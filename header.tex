@@ -24,12 +24,17 @@ tabsize=4, % tab style
 % commentstyle=\color{magenta}\texttt,
 % showspaces=false
 }
+\newcommand{\lst}[3]{\lstinputlisting[title=\href{#2}{#1}]{#3}}
 
 % software menu & keys
 \usepackage[os=win]{menukeys} 
 \usepackage{amssymb} % windows key
 \newcommand{\winstart}{$\boxplus$}
+\newcommand{\winr}{\keys{\winstart+R}}
 \newcommand{\file}[1]{\textbf{\textsf{#1}}}
+\newcommand{\lms}{$\lhd$}
+\newcommand{\dblms}{$\lhd\lhd$}
+\newcommand{\rms}{$\rhd$}
 
 % disable oneliner page breaks
 \usepackage[defaultlines=2,all]{nowidow}
