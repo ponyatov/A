@@ -1,0 +1,31 @@
+\documentclass[oneside,12pt]{book}
+
+% e-book format
+\usepackage[paperwidth=210mm,paperheight=148mm,margin=10mm]{geometry}
+
+% Cyrillization
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+
+% pdflatex options
+\usepackage[unicode]{hyperref}
+\usepackage[pdftex]{graphicx}
+
+% listings
+\usepackage{listings}
+\lstset{
+extendedchars=true,inputencoding=utf8, % i18n
+frame=single, % show frames around
+numbers=left, numberstyle=\small,numbersep=1mm,% line numbering
+tabsize=4, % tab style
+% keywordstyle=\color{blue}\texttt,
+% commentstyle=\color{magenta}\texttt,
+% showspaces=false
+}
+
+% misc
+\newcommand{\email}[1]{$<$\href{mailto:#1}{#1}$>$}
+
+
