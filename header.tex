@@ -14,6 +14,7 @@
 \usepackage[pdftex]{graphicx}
 
 % listings
+\usepackage{verbatim}
 \usepackage{listings}
 \lstset{
 extendedchars=true,inputencoding=utf8, % i18n
@@ -39,6 +40,11 @@ tabsize=4, % tab style
 % disable oneliner page breaks
 \usepackage[defaultlines=2,all]{nowidow}
 
+% books bib management
+\usepackage{biblatex}
+\addbibresource{../bib/python.bib}
+\addbibresource{../bib/eskd.bib}
+
 % misc
 \newcommand{\email}[1]{$<$\href{mailto:#1}{#1}$>$}
 
@@ -61,3 +67,7 @@ tabsize=4, % tab style
 \newcommand{\cp}[1]{\note{копипаста \url{#1}}}
 
 \newcommand{\win}{\winstart Windows}
+
+\newcommand{\mk}{МК}
+
+\newcommand{\term}[1]{\emph{#1}}

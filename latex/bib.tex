@@ -1,0 +1,49 @@
+\section{Список литературы и цитирование}
+
+\latex\ умеет мощную подсистему управления цитированием и списками литературы.
+В простейшем случае, например при написании единственной статьи, раздел
+\term{библиографии}\ можно создать в том же документе, добавив в конец
+\verb|thebibliography|:
+
+\begin{verbatim}
+\documentclass{article}
+
+\input{header}
+
+\author{Вася Пупкин}
+\title{Пример статьи с цитатами}
+
+\begin{document}
+\maketitle
+	
+В статье используются книги: \cite{A} и \cite{B}
+	
+\begin{thebibliography}{99}
+
+\bibitem{A} Книга А
+
+\bibitem{B} Книга B
+	
+\end{thebibliography}
+\end{document}
+\end{verbatim}
+
+Но если вы регулярно работаете с документацией, или часто пишете статьи,
+возникает естественное желание вынести весь список литературы в отдельную базу
+данных, прописать авторов, названия, издательства и т.п. Это делается с помощью
+программы \file{biber}\ и пакета \file{biblatex}.
+
+Пример использования этой системы вы легко найдете в исходниках этой книги:
+
+\begin{itemize}
+  \item файл \file{header.tex} содержит секцию подключения пакета и подгрузки
+  библиофайлов:
+  \begin{verbatim}% books bib management
+\usepackage{biblatex}
+\addbibresource{../bib/python.bib}
+\addbibresource{../bib/eskd.bib}
+...\end{verbatim}
+  \item библиофайлы хранятся в \textbf{соседнем}\ репозитории \file{../bib},
+  склонированном с \url{https://github.com/ponyatov/bib}.
+  \item порядок вызова \file{pdflatex}\ и \file{biber}\ см. \file{Makefile}
+\end{itemize}

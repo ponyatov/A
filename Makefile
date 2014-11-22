@@ -1,4 +1,4 @@
-TEX = Azbuka.tex header.tex bib.tex
+TEX = Azbuka.tex header.tex
 TEX += intro.tex
 
 # KiCAD
@@ -8,16 +8,34 @@ TEX += kicad/kicad.tex
 TEX += eclipse/eclipse.tex
 
 # LaTeX
-TEX += latex/latex.tex
+TEX += latex/latex.tex latex/bib.tex
 
 # Python
 TEX += python/python.tex
 
-Azbuka.pdf: $(TEX)
-	pdflatex Azbuka.tex
-	pdflatex Azbuka.tex
+# tools
+TEX += tech/tools/tools.tex
+
+# tech
+TEX += tech/pcb/kipcb.tex
+
+# Cortex-Mx
+TEX += CortexM/cor.tex
+
+# bibs
+BIB = ../bib/eskd.bib ../bib/python.bib
+
+autobuild: Azbuka.pdf 
+
+tmp/work.pdf: work.tex $(TEX)
+	pdflatex --output-directory=tmp work
+
+Azbuka.pdf: $(TEX) $(BIB)
+	pdflatex --output-directory=tmp Azbuka
+	biber tmp/Azbuka
+	pdflatex --output-directory=tmp Azbuka
+	mv tmp/$@ $@
 
 .PHONY: clean
 clean:
-	rm -rf tmp *.aux *.toc *.log *.out
-	
+	rm -f tmp/*
