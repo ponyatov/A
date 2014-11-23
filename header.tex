@@ -36,6 +36,8 @@ tabsize=4, % tab style
 \newcommand{\lms}{$\lhd$}
 \newcommand{\dblms}{$\lhd\lhd$}
 \newcommand{\rms}{$\rhd$}
+\newcommand{\checkbox}{$\boxtimes$}
+\newcommand{\uncheckbox}{$\square$}
 
 % disable oneliner page breaks
 \usepackage[defaultlines=2,all]{nowidow}
@@ -44,6 +46,9 @@ tabsize=4, % tab style
 \usepackage{biblatex}
 \addbibresource{../bib/python.bib}
 \addbibresource{../bib/eskd.bib}
+
+% extra char sets
+\usepackage{wasysym} % smileys
 
 % set lists style
 % \usepackage{enumitem}
@@ -65,7 +70,9 @@ tabsize=4, % tab style
 \newcommand{\make}{\hyperref[make]{Make}}
 \newcommand{\spice}{ngSPICE}
 \newcommand{\latex}{\LaTeX}
+
 \newcommand{\eclipse}{\textcircled{$\equiv$}\textsc{eclipse}}
+\newcommand{\vim}{(g)Vim}
 
 \newcommand{\note}[1]{\footnote{\ #1}}
 \newcommand{\cp}[1]{\note{копипаста \url{#1}}}
