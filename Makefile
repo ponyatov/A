@@ -4,8 +4,11 @@ TEX += intro.tex
 # KiCAD
 TEX += kicad/kicad.tex
 
-# Eclipse
-TEX += eclipse/eclipse.tex
+# IDE
+TEX += ide/ide.tex
+TEX += ide/eclipse.tex
+TEX += ide/codeblocks.tex
+TEX += ide/vim.tex
 
 # LaTeX
 TEX += latex/latex.tex latex/bib.tex
