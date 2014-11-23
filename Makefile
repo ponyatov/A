@@ -1,4 +1,4 @@
-TEX = Azbuka.tex header.tex
+TEX = Azbuka.tex header.tex authoring.tex
 TEX += intro.tex
 
 # KiCAD
