@@ -49,32 +49,41 @@ Aaron'а} (en) в которой автор рассказывает о подк
   
   \item устанавливаем сначала \file{aSpell}, потом отдельно каждый словарь
   
-  \menu{\file{Aspell-0-50-3-3-Setup.exe}>Setup GNU Aspell>Next}
-  
-  \menu{License>Next}
+  \menu{\file{Aspell-0-50-3-3-Setup.exe}>Setup GNU Aspell>Next>License>Next}
   
   \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next}
   
   \menu{Additional>Next>Install>Next>\uncheckbox\ View manual>Finish}
   
-  \bigskip
-  
-  \menu{\file{Aspell-en-0.50-2-3.exe}>Aspell English Dictionary>Next}
-  
-  \menu{License>Next}
+  \menu{\file{Aspell-en-0.50-2-3.exe}>Aspell English Dictionary>Next>License>Next}
   
   \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
   
-  \bigskip
-  
-  \menu{\file{Aspell-ru-0.50-2-3.exe}>Aspell Russian Dictionary>Next}
-  
-  \menu{License>Next}
+  \menu{\file{Aspell-ru-0.50-2-3.exe}>Aspell Russian Dictionary>Next>License>Next}
   
   \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
   
-  \item делаем дамп словарей 
-  \item объединяем дампы словарей
+  \item делаем дамп словарей, перекодируем из koi8r в utf8 и объединяем
+  
+  \menu{\winr cmd}
+
+\begin{lstlisting}
+cd \GnuWin32\Aspell
+bin\aspell dump master en > en.dict
+bin\aspell dump master ru > ru.koi8
+iconv -f koi8-r -t utf-8 < ru.koi8 > ru.dict
+copy en.dict + ru.dict enru.dict
+\end{lstlisting}
+  
   \item \label{aspellecl} настраиваем \emph{spell-checker} \eclipse
+  
+  \menu{\eclipse>Window>Preferences>Editors>Text editors>Spelling}
+  
+  \menu{User defined dictionary>\file{C:/GnuWin32/Aspell/enru.dict}}
+  
+  \menu{Encoding>UTF-8}
+  
+  \menu{Apply>OK}
+  
 \end{enumerate}
 
