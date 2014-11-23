@@ -1,9 +1,3 @@
 *~
 *.swp
 /tmp/
-*.aux
-*.log
-*.out
-*.pdf
-*.toc
-
