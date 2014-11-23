@@ -25,10 +25,13 @@ TEX += CortexM/cor.tex
 # bibs
 BIB = ../bib/eskd.bib ../bib/python.bib
 
+# heap
+TEX += heap/heap.tex 
+
 LATEX = pdflatex --output-directory=tmp -halt-on-error
 BIBER = biber
 
-buildmain: Azbuka.pdf 
+#buildmain: Azbuka.pdf 
 
 tmp/work.pdf: work.tex $(TEX)
 	$(LATEX) work
