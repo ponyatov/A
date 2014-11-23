@@ -25,15 +25,18 @@ TEX += CortexM/cor.tex
 # bibs
 BIB = ../bib/eskd.bib ../bib/python.bib
 
-autobuild: Azbuka.pdf 
+LATEX = pdflatex --output-directory=tmp -halt-on-error
+BIBER = biber
+
+buildmain: Azbuka.pdf 
 
 tmp/work.pdf: work.tex $(TEX)
-	pdflatex --output-directory=tmp work
+	$(LATEX) work
 
 Azbuka.pdf: $(TEX) $(BIB)
-	pdflatex --output-directory=tmp Azbuka
-	biber tmp/Azbuka
-	pdflatex --output-directory=tmp Azbuka
+	$(LATEX) Azbuka
+	$(BIBER) tmp/Azbuka
+	$(LATEX) Azbuka
 	mv tmp/$@ $@
 
 .PHONY: clean
