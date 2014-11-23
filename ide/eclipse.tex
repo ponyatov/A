@@ -38,7 +38,41 @@ Aaron'а} (en) в которой автор рассказывает о подк
 Установка состоит из \ref{aspellecl}\ шагов:
 \begin{enumerate}
   \item качаем \href{}{aSpell}\ и словари для нужных языков
+  
+  \menu{\winr>\url{http://aspell.net/win32/}>}
+  
+  \menu{Binaries>Full installer}
+  
+  \menu{Precompiled dictionaries>English}
+  
+  \menu{Precompiled dictionaries>Russian}
+  
   \item устанавливаем сначала \file{aSpell}, потом отдельно каждый словарь
+  
+  \menu{\file{Aspell-0-50-3-3-Setup.exe}>Setup GNU Aspell>Next}
+  
+  \menu{License>Next}
+  
+  \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next}
+  
+  \menu{Additional>Next>Install>Next>\uncheckbox\ View manual>Finish}
+  
+  \bigskip
+  
+  \menu{\file{Aspell-en-0.50-2-3.exe}>Aspell English Dictionary>Next}
+  
+  \menu{License>Next}
+  
+  \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
+  
+  \bigskip
+  
+  \menu{\file{Aspell-ru-0.50-2-3.exe}>Aspell Russian Dictionary>Next}
+  
+  \menu{License>Next}
+  
+  \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
+  
   \item делаем дамп словарей 
   \item объединяем дампы словарей
   \item \label{aspellecl} настраиваем \emph{spell-checker} \eclipse
