@@ -20,6 +20,7 @@ TEX += ide/vim.tex
 
 # LaTeX
 TEX += latex/latex.tex latex/bib.tex
+TEX += latex/GLE.tex
 
 # Python
 TEX += python/python.tex
