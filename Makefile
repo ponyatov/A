@@ -1,5 +1,10 @@
-TEX = Azbuka.tex header.tex authoring.tex
+TEX = Azbuka.tex header.tex authoring.tex title.tex
 TEX += intro.tex
+
+# Collid
+TEX += bcollis/bcollis.tex
+TEX += bcollis/thanks.tex
+TEX += bcollis/intro.tex
 
 # KiCAD
 TEX += kicad/kicad.tex
