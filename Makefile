@@ -4,6 +4,9 @@ TEX += intro.tex
 # KiCAD
 TEX += kicad/kicad.tex
 
+# FreeCAD
+TEX += freecad/freecad.tex logo/FreeCAD.png
+
 # IDE
 TEX += ide/ide.tex
 TEX += ide/eclipse.tex
