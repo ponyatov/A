@@ -35,7 +35,7 @@ TEX += tech/pcb/kipcb.tex
 TEX += CortexM/cor.tex
 
 # bibs
-BIB = ../bib/eskd.bib ../bib/python.bib
+BIB = ../bib/eskd.bib ../bib/python.bib ../bib/electronics.bib
 
 # heap
 TEX += heap/heap.tex 
@@ -46,6 +46,8 @@ BIBER = biber
 #buildmain: Azbuka.pdf 
 
 tmp/work.pdf: work.tex $(TEX)
+	$(LATEX) work
+	$(BIBER) tmp/work
 	$(LATEX) work
 
 Azbuka.pdf: $(TEX) $(BIB)
