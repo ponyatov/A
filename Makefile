@@ -5,6 +5,7 @@ TEX += intro.tex
 TEX += bcollis/bcollis.tex
 TEX += bcollis/thanks.tex
 TEX += bcollis/intro.tex
+TEX += bcollis/ch02.tex
 
 # KiCAD
 TEX += kicad/kicad.tex
