@@ -52,8 +52,8 @@ BIBER = biber
 
 tmp/work.pdf: work.tex $(TEX)
 	$(LATEX) work
-	$(BIBER) tmp/work
-	$(LATEX) work
+#	$(BIBER) tmp/work
+#	$(LATEX) work
 
 Azbuka.pdf: $(TEX) $(BIB)
 	$(LATEX) Azbuka
