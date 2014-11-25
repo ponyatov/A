@@ -35,7 +35,9 @@ TEX += tech/pcb/kipcb.tex
 TEX += CortexM/cor.tex
 
 # bibs
-BIB = ../bib/eskd.bib ../bib/python.bib ../bib/electronics.bib
+BIB = ../bib/eskd.bib ../bib/python.bib 
+BIB += ../bib/electronics.bib
+BIB += ../bib/latex.bib
 
 # heap
 TEX += heap/heap.tex 

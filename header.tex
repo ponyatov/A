@@ -9,8 +9,12 @@
 \usepackage[english,russian]{babel}
 \usepackage{indentfirst}
 
+% font setup for screen reading
+\renewcommand{\familydefault}{\sfdefault}
+\normalfont
+
 % pdflatex options
-\usepackage[unicode,colorlinks,linkcolor=blue]{hyperref}
+\usepackage[unicode,colorlinks,linkcolor=blue,bookmarks=true]{hyperref}
 \usepackage[pdftex]{graphicx}
 
 % listings
@@ -47,6 +51,7 @@ tabsize=4, % tab style
 \addbibresource{../bib/python.bib}
 % \addbibresource{../bib/eskd.bib}
 \addbibresource{../bib/electronics.bib}
+\addbibresource{../bib/latex.bib}
 
 % extra char sets
 \usepackage{wasysym} % smileys
