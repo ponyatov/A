@@ -48,13 +48,15 @@ TEX += heap/heap.tex
 LATEX = pdflatex --output-directory=tmp -halt-on-error
 BIBER = biber
 
-#buildmain: Azbuka.pdf 
+#buildmain: pdf 
 
 tmp/work.pdf: work.tex $(TEX)
 	$(LATEX) work
 #	$(BIBER) tmp/work
 #	$(LATEX) work
 
+.PHONY: pdf
+pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB)
 	$(LATEX) Azbuka
 	$(BIBER) tmp/Azbuka
@@ -63,4 +65,5 @@ Azbuka.pdf: $(TEX) $(BIB)
 
 .PHONY: clean
 clean:
-	rm -f tmp/*
+	rm -f tmp/work.* tmp/Azbuka.*
+
