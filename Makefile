@@ -28,6 +28,7 @@ TEX += python/python.tex
 
 # tools
 TEX += tech/tools/tools.tex
+TEX += tech/tools/electro.tex
 
 # tech
 TEX += tech/pcb/kipcb.tex
