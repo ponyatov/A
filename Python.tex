@@ -1,0 +1,21 @@
+\input{header}
+
+\def \thesubtitle {Python}
+
+\title{\thetitle: \thesubtitle}
+\author{\theauthorA, \theauthorB, \theauthorC}
+
+\def \theauthorD {}
+
+\hypersetup{
+	pdftitle={\thetitle: \thesubtitle},
+	pdfauthor={\theauthorA, \theauthorB, \theauthorC},
+	pdfsubject={\githubURL}
+}
+
+\begin{document}
+\input{title}\tableofcontents\clearpage
+
+\input{python/python}
+
+\end{document}

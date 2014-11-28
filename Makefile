@@ -51,12 +51,18 @@ TEX += heap/heap.tex
 LATEX = pdflatex --output-directory=tmp -halt-on-error
 BIBER = biber
 
-#buildmain: pdf 
+#buildmain: pdf
+
+.PHONY: python
+python: Python.pdf
+Python.pdf: Python.tex $(TEX)
+	$(LATEX) Python
+	$(BIBER) tmp/Python
+	$(LATEX) Python
+	mv tmp/$@ $@
 
 tmp/work.pdf: work.tex $(TEX)
 	$(LATEX) work
-#	$(BIBER) tmp/work
-#	$(LATEX) work
 
 .PHONY: pdf
 pdf: Azbuka.pdf
