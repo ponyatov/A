@@ -30,6 +30,7 @@ TEX += python/python.tex
 TEX += tech/tools/tools.tex
 TEX += tech/tools/electro.tex
 TEX += tech/tools/handtools.tex
+TEX += tech/tools/solder.tex
 
 # tech
 TEX += tech/pcb/kipcb.tex
