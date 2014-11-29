@@ -53,14 +53,6 @@ BIBER = biber
 
 #buildmain: pdf
 
-.PHONY: python
-python: Python.pdf
-Python.pdf: Python.tex $(TEX)
-	$(LATEX) Python
-	$(BIBER) tmp/Python
-	$(LATEX) Python
-	mv tmp/$@ $@
-
 tmp/work.pdf: work.tex $(TEX)
 	$(LATEX) work
 
@@ -75,4 +67,3 @@ Azbuka.pdf: $(TEX) $(BIB)
 .PHONY: clean
 clean:
 	rm -f tmp/work.* tmp/Azbuka.*
-
