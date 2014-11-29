@@ -45,6 +45,9 @@ BIB += ../bib/electronics.bib
 BIB += ../bib/latex.bib
 BIB += ../bib/sat.bib
 
+# math
+TEX += math/math.tex
+
 # heap
 TEX += heap/heap.tex 
 
@@ -54,6 +57,8 @@ BIBER = biber
 #buildmain: pdf
 
 tmp/work.pdf: work.tex $(TEX)
+	$(LATEX) work
+#	$(BIBER) tmp/work
 	$(LATEX) work
 
 .PHONY: pdf

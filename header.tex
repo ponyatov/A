@@ -97,14 +97,14 @@ tabsize=4, % tab style
 
 \newcommand{\pref}[1]{/стр.\pageref{#1}/}
 
+% math
+\usepackage{cancel}
+
 % titles
-\def \thetitle {Азбука халтурщика-ARMатурщика}
-\def \theauthorA
-{\href{https://groups.google.com/forum/\#!forum/openwrt2ru}{ruOpenWrt}} 
 
-\def \theauthorB {HackSpace
-<<\href{https://github.com/ponyatov/CHBZ/raw/master/presentation.pdf}{Чебураторный завод}>>}
-
-\def \theauthorC {Консорциум хоббитов России} 
-\def \theauthorD {Bill Collis} 
-\def \githubURL {https://github.com/ponyatov/Azbuka}
+\hypersetup{
+	pdftitle={Азбука халтурщика-ARMатурщика},
+	pdfauthor={ruOpenWrt, HackSpace <<Чебураторный завод>>, Консорциум хоббитов
+	России, Bill Collis (Часть 1)}, 
+	pdfsubject={https://github.com/ponyatov/Azbuka}
+}
