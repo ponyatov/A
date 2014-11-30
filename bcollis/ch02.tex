@@ -3,7 +3,44 @@
 
 \section{2.1 Где купить комплектующие? 15}
 
-.
+В Новой Зеландии есть некоторое количество отличных поставщиков компонентов с
+разумными ценами, включающих \url{www.surplustronics.co.nz}, и
+\url{www.activecomponents.com}. Зарубежные поставщики, которых я использую,
+включают \url{www.digikey.co.nz}, \url{www.sparkfun.com}, \url{ebay.com}
+и \url{aliexpress.com}
+
+\bigskip
+\includegraphics[width=0.8\textwidth]{bcollis/breadboard2.jpg}
+
+Макетная плата (breadboard)\ --- пластмассовый блок с отверстиями и
+металлическими полосковыми металлическими зажимами, создающими соединения между
+элементами схемы. Отверстия расположены так, что компоненты могут быть соединены
+вместе формируя схему. Верхние и нижние ряды, как правило, используется для шин
+питания, красный сверху для плюса, и внизу черный/синий для для минуса (общий
+провод).
+
+\includegraphics[width=0.8\textwidth]{bcollis/BreadboardConnections.jpg}
+
+\bigskip
+
+Эта схема \ref{ch21sch}\ может быть собрана вот так \ref{ch21lay}, обратите
+внимание, что светодиод должен находиться в правильном положении. Если у вас
+есть светодиод и резистор, соединенные в замкнутый контур, светодиод должен
+загореться.
+
+\bigskip
+Принципиальная схема \label{ch21sch}
+
+\bigskip
+Компоновка \label{ch21lay}
+
+\bigskip
+The LED requires 2V the battery is 9V, if you put the LED across the battery it
+would stop working! So a 1k (1000ohm) resistor is used to reduce the voltage to
+the LED and the current through it, get a multimeter and measure the voltage
+across the resistor, is it close to 7V? If you disconnect any wire within the
+circuit it stops working, a circuit needs to be complete before electrons can
+flow.
 
 \section{2.2 Определение сопротивления резистора по цветовому коду 16}
 
