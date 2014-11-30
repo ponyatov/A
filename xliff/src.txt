@@ -1,9 +1,11 @@
+
+
 2.1 Where to buy stuff?
 
 In New Zealand there are a number of reasonably
 priced and excellent suppliers for components including
 www.surplustronics.co.nz and
-www.activecomponents.com Overseas suppliers I use
+www.activecomponents.com. Overseas suppliers I use
 include www.digikey.co.nz, www.sparkfun.com
 ebay.com & aliexpress.com
 

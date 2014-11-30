@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<section>
+<trans-unit><source>
+<mrk mtype="symbol">2.1</mrk> Where to buy stuff?</source><target><mrk mtype="symbol">2.1</mrk> Где купить комплектующие?</target></trans-unit>
+<trans-unit><source>
+</source><target></target></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+In New Zealand there are a number of reasonably priced and excellent suppliers 
+for components including <mrk mtype="protected">www.surplustronics.co.nz</mrk> and <mrk mtype="protected">www.activecomponents.com</mrk>.</source><target>В Новой Зеландии есть некоторое количество отличных поставщиков компонентов с разумными ценами, включающих <mrk mtype="protected">www.surplustronics.co.nz</mrk>, и <mrk mtype="protected">www.activecomponents.com</mrk>.</target></trans-unit>
+<trans-unit><source> 
+Overseas suppliers I use include <mrk mtype="protected">www.digikey.co.nz</mrk>, <mrk mtype="protected">www.sparkfun.com</mrk> <mrk mtype="protected">ebay.com</mrk> 
+&amp; <mrk mtype="protected">aliexpress.com</mrk>
+</source><target>Зарубежные поставщики, которых я использую, включают <mrk mtype="protected">www.digikey.co.nz</mrk>, <mrk mtype="protected">www.sparkfun.com</mrk>, <mrk mtype="protected">ebay.com</mrk> и <mrk mtype="protected">aliexpress.com</mrk></target></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+A breadboard is a plastic block with holes and metal connection strips inside 
+it to make circuits.</source><target>Макетная плата (breadboard) -- пластмассовый блок с отверстиями и металлическими полосковыми металлическими зажимами, создающими соединения между элементами схемы.</target></trans-unit>
+<trans-unit><source> The holes are arranged so that components can be connected together 
+to form circuits.</source><target>Отверстия расположены так, что компоненты могут быть соединены вместе формируя схему.</target></trans-unit>
+<trans-unit><source> The top and bottom rows are usually used for power, top for 
+positive which is red and the bottom for negative which is black.</source><target>Верхние и нижние ряды, как правило, используется для шин питания, красный сверху для плюса, и внизу черный для для минуса (общий провод).</target></trans-unit>
+<trans-unit><source>
+</source><target></target></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+This circuit could be built like this, note that the LED must go around the 
+correct way.</source><target>Эта схема может быть собрана вот так, обратите внимание, что светодиод должен находиться в правильном положении.</target></trans-unit>
+<trans-unit><source> If you have the LED and resistor connected in a closed circuit the 
+LED should light up.</source><target>Если у вас есть светодиод и резистор, соединенные в замкнутый контур, светодиод должен загореться.</target></trans-unit>
+<trans-unit><source>
+</source><target></target></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+Schematic or circuit diagram
+</source><target>Принципиальная схема</target></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+Layout
+</source><target>Компоновка</target></trans-unit>
+</section>
+
+</body>
+</file>
+</xliff>

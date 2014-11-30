@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<section>
+<trans-unit><source>
+<mrk mtype="symbol">2.1</mrk> Where to buy stuff?</source></trans-unit>
+<trans-unit><source>
+</source></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+In New Zealand there are a number of reasonably priced and excellent suppliers 
+for components including <mrk mtype="protected">www.surplustronics.co.nz</mrk> and <mrk mtype="protected">www.activecomponents.com</mrk>.</source></trans-unit>
+<trans-unit><source> 
+Overseas suppliers I use include <mrk mtype="protected">www.digikey.co.nz</mrk>, <mrk mtype="protected">www.sparkfun.com</mrk> <mrk mtype="protected">ebay.com</mrk> 
+&amp; <mrk mtype="protected">aliexpress.com</mrk>
+</source></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+A breadboard is a plastic block with holes and metal connection strips inside 
+it to make circuits.</source></trans-unit>
+<trans-unit><source> The holes are arranged so that components can be connected together 
+to form circuits.</source></trans-unit>
+<trans-unit><source> The top and bottom rows are usually used for power, top for 
+positive which is red and the bottom for negative which is black.</source></trans-unit>
+<trans-unit><source>
+</source></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+This circuit could be built like this, note that the LED must go around the 
+correct way.</source></trans-unit>
+<trans-unit><source> If you have the LED and resistor connected in a closed circuit the 
+LED should light up.</source></trans-unit>
+<trans-unit><source>
+</source></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+Schematic or circuit diagram
+</source></trans-unit>
+</section>
+
+<section>
+<trans-unit><source>
+Layout
+</source></trans-unit>
+</section>
+
+</body>
+</file>
+</xliff>

@@ -9,22 +9,32 @@ extern int yylineno;
 extern int yylex();
 void yyerror(const char msg[]) { cerr << msg << " @ " << yylineno << endl; exit(-1); }
 #define YYINITDEPTH 0x10000
+
+int CHARPOS=0;
+#define LINEWIDTH 75
 %}
 
 %token CHAR
+%token SPACE
 %token EOL
 %token PAR
 %token PREP
 %token NUM
+%token URL
 
 %%
 
 TEXT: BLOCK | BLOCK TEXT ;
 BLOCK: LINE ;
-LINE: PARz | PREPz | NUM {cout<<"["<<$$<<"]";} | CHARz LINE ;
-CHARz: CHAR {cout<<$$;} ;
-PREPz: PREP {cout<<"("<<$$<<")\n";} ;
-PARz: PAR {cout<<"\n\n";};
+LINE: 
+	PAR {cout<<"\n</source></trans-unit>\n</section>\n\n<section>\n<trans-unit><source>\n"; CHARPOS=0; } | 
+	PREP {cout<<$$<<"</source></trans-unit>\n<trans-unit><source>";} | 
+	NUM {cout<<"<mrk mtype=\"symbol\">"<<$$<<"</mrk>";} | 
+	URL {cout<<"<mrk mtype=\"protected\">"<<$$<<"</mrk>"; CHARPOS+=$$.length(); } | 
+	CHARz LINE ;
+CHARz: 
+	CHAR {cout<<$$; CHARPOS++; } | 
+	SPACE {cout<<$$; CHARPOS++; if (CHARPOS>LINEWIDTH) {CHARPOS=0; cout<<"\n";} } ;
 
 %%
 
