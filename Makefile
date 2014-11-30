@@ -59,7 +59,7 @@ BIBER = biber
 tmp/work.pdf: work.tex $(TEX)
 	$(LATEX) work
 #	$(BIBER) tmp/work
-	$(LATEX) work
+#	$(LATEX) work
 
 .PHONY: pdf
 pdf: Azbuka.pdf
