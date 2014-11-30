@@ -1,0 +1,25 @@
+
+2.1 Where to buy stuff?
+
+In New Zealand there are a number of reasonably
+priced and excellent suppliers for components including
+www.surplustronics.co.nz and
+www.activecomponents.com Overseas suppliers I use
+include www.digikey.co.nz, www.sparkfun.com
+ebay.com & aliexpress.com
+
+A breadboard is a plastic block with holes and metal
+connection strips inside it to make circuits. The holes
+are arranged so that components can be connected
+together to form circuits. The top and bottom rows are
+usually used for power, top for positive which is red and
+the bottom for negative which is black.
+
+This circuit could be built like this, note that the LED
+must go around the correct way. If you have the LED and resistor connected in a closed circuit
+the LED should light up.
+
+Schematic or circuit diagram
+
+Layout
+
