@@ -48,6 +48,10 @@ BIB += ../bib/sat.bib
 # math
 TEX += math/math.tex
 
+# prog
+TEX += prog/prog.tex
+TEX += prog/parser.tex
+
 # heap
 TEX += heap/heap.tex 
 
