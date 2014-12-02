@@ -16,6 +16,7 @@
 % pdflatex options
 \usepackage[unicode,colorlinks,linkcolor=blue,bookmarks=true]{hyperref}
 \usepackage[pdftex]{graphicx}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
 
 % listings
 \usepackage{verbatim}
@@ -93,9 +94,12 @@ tabsize=4, % tab style
 
 \newcommand{\mk}{МК}
 
-\newcommand{\term}[1]{\emph{#1}}
 
 \newcommand{\pref}[1]{/стр.\pageref{#1}/}
+
+% selecting
+\newcommand{\term}[1]{\textcolor{RubineRed}{#1}}
+\renewcommand{\emph}[1]{\textcolor{Blue}{#1}}
 
 % math
 \usepackage{cancel}

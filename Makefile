@@ -51,6 +51,8 @@ TEX += math/math.tex
 # prog
 TEX += prog/prog.tex
 TEX += prog/parser.tex
+TEX += prog/sysdesign.tex
+TEX += prog/ortho.tex
 
 # heap
 TEX += heap/heap.tex 
