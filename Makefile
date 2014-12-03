@@ -44,6 +44,8 @@ BIB += ../bib/eskd.bib
 BIB += ../bib/electronics.bib
 BIB += ../bib/latex.bib
 BIB += ../bib/sat.bib
+BIB += ../bib/math.bib
+BIB += ../bib/sysdesign.bib
 
 # math
 TEX += math/math.tex
