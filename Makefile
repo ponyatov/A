@@ -52,7 +52,7 @@ TEX += math/math.tex
 
 # prog
 TEX += prog/prog.tex
-TEX += prog/parser.tex
+TEX += prog/lexer/lexer.tex
 TEX += prog/sysdesign.tex
 TEX += prog/ortho.tex
 
