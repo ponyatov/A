@@ -12,8 +12,9 @@ SRC = $(PWD)/src
 
 TMP = $(PWD)/tmp
 
+# build/target triplets
+BUILD = $(shell gcc -dumpmachine)
 # cross-compiler [T]ool[C]hain
-
 TC = $(PWD)/$(BUILD)
 
 # target root filesystem

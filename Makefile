@@ -58,6 +58,7 @@ TEX += prog/ortho.tex
 
 # linux
 TEX += linux/linux.tex
+TEX += linux/intro.tex
 TEX += azlin/azlin.tex
 
 # heap
