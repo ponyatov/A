@@ -56,6 +56,10 @@ TEX += prog/lexer/lexer.tex
 TEX += prog/sysdesign.tex
 TEX += prog/ortho.tex
 
+# linux
+TEX += linux/linux.tex
+TEX += azlin/azlin.tex
+
 # heap
 TEX += heap/heap.tex 
 
@@ -73,7 +77,7 @@ tmp/work.pdf: work.tex $(TEX)
 pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB)
 	$(LATEX) Azbuka
-	$(BIBER) tmp/Azbuka
+#	$(BIBER) tmp/Azbuka
 	$(LATEX) Azbuka
 	mv tmp/$@ $@
 
