@@ -1,0 +1,3 @@
+[submodule "azlin"]
+	path = azlin
+	url = git@github.com:ponyatov/azlin.git
