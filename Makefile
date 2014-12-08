@@ -75,13 +75,15 @@ BIBER = biber
 tmp/work.pdf: work.tex $(TEX) $(TXT)
 	python rex.py
 	$(LATEX) work
+	makeindex tmp/work
 #	$(BIBER) tmp/work
-#	$(LATEX) work
+	$(LATEX) work
 
 .PHONY: pdf
 pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB) $(TXT)
 	$(LATEX) Azbuka
+	makeindex tmp/Azbuka
 #	$(BIBER) tmp/Azbuka
 	$(LATEX) Azbuka
 	mv tmp/$@ $@
