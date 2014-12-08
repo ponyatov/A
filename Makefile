@@ -1,5 +1,5 @@
 TEX = Azbuka.tex header.tex authoring.tex title.tex
-TEX += lstmake.sty
+TEX += lstmk.sty lstrc.sty
 TEX += intro.tex
 
 TXT = rex.py
