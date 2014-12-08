@@ -2,13 +2,12 @@
 \lstdefinelanguage{mk}%
 {
 	showtabs=true,
-	alsoletter={.},
+	alsoletter={.,\+},
  	comment=[l]{\#},
- 	keywords={.PHONY,shell,PWD},
+ 	keywords={.PHONY,shell,PWD,include},
  	keywords=[2]{GZ,SRC,TMP,ROOT,BOOT,DIRS,TC},
- 	keywords=[3]{HOST,TARGET,BUILD},
- 	keywords=[3]{APP,HW,CPU,ARCH},
- 	keywords=[4]{dirs,gz},
- 	keywords=[5]{mkdir}
+ 	keywords=[3]{BUILD,HOST,TARGET,APP,HW,CPU,ARCH,LIBS,APPS},
+ 	keywords=[4]{dirs,gz,sdl},
+ 	keywords=[5]{mkdir,ld,as,gcc,g++}
 }
 \endinput
