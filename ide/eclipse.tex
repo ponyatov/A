@@ -4,35 +4,27 @@
 
 \section{Установка \eclipse\ под \win}
 
-\menu{\winr>\url{https://eclipse.org/}>Download}
-
-\menu{Eclipse Luna release for>\win}
+\menu{\winr>\url{https://eclipse.org/}>Download>Eclipse Luna release for>\win}
 
 Качаем архив базовой системы:
-
 \menu{Eclipse IDE for Java Developers>\win\ 32/64 Bit}
 
 Или сразу сборку CDT\eclipse:
-
 \menu{Eclipse IDE for C/C++ Developers>\win\ 32/64 Bit}
 
 \section{Установка \eclipse\ под \linux}
 
-\menu{\winr>\url{https://eclipse.org/}>Download}
-
-\menu{Eclipse Luna release for>\win}
+\menu{\winr>\url{https://eclipse.org/}>Download>Eclipse Luna release for>\linux}
 
 Качаем архив базовой системы:
-
 \menu{Eclipse IDE for Java Developers>\linux\ 32/64 Bit}
 
 Или сразу сборку CDT\eclipse:
-
 \menu{Eclipse IDE for C/C++ Developers>\linux\ 32/64 Bit}
 
 \bigskip
 
-Устанавливаем в систему Java-рантайм:
+Пока качается, параллельно устанавливаем в систему Java-рантайм:
 
 \begin{verbatim}
 sudo aptitude install openjdk-7-jre
@@ -89,6 +81,28 @@ CDT\eclipse.
 \menu{\checkbox\ GDB Hardware Debugging}
 
 \menu{Next>Next>Accept>Finish}
+
+\section{Установка PyDev}
+
+\href{http://pydev.org/}{\prog{PyDev}}\ --- расширение для разработки на Python:
+\bigskip
+
+
+\menu{\eclipse>Help>Install New Software\ldots}
+
+\menu{Work with>Add>Add repository}
+
+\menu{Name>PyDev}
+
+\menu{Location>\url{http://pydev.org/updates}}
+
+\menu{OK}
+
+\menu{Work with>PyDev}
+
+\menu{PyDev>\checkbox\ PyDev for Eclipse}
+
+\menu{Next>Next>Accept>Finish>Certitificate>Restart Eclipse>Ok}
 
 \section{Установка TeXlipse}
 
