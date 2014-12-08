@@ -18,7 +18,6 @@ TEX += freecad/freecad.tex logo/FreeCAD.png
 # IDE
 TEX += ide/ide.tex
 TEX += ide/eclipse.tex
-TXT += ~/.blackboxmenu
 TEX += ide/codeblocks.tex
 TEX += ide/vim.tex
 
@@ -62,7 +61,7 @@ TEX += prog/ortho.tex
 # linux
 TEX += linux/linux.tex
 TEX += linux/intro.tex
-TEX += azlin/azlin.tex
+TEX += ../azlin/azlin.tex
 
 # heap
 TEX += heap/heap.tex 
