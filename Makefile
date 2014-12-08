@@ -1,4 +1,5 @@
 TEX = Azbuka.tex header.tex authoring.tex title.tex
+TEX += lstmake.sty
 TEX += intro.tex
 
 TXT = rex.py
@@ -61,7 +62,7 @@ TEX += prog/ortho.tex
 # linux
 TEX += linux/linux.tex
 TEX += linux/intro.tex
-TEX += ../azlin/azlin.tex
+TEX += azlin/azlin.tex
 
 # heap
 TEX += heap/heap.tex 

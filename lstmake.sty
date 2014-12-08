@@ -1,0 +1,14 @@
+\ProvidesFile{lstmake.sty}
+\lstdefinelanguage{make}%
+{
+	showtabs=true,
+	alsoletter={.},
+ 	comment=[l]{\#},
+ 	keywords={.PHONY,shell,PWD},
+ 	keywords=[2]{GZ,SRC,TMP,ROOT,BOOT,DIRS,TC},
+ 	keywords=[3]{HOST,TARGET,BUILD},
+ 	keywords=[3]{APP,HW,CPU,ARCH},
+ 	keywords=[4]{dirs,gz},
+ 	keywords=[5]{mkdir}
+}
+\endinput
