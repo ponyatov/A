@@ -1,6 +1,8 @@
 TEX = Azbuka.tex header.tex authoring.tex title.tex
 TEX += intro.tex
 
+TXT = rex.py
+
 # Collid
 TEX += bcollis/bcollis.tex
 TEX += bcollis/thanks.tex
@@ -16,6 +18,7 @@ TEX += freecad/freecad.tex logo/FreeCAD.png
 # IDE
 TEX += ide/ide.tex
 TEX += ide/eclipse.tex
+TXT += ~/.blackboxmenu
 TEX += ide/codeblocks.tex
 TEX += ide/vim.tex
 
@@ -69,14 +72,15 @@ BIBER = biber
 
 #buildmain: pdf
 
-tmp/work.pdf: work.tex $(TEX)
+tmp/work.pdf: work.tex $(TEX) $(TXT)
+	python rex.py
 	$(LATEX) work
 #	$(BIBER) tmp/work
 #	$(LATEX) work
 
 .PHONY: pdf
 pdf: Azbuka.pdf
-Azbuka.pdf: $(TEX) $(BIB)
+Azbuka.pdf: $(TEX) $(BIB) $(TXT)
 	$(LATEX) Azbuka
 #	$(BIBER) tmp/Azbuka
 	$(LATEX) Azbuka
