@@ -75,9 +75,9 @@ BIBER = biber
 tmp/work.pdf: work.tex $(TEX) $(TXT)
 	python rex.py
 	$(LATEX) work
-	makeindex tmp/work
-#	$(BIBER) tmp/work
-	$(LATEX) work
+#	makeindex tmp/work
+##	$(BIBER) tmp/work
+#	$(LATEX) work
 
 .PHONY: pdf
 pdf: Azbuka.pdf
