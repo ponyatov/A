@@ -6,10 +6,43 @@
 
 \bigskip
 \url{http://www.syslinux.org/}
-\bigskip
+
+\subsection{Установка под \win\ на флешку}
 
 \file{.zip}\ с бинарной сборкой:
 
 \url{https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.zip}
+\bigskip
 
-\lst{syslinux.cfg}{}{linux/syslinux.cfg}
+Распакуйте файлы из \file{.zip}
+
+\begin{tabular}{l l}
+\file{/bios/win32/syslinux.exe} & консольный
+инсталлятор \\
+\file{/bios/com32/menu/menu.c32} & модуль текстового меню \\
+\file{/bios/com32/menu/vesamenu.c32} & модуль графического меню (VESA)\\
+\file{/bios/com32/libutil/libutil.c32} & служебная библиотека \prog{syslinux} \\
+\end{tabular}
+
+Для установки на флешку с FAT, на которую назначена буква
+\file{F:}, выполните батник:
+
+\lst{/syslinux/syslinuxusb.bat}{}{linux/syslinuxusb.bat}
+
+\begin{tabular}{l l l}
+-i & install & установить \\
+-m & MBR & в MBR \\
+-a & active & сделать раздел активным \\
+-d & directory & в каталог \file{syslinux}
+\end{tabular}
+
+\subsection{\file{syslinux.cfg}}
+
+\prog{syslinux}\ настривается текстовым файлом \file{syslinux.cfg}.
+
+\lst{/syslinux/syslinux.cfg}{}{linux/syslinux.cfg}
+
+В примере показа реализация с использованием графического VESA меню. 
+Для использования более надежного текстового меню замените на 
+\verb|UI menu.c32|.
+
