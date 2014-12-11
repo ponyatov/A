@@ -7,12 +7,25 @@
 \bigskip
 \url{http://www.syslinux.org/}
 
-\subsection{Установка под \win\ на флешку}
+\subsection{Закачка}
 
-\file{.zip}\ с бинарной сборкой:
+\file{.zip}\ с бинарной сборкой \prog{syslinux}:
 
 \url{https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.zip}
 \bigskip
+
+\prog{memtest86+}\ --- полезная утилита для тестирования \ram:
+
+\url{http://www.memtest.org/download/5.01/memtest86+-5.01.zip}
+\bigskip 
+
+Если планируете устанавливать рабочую станцию для сборки az\linux:
+
+Установочный образ Debian Linux cmd64/x64:
+
+\url{http://cdimage.debian.org/debian-cd/7.7.0/amd64/iso-cd/debian-7.7.0-amd64-netinst.iso}
+
+\subsection{Установка под \win\ на флешку}
 
 Распакуйте файлы из \file{.zip}
 \bigskip
@@ -26,8 +39,9 @@
 \file{/bios/com32/libutil/libutil.c32} &  \\
 \file{/bios/com32/lib/libcom32.c32} &  \\
 \end{tabular}
+\bigskip
 
-Для установки на флешку с FAT, на которую назначена буква
+Для установки \prog{syslinux}\ на флешку с FAT, на которую назначена буква
 \file{F:}, выполните батник:
 
 \lst{/syslinux/syslinuxusb.bat}{}{linux/syslinuxusb.bat}
@@ -38,14 +52,30 @@
 -a & active & сделать раздел активным \\
 -d & directory & в каталог \file{syslinux}
 \end{tabular}
+\bigskip
+
+Если ставите Debian, распакуйте из \file{debian-netinst.iso}
+в \file{F:/Debian/}
+\bigskip
+
+\begin{tabular}{l l}
+\file{debian-7.7.0-amd64-netinst.iso} & \file{.iso}-образ установочного CD-ROM\\
+\file{.iso/install.amd/vmlinuz} & ядро \\
+\file{.iso/install.amd/initrd.gz} & ramdisk с инсталляром \\
+\end{tabular}
+\bigskip
 
 \subsection{\file{syslinux.cfg}}
 
 \prog{syslinux}\ настривается текстовым файлом \file{syslinux.cfg}.
 
-\lst{/syslinux/syslinux.cfg}{}{linux/syslinux.cfg}
+\lstx{/syslinux/syslinux.cfg}{}{linux/syslinux.cfg}{syslinux}
 
 В примере показа реализация с использованием графического VESA меню. 
 Для использования более надежного текстового меню замените на 
 \verb|UI menu.c32|.
 
+\emph{Обратите внимание на возможность включения нестандартных видеорежимов}
+используя \file{[VESA]MENU RESOLUTION}: этот финт нужен для включения графики на
+ASUS EeePC 701: режим 800$\times$480 недоступен для включения через параметр
+ядра \file{vga=}, поэтому приходится использовать возможности \prog{syslinux}.
