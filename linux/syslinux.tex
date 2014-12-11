@@ -19,11 +19,28 @@
 \url{http://www.memtest.org/download/5.01/memtest86+-5.01.zip}
 \bigskip 
 
-Если планируете устанавливать рабочую станцию для сборки az\linux:
+Если планируете устанавливать рабочую станцию для сборки az\linux\ с флешки,
+нужно скачать полные или \emph{netinst}\ установочные \file{.iso}-образы: 
 
-Установочный образ Debian Linux cmd64/x64:
+\emph{Установочный образ Debian Linux} i386:
+
+\url{http://cdimage.debian.org/debian-cd/7.7.0/i386/iso-cd/debian-7.7.0-i386-netinst.iso}
+
+\emph{Установочный образ Debian Linux} amd64:
 
 \url{http://cdimage.debian.org/debian-cd/7.7.0/amd64/iso-cd/debian-7.7.0-amd64-netinst.iso}
+
+\emph{Сборка HDD-инсталлятора} i386:
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-i386/current/images/hd-media/initrd.gz}
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-i386/current/images/hd-media/vmlinuz}
+
+\emph{Сборка HDD-инсталлятора} amd64:
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-amd64/current/images/hd-media/initrd.gz}
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-amd64/current/images/hd-media/vmlinuz}
 
 \subsection{Установка под \win\ на флешку}
 
@@ -74,7 +91,7 @@
 
 \lstx{/syslinux/syslinux.cfg}{}{linux/syslinux.cfg}{syslinux}
 
-В примере показа реализация с использованием графического VESA меню. 
+В примере показана реализация с использованием графического VESA меню. 
 Для использования более надежного текстового меню замените на 
 \verb|UI menu.c32|.
 
