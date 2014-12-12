@@ -1,0 +1,101 @@
+\section{Загрузчик \prog{syslinux}}
+
+Самый простой и удобный загрузчик для i386-систем, ставится на флешку
+из под Windows, работает с FAT-разделами, поддерживает загрузку с флешек, CDROM
+и по сети.
+
+\bigskip
+\url{http://www.syslinux.org/}
+
+\subsection{Закачка}
+
+\file{.zip}\ с бинарной сборкой \prog{syslinux}:
+
+\url{https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.zip}
+\bigskip
+
+\prog{memtest86+}\ --- полезная утилита для тестирования \ram:
+
+\url{http://www.memtest.org/download/5.01/memtest86+-5.01.zip}
+\bigskip 
+
+Если планируете устанавливать рабочую станцию для сборки az\linux\ с флешки,
+нужно скачать полные или \emph{netinst}\ установочные \file{.iso}-образы: 
+
+\emph{Установочный образ Debian Linux} i386:
+
+\url{http://cdimage.debian.org/debian-cd/7.7.0/i386/iso-cd/debian-7.7.0-i386-netinst.iso}
+
+\emph{Установочный образ Debian Linux} amd64:
+
+\url{http://cdimage.debian.org/debian-cd/7.7.0/amd64/iso-cd/debian-7.7.0-amd64-netinst.iso}
+
+\emph{Сборка HDD-инсталлятора} i386:
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-i386/current/images/hd-media/initrd.gz}
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-i386/current/images/hd-media/vmlinuz}
+
+\emph{Сборка HDD-инсталлятора} amd64:
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-amd64/current/images/hd-media/initrd.gz}
+
+\url{http://http.us.debian.org/debian/dists/stable/main/installer-amd64/current/images/hd-media/vmlinuz}
+
+\subsection{Установка под \win\ на флешку}
+
+Распакуйте файлы из \file{.zip}
+\bigskip
+
+\begin{tabular}{l l}
+\file{/bios/win32/syslinux.exe} & консольный
+инсталлятор \\
+\file{/bios/com32/menu/menu.c32} & модуль текстового меню \\
+\file{/bios/com32/menu/vesamenu.c32} & модуль графического меню (VESA)\\
+&\emph{служебные библиотеки \prog{syslinux}}\\
+\file{/bios/com32/libutil/libutil.c32} &  \\
+\file{/bios/com32/lib/libcom32.c32} &  \\
+\end{tabular}
+\bigskip
+
+Для установки \prog{syslinux}\ на флешку с FAT, на которую назначена буква
+\file{F:}, выполните батник:
+
+\lst{/syslinux/syslinuxusb.bat}{}{linux/syslinuxusb.bat}
+
+\begin{tabular}{l l l}
+-i & install & установить \\
+-m & MBR & в MBR \\
+-a & active & сделать раздел активным \\
+-d & directory & в каталог \file{syslinux}
+\end{tabular}
+\bigskip
+
+Если ставите Debian, распакуйте из \file{debian-netinst.iso}
+в \file{F:/Debian/}
+\bigskip
+
+\begin{tabular}{l l}
+\file{debian-7.7.0-amd64-netinst.iso} & \file{.iso}-образ установочного CD-ROM\\
+\file{debian-7.7.0-i386-netinst.iso} & \file{.iso}-образ установочного CD-ROM\\
+\file{.iso/install.amd/vmlinuz} & ядро amd64 (x64) \\
+\file{.iso/install.amd/initrd.gz} & ramdisk с инсталляром \\
+\file{.iso/install.386/vmlinuz} & ядро i386 (x32) \\
+\file{.iso/install.386/initrd.gz} & ramdisk с инсталляром \\
+\end{tabular}
+\bigskip
+
+\subsection{\file{syslinux.cfg}}
+
+\prog{syslinux}\ настривается текстовым файлом \file{syslinux.cfg}.
+
+\lstx{/syslinux/syslinux.cfg}{}{linux/syslinux.cfg}{syslinux}
+
+В примере показана реализация с использованием графического VESA меню. 
+Для использования более надежного текстового меню замените на 
+\verb|UI menu.c32|.
+
+\emph{Обратите внимание на возможность включения нестандартных видеорежимов}
+используя \file{[VESA]MENU RESOLUTION}: этот финт нужен для включения графики на
+ASUS EeePC 701: режим 800$\times$480 недоступен для включения через параметр
+ядра \file{vga=}, поэтому приходится использовать возможности \prog{syslinux}.

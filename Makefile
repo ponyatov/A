@@ -1,5 +1,5 @@
 TEX = Azbuka.tex header.tex authoring.tex title.tex
-TEX += lstmk.sty lstrc.sty
+TEX += lstmk.sty lstrc.sty lstsyslinux.sty
 TEX += intro.tex
 
 TXT = rex.py
@@ -61,6 +61,8 @@ TEX += prog/ortho.tex
 
 # linux
 TEX += linux/linux.tex
+TEX += linux/syslinux.tex
+TEX += linux/syslinux.cfg
 TEX += linux/intro.tex
 TEX += azlin/azlin.tex
 
