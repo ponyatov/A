@@ -1,14 +1,14 @@
 #TeXlipse project settings
-#Mon Dec 15 10:38:43 SAMT 2014
+#Mon Dec 15 14:04:16 MSK 2014
 markTmpDer=true
 builderNum=2
-outputDir=
+outputDir=tmp/
 makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=tmp
-mainTexFile=Azbuka.tex
-outputFile=Azbuka.pdf
+mainTexFile=work.tex
+outputFile=work.pdf
 langSpell=ru
 markDer=true
 srcDir=

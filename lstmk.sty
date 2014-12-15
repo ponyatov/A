@@ -2,12 +2,13 @@
 \lstdefinelanguage{mk}%
 {
 	showtabs=true,
-	alsoletter={.,\+},
+	alsoletter={.,\+,\_},
  	comment=[l]{\#},
  	keywords={.PHONY,shell,PWD,include},
  	keywords=[2]{GZ,SRC,TMP,ROOT,BOOT,DIRS,TC},
  	keywords=[3]{BUILD,HOST,TARGET,APP,HW,CPU,ARCH,LIBS,APPS},
- 	keywords=[4]{dirs,gz,sdl},
- 	keywords=[5]{mkdir,ld,as,gcc,g++}
+ 	keywords=[3]{QEMU_CFG},
+ 	keywords=[4]{dirs,gz,sdl,tc,gcc0,gcc,binutils,cclibs,core,kernel,emu},
+ 	keywords=[5]{mkdir,ld,as,gcc,g++,qemu,qemu}
 }
 \endinput
