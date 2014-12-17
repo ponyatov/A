@@ -4,3 +4,6 @@
 *.exe
 *.tex
 
+*.o
+
+txt2xliff

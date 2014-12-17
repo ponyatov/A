@@ -1,0 +1,7 @@
+#!/bin/sh
+bison -d -o lex.h txt2xliff.bison &&\
+bison    -o txt2xliff.bison.c txt2xliff.bison &&\
+flex txt2xliff.lex &&\
+g++ -o txt2xliff lex.yy.c txt2xliff.bison.c &&\
+chmod +x txt2xliff &&\
+./txt2xliff < src.txt > src.xliff
