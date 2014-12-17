@@ -1,3 +1,4 @@
+%option yylineno
 %option noyywrap
 
 %{
@@ -10,6 +11,15 @@ using namespace std;
 
 %%
 
+\&		{ yylval = "&amp;"; return CHAR; }
+
+([a-z0-9]+\.)+([a-z]+)	{ yylval = yytext; return URL; }
+[0-9]+(\.[0-9]+)*	{ yylval = yytext; return NUM; }
+[\.\?\!]				{ yylval = yytext; return PREP; }
+
+\n\n+	{ yylval = yytext; return PAR; }
+\n		{ yylval = " "; return CHAR; }
+\ 		{ yylval = yytext; return SPACE; }
 .		{ yylval = yytext; return CHAR; }
 
 %%
