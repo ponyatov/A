@@ -7,7 +7,7 @@ flex xliff2tex.lex
 
 g++ -o xliff2tex.exe lex.yy.c xliff2tex.bison.c
 
-xliff2tex.exe < ch_2_1_down.xliff > target.tex
+xliff2tex.exe < ch_2_1_end_src.xliff > target.tex
 
 pause
 goto ag
