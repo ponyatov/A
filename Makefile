@@ -15,6 +15,7 @@ TEX += kicad/kicad.tex
 TEX += kicad/about.tex
 TEX += kicad/inst.tex
 TEX += kicad/eeschema.tex
+TEX += kicad/minilesson.tex
 TEX += kicad/libs.tex
 TEX += kicad/pcbnew.tex
 TEX += kicad/gerbview.tex
