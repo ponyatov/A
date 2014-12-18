@@ -12,6 +12,7 @@ TEX += bcollis/ch02.tex
 
 # KiCAD
 TEX += kicad/kicad.tex
+TEX += kicad/about.tex
 
 # FreeCAD
 TEX += freecad/freecad.tex logo/FreeCAD.png
