@@ -13,6 +13,11 @@ TEX += bcollis/ch02.tex
 # KiCAD
 TEX += kicad/kicad.tex
 TEX += kicad/about.tex
+TEX += kicad/inst.tex
+TEX += kicad/eeschema.tex
+TEX += kicad/libs.tex
+TEX += kicad/pcbnew.tex
+TEX += kicad/gerbview.tex
 TEX += kicad/spice.tex
 
 # FreeCAD
