@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3  Date: 01.09.2014 16:07:21
+#encoding utf-8
+#
+# R
+#
+DEF R R 0 40 Y Y 1 F N
+F0 "R" 0 150 60 H V C CNN
+F1 "R" 0 -150 60 H V C CNN
+F2 "~" 0 0 60 H V C CNN
+F3 "~" 0 0 60 H V C CNN
+DRAW
+S -200 75 200 -75 0 1 0 N
+X ~ 1 -300 0 100 R 50 50 1 1 P
+X ~ 2 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Rvar
+#
+DEF Rvar R 0 40 Y Y 1 F N
+F0 "R" 100 250 60 H V C CNN
+F1 "Rvar" 150 150 60 H V C CNN
+F2 "~" 0 0 60 H V C CNN
+F3 "~" 0 0 60 H V C CNN
+DRAW
+S -200 75 200 -75 0 1 0 N
+P 2 0 1 0  25 200  0 75 N
+P 3 0 1 0  0 200  0 75  -25 200 N
+X ~ 1 -300 0 100 R 50 50 1 1 P
+X ~ 2 300 0 100 L 50 50 1 1 P
+X ~ 3 0 300 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
