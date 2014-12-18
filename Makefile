@@ -19,6 +19,7 @@ TEX += kicad/libs.tex
 TEX += kicad/pcbnew.tex
 TEX += kicad/gerbview.tex
 TEX += kicad/spice.tex
+TEX += kicad/wings.tex
 
 # FreeCAD
 TEX += freecad/freecad.tex logo/FreeCAD.png
