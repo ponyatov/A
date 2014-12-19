@@ -1,8 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:SPICE
 LIBS:C
-LIBS:L
-LIBS:R
+LIBS:led1-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

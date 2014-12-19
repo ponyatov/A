@@ -1,4 +1,4 @@
-update=19.12.2014 14:05:44
+update=19.12.2014 14:07:16
 version=1
 last_client=kicad
 [cvpcb]
@@ -35,3 +35,16 @@ LibName4=L
 LibName5=R
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
