@@ -27,3 +27,28 @@ for i in FILES:
 		F.close()
 	except:
 		print 'error',i
+
+NEWFILES = [
+	('azlin/mk/versions.mk','azlin/doc/versions.cross',r'BINUTILS.+'),
+	('azlin/mk/versions.mk','azlin/doc/versions.cross',r'(GMP|MPFR|MPC).+'),
+	('azlin/mk/versions.mk','azlin/doc/versions.cross',r'GCC.+'),
+
+	('azlin/mk/versions.mk','azlin/doc/versions.core',r'(KERNEL|ULIBC|BUSYBOX).+'),
+
+	('azlin/mk/versions.mk','azlin/doc/versions.boot',r'(UBOOT|SYSLINUX|GRUB).+'),
+
+	('azlin/mk/versions.mk','azlin/doc/versions.libs',r'(SDL).+'),
+]
+NEWTARGS={}
+for j in NEWFILES:
+	try:
+		NEWTARGS[j[1]].append((j[0],j[-1]))
+	except:
+		NEWTARGS[j[1]]=[(j[0],j[-1])]
+for k in NEWTARGS:
+	F=open(k,'w')
+	for x,y in NEWTARGS[k]:
+		for z in open(x).readlines():
+			if re.match(y,z):
+				print >>F,z[:-1]
+	F.close()

@@ -74,6 +74,10 @@ TEX += linux/syslinux.tex
 TEX += linux/syslinux.cfg
 TEX += linux/intro.tex
 TEX += azlin/azlin.tex
+TEX += linux/libsdl.tex
+TEX += linux/opengl.tex
+TEX += linux/realtime.tex
+TEX += linux/netboot.tex
 
 # heap
 TEX += heap/heap.tex 
@@ -86,18 +90,17 @@ BIBER = biber
 tmp/work.pdf: work.tex $(TEX) $(TXT)
 	python rex.py
 	$(LATEX) work
-	makeindex tmp/work
-##	$(BIBER) tmp/work
-	$(LATEX) work
+#	$(LATEX) work
+#	makeindex tmp/work
 
 .PHONY: pdf
 pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB) $(TXT)
 	$(LATEX) Azbuka
 	makeindex tmp/Azbuka
-#	$(BIBER) tmp/Azbuka
 	$(LATEX) Azbuka
 	mv tmp/$@ $@
+#	$(BIBER) tmp/Azbuka
 
 .PHONY: clean
 clean:
