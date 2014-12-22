@@ -21,6 +21,8 @@ TEX += kicad/pcbnew.tex
 TEX += kicad/gerbview.tex
 TEX += kicad/spice.tex
 TEX += kicad/wings.tex
+TEX += tmp/icon_kicad.png
+TEX += tmp/eeschema.png
 
 # FreeCAD
 TEX += freecad/freecad.tex logo/FreeCAD.png
@@ -92,6 +94,13 @@ tmp/work.pdf: work.tex $(TEX) $(TXT)
 	$(LATEX) work
 #	$(LATEX) work
 #	makeindex tmp/work
+
+tmp/%.png: kicad/%.svg
+	inkscape $< --export-png=$@ --export-dpi=300
+tmp/%.pdf: kicad/%.svg
+	inkscape $< --export-pdf=$@
+#	convert $< $@
+#	rsvg-convert -f pdf -o $@ $<
 
 .PHONY: pdf
 pdf: Azbuka.pdf
