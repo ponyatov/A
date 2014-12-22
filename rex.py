@@ -38,6 +38,8 @@ NEWFILES = [
 	('azlin/mk/versions.mk','azlin/doc/versions.boot',r'(UBOOT|SYSLINUX|GRUB).+'),
 
 	('azlin/mk/versions.mk','azlin/doc/versions.libs',r'(SDL).+'),
+
+	('/home/ponyatov/.blackbox/menu','tmp/kicad.bbmenu',r'\[submenu\].+CAD.+|.+kicad.+'),
 ]
 NEWTARGS={}
 for j in NEWFILES:

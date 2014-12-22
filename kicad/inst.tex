@@ -1,4 +1,4 @@
-\section{Установка под \win}\label{kicadinst}
+\section{Установка под \win}\label{kicadinstwin}
 
 \menu{\winr{\url{http://www.kicad-pcb.org/}}>Download>\winstart}
 
@@ -19,3 +19,33 @@
 \menu{Location>\file{C:/KiCad}>Install}
 
 \menu{Completing Setup>\uncheckbox Wings3D>Finish}
+
+\section{Установка под \linux}\label{kicadinstlin}
+
+\begin{verbatim}
+root# aptitude install kicad-doc-ru kicad
+\end{verbatim}
+
+\lst{+++\ $\sim$/.blackbox/menu}{}{tmp/kicad.bbmenu}
+
+Для добавления библиотек, поставляемых с этой книгой, сделайте \emph{git
+checkout}:
+
+\begin{verbatim}
+user:~$ git clone --depth=1 -o gh https://github.com/ponyatov/Azbuka.git Azbuka
+\end{verbatim}
+
+\menu{\prog{kicad}>\prog{eeschema}>Настройки>Библиотека}
+
+\menu{Пользовательские пути поиска>Добавить>\file{/home/user/Azbuka/kicad/lib}}
+
+\menu{Файлы библиотек>Добавить>R,L,C,SPICE,DA\_POWER,..>Открыть>OK}
+
+\bigskip
+Для проверки работы библиотек можете открыть проект
+
+\menu{\prog{kicad}>Файл>Открыть>\file{~/Azbuka/bcollis/led1/led1.pro}}
+
+или сразу схему
+
+\menu{\prog{eeschema}>Файл>Открыть>\file{~/Azbuka/bcollis/led1/led1.sch}}
