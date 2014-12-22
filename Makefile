@@ -22,7 +22,13 @@ TEX += kicad/gerbview.tex
 TEX += kicad/spice.tex
 TEX += kicad/wings.tex
 TEX += tmp/icon_kicad.png
-TEX += tmp/eeschema.png
+TEX += tmp/icon_eeschema.png
+TEX += tmp/icon_gerbview.png
+TEX += tmp/icon_cvpcb.png
+TEX += tmp/icon_modedit.png
+TEX += tmp/icon_pcbcalculator.png
+TEX += tmp/icon_pcbnew.png
+TEX += tmp/icon_pagelayout.png
 
 # FreeCAD
 TEX += freecad/freecad.tex logo/FreeCAD.png
