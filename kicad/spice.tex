@@ -2,27 +2,32 @@
 \chapter{Использование SPICE}
 \cp{http://www.mithatkonar.com/wiki/doku.php/kicad/kicad\_spice\_quick\_guide}
 
+\prog{SPICE}: [S]imulation [P]rogram with [I]ntegrated [C]ircuit
+[E]mphasis\ --- пакет программ симуляции и расчета электронных схем.
+Это мощная программа, используемая в разработке устройств и \emph{интегральных
+схем}, для расчета режимов работы, оптимизаии, и предсказания поведения схем.
+
 \section{Доступные SPICE-пакеты}
 
 \begin{itemize}
-\item \href{http://ngspice.sourceforge.net/}{ngspice}: Arguably the most FOSSy
-commonly available SPICE engine.
+\item \href{http://ngspice.sourceforge.net/}{ngspice}: самый доступный
+бесплатный OpenSource SPICE-движок.
 \item
 \href{https://www.gnu.org/software/gnucap/}{gnucap}\note{уже включен в
 виндозную сборку KiCAD}:
-Not actually SPICE but tries to be syntax-compatible.
-\item \href{http://www.spiceopus.si/}{SpiceOpus}: Proprietary but nice,
-especially the output plotting.
-\item \href{http://www.linear.com/designtools/software/}{LTSpice}: Linear
-Technology's popular, proprietary Windows solution.
-Works in \href{http://www.winehq.org/}{Wine}. Has a GUI anyway, so … ? Whether
-it's scritable needs to be verified.
+Не совсем SPICE, но пытается быть синтаксически совместмой.
+\item \href{http://www.spiceopus.si/}{SpiceOpus}: Коммерческая, но
+удобная, особенно в плане вывода графиков.
+\item \href{http://www.linear.com/designtools/software/}{LTSpice}:
+Популярная бесплатная коммерческая версия от Linear Technology для \win.
+Работает в \Prog{WINE}. Поставляется в комплекте с графической оболочкой,
+но требуется проверка файлов расчетных заданий, которые она создает. 
 \item
 \href{http://www.cadence.com/products/orcad/pspice_simulation/Pages/default.aspx}{PSpice}:
-Windows-only, expensive, defacto standard professional solution in the USA. They
-also have a tradition of making available a \emph{gratis} crippleware student
-version.
-Also has a \underline{GUI}, so … ?
+\win-only, дорогой коммерческий пакет, стандарт de-facto для
+профессионального применения в USA в составе тяжелых EDA-продуктов.
+Они традиционно предоставляют обрезанную \emph{gratis}-версию для студентов.
+Также имеет в комплекте GUI.
 \item \url{http://www.ngspice.com/}\ --- on-line вариант \prog{ngspice}, удобен
 для начального обучения
 \item Какие-то еще?
