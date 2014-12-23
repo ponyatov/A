@@ -4,11 +4,12 @@ TEX += intro.tex
 
 TXT = rex.py
 
-# Collid
+# Collis
 TEX += bcollis/bcollis.tex
 TEX += bcollis/thanks.tex
 TEX += bcollis/intro.tex
 TEX += bcollis/ch02.tex
+TEX += bcollis/led1/led1.pdf
 
 # KiCAD
 TEX += kicad/kicad.tex
@@ -21,14 +22,14 @@ TEX += kicad/pcbnew.tex
 TEX += kicad/gerbview.tex
 TEX += kicad/spice.tex
 TEX += kicad/wings.tex
-TEX += tmp/icon_kicad.png
-TEX += tmp/icon_eeschema.png
-TEX += tmp/icon_gerbview.png
-TEX += tmp/icon_cvpcb.png
-TEX += tmp/icon_modedit.png
-TEX += tmp/icon_pcbcalculator.png
-TEX += tmp/icon_pcbnew.png
-TEX += tmp/icon_pagelayout.png
+TEX += kicad/icon_kicad.png
+TEX += kicad/icon_eeschema.png
+TEX += kicad/icon_gerbview.png
+TEX += kicad/icon_cvpcb.png
+TEX += kicad/icon_modedit.png
+TEX += kicad/icon_pcbcalculator.png
+TEX += kicad/icon_pcbnew.png
+TEX += kicad/icon_pagelayout.png
 
 # FreeCAD
 TEX += freecad/freecad.tex logo/FreeCAD.png
@@ -101,12 +102,10 @@ tmp/work.pdf: work.tex $(TEX) $(TXT)
 #	$(LATEX) work
 #	makeindex tmp/work
 
-tmp/%.png: kicad/%.svg
+%.png: %.svg
 	inkscape $< --export-png=$@ --export-dpi=300
-tmp/%.pdf: kicad/%.svg
+%.pdf: %.svg
 	inkscape $< --export-pdf=$@
-#	convert $< $@
-#	rsvg-convert -f pdf -o $@ $<
 
 .PHONY: pdf
 pdf: Azbuka.pdf
