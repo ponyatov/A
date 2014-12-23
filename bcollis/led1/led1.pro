@@ -1,6 +1,6 @@
-update=Втр 23 Дек 2014 22:12:15
+update=Втр 23 Дек 2014 23:17:48
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -38,8 +38,6 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../../kicad/lib
@@ -80,3 +78,5 @@ LibName5=R
 LibName6=SPICE
 LibName7=SWITCH
 LibName8=VD
+[general]
+version=1

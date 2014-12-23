@@ -105,7 +105,7 @@ tmp/work.pdf: work.tex $(TEX) $(TXT)
 %.png: %.svg
 	inkscape $< --export-png=$@ --export-dpi=300
 %.pdf: %.svg
-	inkscape $< --export-pdf=$@
+	inkscape $< --export-pdf=$@ --export-area-drawing
 
 .PHONY: pdf
 pdf: Azbuka.pdf
