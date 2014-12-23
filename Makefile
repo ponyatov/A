@@ -114,7 +114,13 @@ Azbuka.pdf: $(TEX) $(BIB) $(TXT)
 	$(LATEX) Azbuka
 	makeindex tmp/Azbuka
 	$(LATEX) Azbuka
-	mv tmp/$@ $@
+#	mv tmp/$@ $@
+	ghostscript \
+		-sDEVICE=pdfwrite \
+		-dMaxSubsetPct=100 \
+		-dPDFSETTINGS=/ebook \
+		-dNOPAUSE -dBATCH \
+		-sOutputFile=Azbuka.pdf tmp/Azbuka.pdf
 #	$(BIBER) tmp/Azbuka
 
 .PHONY: clean
