@@ -2,3 +2,6 @@
 *.swp
 /tmp/
 azlin
+*.cir
+*.xml
+
