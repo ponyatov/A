@@ -9,7 +9,7 @@ TEX += bcollis/bcollis.tex
 TEX += bcollis/thanks.tex
 TEX += bcollis/intro.tex
 TEX += bcollis/ch02.tex
-TEX += bcollis/led1/led1.pdf
+#TEX += bcollis/led1/led1.pdf
 
 # KiCAD
 TEX += kicad/kicad.tex
@@ -22,14 +22,14 @@ TEX += kicad/pcbnew.tex
 TEX += kicad/gerbview.tex
 TEX += kicad/spice.tex
 TEX += kicad/wings.tex
-TEX += kicad/icon_kicad.png
-TEX += kicad/icon_eeschema.png
-TEX += kicad/icon_gerbview.png
-TEX += kicad/icon_cvpcb.png
-TEX += kicad/icon_modedit.png
-TEX += kicad/icon_pcbcalculator.png
-TEX += kicad/icon_pcbnew.png
-TEX += kicad/icon_pagelayout.png
+#TEX += kicad/icon_kicad.png
+#TEX += kicad/icon_eeschema.png
+#TEX += kicad/icon_gerbview.png
+#TEX += kicad/icon_cvpcb.png
+#TEX += kicad/icon_modedit.png
+#TEX += kicad/icon_pcbcalculator.png
+#TEX += kicad/icon_pcbnew.png
+#TEX += kicad/icon_pagelayout.png
 
 # FreeCAD
 TEX += freecad/freecad.tex logo/FreeCAD.png
@@ -52,6 +52,10 @@ TEX += tech/tools/tools.tex
 TEX += tech/tools/electro.tex
 TEX += tech/tools/handtools.tex
 TEX += tech/tools/solder.tex
+
+# Stanki
+TEX += stanki/stanki.tex
+TEX += stanki/1A616.tex
 
 # tech
 TEX += tech/pcb/kipcb.tex
@@ -97,7 +101,7 @@ BIBER = biber
 #buildmain: pdf
 
 tmp/work.pdf: work.tex $(TEX) $(TXT)
-	python rex.py
+#	python rex.py
 	$(LATEX) work
 #	$(LATEX) work
 #	makeindex tmp/work
