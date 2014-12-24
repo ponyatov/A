@@ -8,6 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 \usepackage{indentfirst}
+\usepackage{enumitem} 
 
 % font setup for screen reading
 \renewcommand{\familydefault}{\sfdefault}
@@ -17,6 +18,17 @@
 \usepackage[unicode,colorlinks,linkcolor=blue,bookmarks=true]{hyperref}
 \usepackage[pdftex]{graphicx}
 \usepackage[usenames,dvipsnames,svgnames]{xcolor}
+
+% relative sectioning
+\usepackage{ifthen}
+\newcounter{secdepth}\setcounter{secdepth}{0}
+\newcommand{\secup}{\addtocounter{secdepth}{1}}
+\newcommand{\secdown}{\addtocounter{secdepth}{-1}}
+\newcommand{\secrel}[1]{
+\ifthenelse{\equal{\value{secdepth}}{0}}{\part{#1}}{}
+\ifthenelse{\equal{\value{secdepth}}{-1}}{\chapter{#1}}{}
+\ifthenelse{\equal{\value{secdepth}}{-2}}{\section{#1}}{}
+}
 
 % listings
 \usepackage{verbatim}
@@ -123,7 +135,7 @@ commentstyle=\color{Cyan}%\texttt%,
 \newcommand{\prog}[1]{\textcolor{Brown}{#1}}
 \newcommand{\pack}[1]{\textcolor{Magenta}{#1}}
 
-\newcommand{\odina}{\prog{1А616}}
+\newcommand{\odina}{1А616}
 
 % math
 \usepackage{cancel}

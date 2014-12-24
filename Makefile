@@ -103,7 +103,7 @@ BIBER = biber
 tmp/work.pdf: work.tex $(TEX) $(TXT)
 #	python rex.py
 	$(LATEX) work
-#	$(LATEX) work
+	$(LATEX) work
 #	makeindex tmp/work
 
 %.png: %.svg
