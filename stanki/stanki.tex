@@ -15,7 +15,7 @@ A basic approach to making small parts on miniature machine tools
 
 \emph{Настольные станки}
 
-Базовый подход к изготовлению мелких деталей на миниатюрных настольных станках
+Основной подход к изготовлению мелких деталей на миниатюрных настольных станках
 
 \clearpage
 \secrel{A special note to engineers reading this book}
@@ -195,35 +195,38 @@ in this undertaking.
 
 \bigskip\copyright\ Joe Martin
 
-\secrel{Safety Rules}
-\secrel{Foreword}
-\secrel{Introduction}
-\secrel{A gallery of machining project photos}
+\secrel{Правила техники безопасности}
+\secrel{Предисловие}
+\secrel{Введение}
+\secrel{Галерея фотографий проектов}
+\secrel{Профиль Мастера\ --- Скотти Хьюитт... 24}
 
-\secrel{SECTION I-GENERAl MACHINING}
+\secrel{РАЗДЕЛ I\ --- О станочной обработке}
 \secdown
-\secrel{Craftsman Profile-Scotty Hewitt ........... 24}
-\secrel{I. Getting information on machining. . . . . . 27}
-\secrel{2. Do you need a lathe. a mill or bOlh? ........ 29}
-\secrel{3. Materials for metalworking .............. 39}
-\secrel{4. Processes for metalworking}
-\secrel{4. I- Heat treating ............ ..• ...... 45}
-\secrel{4.2-Metal fini shes ........... . ........ 46}
-\secrel{4.3-Castings. . . ... .... ..... .... 49}
-\secrel{4.4-----0ther ways 10 form metal .. .. .. . .. .. 5 1}
-\secrel{4.5- Joining metal- Soldering}
-\secrel{and we lding . . . . . . . .. . . .. . .. . 52}
-\secrel{5. Using hand tools and abrasives .......... .. 57}
-\secrel{6. Cutting tools for metalworking}
-\secrel{6. I- General notes on cutting IDols . . 63}
-\secrel{6.2- Cutting tools for both}
-\secrel{the lathe and mill ................... 65}
-\secrel{6.3-Lathe cutting tools ................. 72}
-\secrel{6.4-Culter,S for milling ...... ....... .... 81}
-\secrel{7. Measuring and measurement tools . . . 85}
-\secrel{8. Cool ants and CUlling oils ................ 99}
-\secrel{9. General machining terms . . .. . 101}
-\secrel{10. Machine tool lubrication and maintenancc . 107}
+\secrel{1. Получение информации об обработке...... 27}
+\secrel{2. Вам нужен токарный станок. фрезерный станок или оба ? ........ 29}
+\secrel{3. Материалы для металлообработки... 39}
+\secrel{4. Процессы для металлообработки}
+\secdown
+\secrel{4.1 Термообработка ............ ..  ...... 45}
+\secrel{4.2 Финиширование ...... 46}
+\secrel{4.3 Литье................ 49}
+\secrel{4.4 Другие способы формования металла... .. .. . .. .. 5 1}
+\secrel{4.5 Соединение металлов: пайка и сварка ......... . . .. . .. . 52}
+\secup
+\secrel{5. Использование ручных инструментов и абразивов .......... .. 57}
+\secrel{6. Режущий инструмент для металлообработки}
+\secdown
+\secrel{6. I Общие замечания о вырезании идолов . , 63}
+\secrel{6.2 Режущий инструмент для токарного и фрезерного станков}
+\secrel{6.3 Режущий инструмент для токарных станков  ................. 72}
+\secrel{6.4 Режущий инструмент для фрезеровки ...... ....... .... 81}
+\secup
+\secrel{7. Измерительные инструменты и измерения... 85}
+\secrel{8. Смазочно-охлаждающие жидкости и масла... 99}
+\secrel{9. Основные термины мехобработки .... . 101}
+\secrel{10. Смазка и обслуживание станка .... 107}
+\secup
 \secup
 
 \secrel{SECTION 2-LATHE OPERATIONS}
@@ -362,19 +365,48 @@ in this undertaking.
 характеристики и отражаются в шифре (номере) станка.
 
 \begin{verbatim}
-<группа>[<буква1>]<тип><характеризующий размер>[<буква2>]
+<группа>[<буква1>]<тип><характеризующий размер>[<буква2>][M][Фn]
 \end{verbatim}
 
 Кроме цифр, в условные обозначения модели станка часто входят буквы. Если
 \emph{буква1} стоит между первой и второй цифрами, то это означает, что
 конструкция станка подверглась усовершенствованию по сравнению с прежней
-моделью. Если \emph{буква2} стоит в конце номера станка, то это говорит об
-изменении основной, «базовой» модели станка.
+моделью. 
+
+Если \emph{буква2} стоит в конце номера станка, то это говорит об
+изменении основной, «базовой» модели станка. Часто \emph{буква2} задает класс
+точности:
+
+\begin{description}
+\item[Н] нормальная (часто не указывается)
+\item[П] повышенная
+\item[В] высокая
+\item[А] особо высокая
+\item[С] особо-точный станок
+\end{description}
+
+Для станков с ЧПУ:
+\begin{description}
+\item[М] наличие магазина инструментов,
+\item[Ф1] станки с цифровой индикацией и преднабором координат,
+\item[Ф2] с позиционными и прямоугольными системами,
+\item[Ф3] с контурными системами,
+\item[Ф4] с универсальной системой для позиционной и контурной обработки. Эти
+шифры пишутся в конце номера модели.
+\end{description}
 
 \bigskip
 \noindent\emph{группа}/\emph{тип}:
 \begin{enumerate}[label={\arabic*}]
   \item токарные;
+  \begin{enumerate}[label={\arabic*}]
+    \item 
+    \item 
+    \item револьверные;
+    \item 
+    \item 
+    \item токарно-винторезные;
+  \end{enumerate}
   \item сверлильные и расточные;
   \begin{enumerate}[label={\arabic*}]
     \item вертикально-сверлильные,
@@ -404,6 +436,9 @@ in this undertaking.
 задает \emph{максимально возможный радиус} обрабатываемой \emph{заготовки}
 \end{description}
 
+\bigskip
+Пример: 1А616: станок токарно(1)-винторезный(6), модификация(А), высота
+центров над станиной (16)0 мм.
 
 \input{stanki/1A616}
 \secup

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<segment>
+
+<trans-unit><source>
+</source><target></target></trans-unit>
+
+<trans-unit><source>
+A basic approach to making small parts on miniature machine tools
+</source><target>
+Основной подход к изготовлению мелких деталей на миниатюрных станках</target></trans-unit>
+
+</segment>
+<segment>
+<trans-unit><source>Safety Rules</source><target>Правила техники безопасности</target></trans-unit>
+<trans-unit><source>Foreword</source><target>Предисловие</target></trans-unit>
+<trans-unit><source>Introduction</source><target>Введение</target></trans-unit>
+<trans-unit><source>A gallery of machining project photos</source><target>Галерея фотографий проектов</target></trans-unit>
+
+</segment>
+<segment>
+<trans-unit><source>SECTION I-GENERAl MACHINING</source>
+<target>РАЗДЕЛ I - О станочной обработке</target></trans-unit>
+
+<trans-unit><source>Craftsman Profile-Scotty Hewitt ........... 24</source><target>Профиль Мастера - Скотти Хьюитт... 24</target></trans-unit>
+<trans-unit><source>I. Getting information on machining. . . . . . 27</source><target>I. получение информации об обработке...... 27</target></trans-unit>
+<trans-unit><source>2. Do you need a lathe. a mill or bOlh? ........ 29</source><target>2. Вам нужен токарный станок. фрезерный станок или оба ? ........ 29</target></trans-unit>
+<trans-unit><source>3. Materials for metalworking .............. 39</source><target>3. Материалы для металлообработки... 39</target></trans-unit>
+<trans-unit><source>4. Processes for metalworking</source><target>4. Процессы для металлообработки</target></trans-unit>
+<trans-unit><source>4. I- Heat treating ............ ..• ...... 45</source><target>4. I Термообработка ............ ..  ...... 45</target></trans-unit>
+<trans-unit><source>4.2-Metal fini shes ........... . ........ 46</source><target>4.2 Финиширование ...... 46</target></trans-unit>
+<trans-unit><source>4.3-Castings. . . ... .... ..... .... 49</source><target>4.3 Литье................ 49</target></trans-unit>
+<trans-unit><source>4.4-----0ther ways 10 form metal .. .. .. . .. .. 5 1</source><target>4.4 Другие способы формования металла... .. .. . .. .. 5 1</target></trans-unit>
+<trans-unit><source>4.5- Joining metal- Soldering</source><target>4.5 Соединение металлов: пайка</target></trans-unit>
+<trans-unit><source>and we lding . . . . . . . .. . . .. . .. . 52</source><target>и сварка ......... . . .. . .. . 52</target></trans-unit>
+<trans-unit><source>5. Using hand tools and abrasives .......... .. 57</source><target>5. Использование ручных инструментов и абразивов .......... .. 57</target></trans-unit>
+<trans-unit><source>6. Cutting tools for metalworking</source><target>6. Режущий инструмент для металлообработки</target></trans-unit>
+<trans-unit><source>6. I- General notes on cutting IDols . . 63</source><target>6. I Общие замечания о вырезании идолов . , 63</target></trans-unit>
+<trans-unit><source>6.2- Cutting tools for both</source><target>6.2 Режущий инструмент для обоих</target></trans-unit>
+<trans-unit><source>the lathe and mill ................... 65</source><target>токарный станок и фрезерный станок... 65</target></trans-unit>
+<trans-unit><source>6.3-Lathe cutting tools ................. 72</source><target>6.3 Режущий инструмент для токарных станков  ................. 72</target></trans-unit>
+<trans-unit><source>6.4-Culter,S for milling ...... ....... .... 81</source><target>6.4 Режущий инструмент для фрезеровки ...... ....... .... 81</target></trans-unit>
+<trans-unit><source>7. Measuring and measurement tools . . . 85</source><target>7. Измерительные инструменты и измерения... 85</target></trans-unit>
+<trans-unit><source>8. Cool ants and CUlling oils ................ 99</source><target>8. Смазочно-охлаждающие жидкости и масла... 99</target></trans-unit>
+<trans-unit><source>9. General machining terms . . .. . 101</source><target>9. Основные термины мехобработки .... . 101</target></trans-unit>
+<trans-unit><source>10. Machine tool lubrication and maintenancc . 107</source><target>10. Смазка и обслуживание станка .... 107</target></trans-unit>
+
+</segment>
+<segment>
+<trans-unit><source>SECTION 2-LATHE OPERATIONS</source><target></target></trans-unit>
+
+<trans-unit><source>Craftsman Profile-Jerry Kieffer ..... .. .. .. . 112</source><target></target></trans-unit>
+<trans-unit><source>Jerry Kieffer's Flying Pendulum Clock .. . .. 114</source><target></target></trans-unit>
+<trans-unit><source>I. Lathe work holding ... .. . .. . .. .. .. . .. . . 115</source><target></target></trans-unit>
+<trans-unit><source>2. Lathe operating instnlclions . . . . ......... 121</source><target></target></trans-unit>
+<trans-unit><source>3. Tail slock lools and operations . . . . . ...... 141</source><target></target></trans-unit>
+<trans-unit><source>4. Ri ser blocks .. . . . . . . . . . . . . ........... 145</source><target></target></trans-unit>
+<trans-unit><source>5. Supporting long or thin work . . ... ... . . .. 149</source><target></target></trans-unit>
+<trans-unit><source>6. Gelling started in thread cutting. . . . .. 157</source><target></target></trans-unit>
+<trans-unit><source>7. Knurled fini shes. . . . . . . . .. .. . ....... 167</source><target></target></trans-unit>
+<trans-unit><source>8. Watchmaking and clockmaking tools . ... . 171</source><target></target></trans-unit>
+<trans-unit><source>9. Milling operations on a lathe . . . . .. . . . ... 177</source><target></target></trans-unit>
+
+</segment>
+<segment>
+<trans-unit><source>SECTION 3-MIll1NG OPERATIONS</source><target></target></trans-unit>
+
+<trans-unit><source>Craftsman Profile- Augie Hiscano . ........ . 180</source><target></target></trans-unit>
+<trans-unit><source>I. Holding parts for milling. . . . . . . . . . . . . 183</source><target></target></trans-unit>
+<trans-unit><source>2. Mill operating in structions.. . . . ....... . 191</source><target></target></trans-unit>
+<trans-unit><source>3. Squaring up a block ...... ........ .. .... 205</source><target></target></trans-unit>
+<trans-unit><source>4. The rotary table and index ing attachment ..... 209</source><target></target></trans-unit>
+<trans-unit><source>5. Gears and Geartrains ................... 2 19</source><target></target></trans-unit>
+<trans-unit><source>6. Accessories for milling</source><target></target></trans-unit>
+<trans-unit><source>• Horizontal milling conversion .... . ..... 235</source><target></target></trans-unit>
+<trans-unit><source>• Rotary column attachmcnt . . . . . . .. 237</source><target></target></trans-unit>
+
+</segment>
+<segment>
+<trans-unit><source>SECTION 4-OTHER MACHINING TOPICS</source><target></target></trans-unit>
+
+<trans-unit><source>Craft sman Profiles-Dan Lutz and Paul White . 242</source><target></target></trans-unit>
+<trans-unit><source>I. Setting up a small workshop .... .... .... . 247</source><target></target></trans-unit>
+<trans-unit><source>2. Lathe and mill alignment and adj ustments .. 25 1</source><target></target></trans-unit>
+<trans-unit><source>3. Enginering drawings . .... .. ............ 259</source><target></target></trans-unit>
+<trans-unit><source>4. Frequently asked questions . . . . .. . . . .. . . 265</source><target></target></trans-unit>
+<trans-unit><source>5. Making a bus iness o ut of a hobby .. .Joe Martin's</source><target></target></trans-unit>
+<trans-unit><source>and Sherline's story ................... 273</source><target></target></trans-unit>
+<trans-unit><source>6. Using CNC in a home shop ... ........... 309</source><target></target></trans-unit>
+
+</segment>
+<segment>
+<trans-unit><source>SECTION S-PROJECTS AND RESOURCES</source><target></target></trans-unit>
+
+<trans-unit><source>Cra ftsman Profi le-Bob Bres lauer ........... 3 16</source><target></target></trans-unit>
+<trans-unit><source>Machini st's tips .......................... 3 18</source><target></target></trans-unit>
+<trans-unit><source>I. Plans and projects you can build ........... 3 19</source><target></target></trans-unit>
+<trans-unit><source>1. Miniature Tap Handle ... a beginning</source><target></target></trans-unit>
+<trans-unit><source>project you can use in your shop ........... 32 1</source><target></target></trans-unit>
+<trans-unit><source>2. Mill vise "sofe jaws. . . . . . . . . . . . . . . . 325</source><target></target></trans-unit>
+<trans-unit><source>3. Lay ing out a circul ar hole pattern</source><target></target></trans-unit>
+<trans-unit><source>fordrilling, a handy skill to learn. . .. . 327</source><target></target></trans-unit>
+<trans-unit><source>4. "Millie" ... a small oscillating steam</source><target></target></trans-unit>
+<trans-unit><source>engine by Ed Warren, a simple project</source><target></target></trans-unit>
+<trans-unit><source>from the pages of Modeltec magazine) ..... . 329</source><target></target></trans-unit>
+<trans-unit><source>5. Ordering plans for the Little Ange l</source><target></target></trans-unit>
+<trans-unit><source>hit 'n miss engine ... an advanced</source><target></target></trans-unit>
+<trans-unit><source>machining project by Bob Shores .......... 333</source><target></target></trans-unit>
+<trans-unit><source>2. Contests and awards for tabletop machini sts . . 335</source><target></target></trans-unit>
+<trans-unit><source>3. Exploded views and part number li sting</source><target></target></trans-unit>
+<trans-unit><source> Model 4000 and 4400 Lathes .. ......... 340</source><target> </target></trans-unit>
+<trans-unit><source> Model 5000 and 5400 Milling machines . . . 341</source><target> </target></trans-unit>
+<trans-unit><source> Model 2000 8-Direction Mill Column ..... 342</source><target> </target></trans-unit>
+<trans-unit><source> Part number listing ... . ... . ........ . .. 343</source><target> </target></trans-unit>
+<trans-unit><source>4. A simple RPM gage for your latheor mill ... . 345</source><target></target></trans-unit>
+<trans-unit><source>Harold Cli sby and the first Sherline lathe .... . 346</source><target></target></trans-unit>
+<trans-unit><source>S. Index ............. .... ...... . . . 347</source><target></target></trans-unit>
+<trans-unit><source> Conversion faclors .. . ... . . .. .. ........ 350</source><target> </target></trans-unit>
+
+</segment>
+
+
+</body>
+</file>
+</xliff>
