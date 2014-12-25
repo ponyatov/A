@@ -1,6 +1,9 @@
 
-\chapter{Использование SPICE}
+\secrel{Моделирование схем в ngSPICE}\secdown
+
 \cp{http://www.mithatkonar.com/wiki/doku.php/kicad/kicad\_spice\_quick\_guide}
+
+\cp{http://physics.gmu.edu/~rubinp/courses/407/ngspice.pdf}
 
 \prog{SPICE}: [S]imulation [P]rogram with [I]ntegrated [C]ircuit
 [E]mphasis\ --- пакет программ симуляции и расчета электронных схем.
@@ -33,7 +36,7 @@ SPICE может выполнять несколько видо схемотех
 Анализ Монте-Карло
 \end{itemize}  
 
-\section{Доступные SPICE-пакеты}
+\secrel{Доступные SPICE-пакеты}
 
 \begin{itemize}
 \item \href{http://ngspice.sourceforge.net/}{ngspice}: самый доступный
@@ -59,84 +62,82 @@ SPICE может выполнять несколько видо схемотех
 \item Какие-то еще?
 \end{itemize}
 
-\section{Установка \prog{ngspice} под \win}
+\secrel{Установка \prog{ngspice} под \win}
 
 \menu{\winr\url{http://ngspice.sourceforge.net/download.html}>\prog{ng-spice-rework}>\file{ngspice-xx\_xxxxxx.zip}}
 
-\section{Установка \prog{ngspice} под \linux}
+\menu{unzip \file{ngspice-xx\_xxxxxx.zip}>\file{C:/spice}}
+
+\menu{\winstart>Компьютер>\rms>Свойства>Дополнительные
+параметры системы}
+
+\menu{Переменные среды>\file{PATH=\ldots;C:/spice/bin}}
+
+\secrel{Установка \prog{ngspice} под \linux}
 
 \begin{verbatim}
 root# aptitude install ngspice
 \end{verbatim}
 
-\section{Настройка в \prog{KiCAD}}
-
-\subsection{Библиотеки компонентов со SPICE-элементами}
+\secrel{Библиотеки компонентов со SPICE-элементами для \prog{KiCAD}}
 
 \begin{itemize}
+\item Библиотека базовых SPICE-компонентов поствляется с KiCAD. Эта
+библиотека\ --- хороший вариант для начальных экспериментов.
+Библиотека не подключена по умолчанию, вы должны сделать это вручную сами через
+пенеджер библиотек. На Debian Linux это файл\\
+\file{/usr/share/kicad/library/pspice.lib}\note{PSpice\ --- популярная
+коммерческая версия SPICE}
 
-\item There is a library of basic SPICE components that ships with KiCad. It's
-good enough for initial experimentation.
+\item Mithat Konar \email{webs@mithatkonar.com} разрабатывает (очень медленно)
+\href{https://bitbucket.org/mithat/kicad-spice-library}{собственую
+библиотеку} с некоторыми модификациями.
 
-\begin{itemize}
-\item The library isn't included in Eeschema projects by default. You'll have to
-add it manually if you want to use it.
-In Debian-based Linux, it's at \\/usr/share/kicad/library/pspice.lib. (PSpice is
-a popular proprietary version of SPICE.)
-\end{itemize}
-
-\item I am developing (very slowly)
-\href{https://bitbucket.org/mithat/kicad-spice-library}{my own
-library}\note{Mithat Konar \email{webs@mithatkonar.com}}
-of components based on the above with some changes and additions.
+\item В комплекте с этой книгой поставляются библиотеки, адаптированные для
+SPICE.
 
 \end{itemize}
 
-\subsection{Настройка проекта}
+\secrel{Настройка проекта}
 
 \begin{enumerate}
-\item Create a new project in the conventional way.
-\item Open Eeschema and remove all the library references included by default.
-\item Manually add one or more libraries with SPICE components to the project.
-\begin{itemize}
-  \item Note that the SPICE library that comes packaged with KiCad is not
-  included by default in new KiCad projects.
-\end{itemize}
-\item Specify the SPICE engine you want to use:
-\begin{itemize}
-  \item Click the “Generate netlist” button (or the equivalent menu item).
-  \item Select the “Spice” tab
-  \item Enter the name of the command to invoke the simulator (with or without
-path) in the “Simulator command:” textbox.
-\end{itemize}
+\item Создайте новый проект как обычно.
+\item Откройте \prog{Eeschema} и удалите все библиотеки, подключаемые по
+умолчанию.
+\item Вручную добавьте одную из SPICE-библиотек, или набор библиотек для
+из этой книги. ОБратите внимание, что SPICE-библитека из поставки \prog{KiCAD}
+по умолчанию не подключается к пректу.
+\item Укажите расчетный SPICE-движок, который вы хотите использовать:
+
+\menu{\prog{eeschema}>Меню>Инструменты>Сформировать список цепей}
+
+\menu{вкладка Spice>Команда симулятора:>\prog{ngspice}}
+
 \end{enumerate}
 
-\subsection{Making it happen}
+\secrel{Как это работает}
 
 \begin{enumerate}
   \item
-Do your schematic capture, subject to a couple best practices:
+Рисуйте вашу схему, соблюдая несколько рекомендаций:  
 \begin{itemize}
   \item
-For named nets, use global labels instead of local labels.
-\begin{itemize}
+Для именованных цепей используйте \emph{глобальные метки} вместо локальных. 
+В списке цепей глобальные идентификаторы цепей включаются как есть, а
+локальные метки модифицируются, что делает сложным последующие ссылки на них при
+SPICE-моделировании.
   \item
-The reason for this is that in the netlists, global identifiers will be used
-as-is but local labels get text prepended to the name—which makes it hard for
-you to remember/guess what the full identifier is.
-\end{itemize}
-Use the ”0” component from a SPICE component library rather than the GND symbol.
-\begin{itemize}
-  \item
-”0” is the official name of ground node in SPICE. Some engines may translate GND
-into 0, some may not.
-\end{itemize}
+Используйте компонент [0] из библиотеки \file{spice}, вместо обычного комопнента
+[GND]: ”0” официальное имя главной земли в файлах PSpice. Некоторые SPICE-движки
+умеют транслировать $GND \rightarrow 0$, другие нет.
 \end{itemize}
   \item
-Specify the simulations you want to run and the output you want to display by
-adding a text block (i.e., “comment”) with the needed SPICE and Nutmeg syntax
-plus a little added mojo. To do an AC analysis and plot the response at node
-\verb|vout|, you would add the following block:
+Укажите режимы сиуляции, которые вы хотите выполнить, и генерацию вывода,
+который хотите отобразить, добавив на схему текстовый блок (т.е.
+``комментарий'') c необходимыми директивами в синтаксисе
+\href{http://newton.ex.ac.uk/teaching/cdhw/Electronics2/userguide/sec5.html}{SPICE и Nutmeg}
+с некоторыми добавками. Например, для выполнения \term{расчета по постоянному
+току} и вывода сигнала в точке \verb|vout|, добавьте блок:
 \begin{lstlisting}
 +PSPICE
 .control
@@ -148,35 +149,36 @@ plot vp(vout)
 \end{lstlisting}
 \begin{itemize}
   \item
-The line +PSPICE is KiCad-speak for, “Stick the following text at the end of a
-SPICE netlist.”
-\begin{itemize}
+Первая строка ``+PSPICE '' указывает kicadу добавить текст \emph{в конец}
+сформированного \file{.cir}-файла. \emph{В текущей версии KiCAD есть баг,
+который требует обязательного пробела после +SPICE}.
   \item
-\textcircled{!} There appears to be a bug in the parser that requires you to add
-a space after +PSPICE and before the line break.
-\end{itemize}
+Соответственно строка ``-PSPICE " добавляет текст \emph{в начало} .cir-файла.
   \item
-There is a corresponding -PSPICE that is KiCad-speak for, “Stick the following
-text at the start of a SPICE netlist.”
+Для поборников OpenSource, не желающих видеть ссылка на коммерческий PSpice,
+предусмотрены директивы-синонимы $\pm$``GNUCAP ''. Я думаю это то же самое что и
+$\pm$``PSPICE ``, но не уверен на 100\%, проверьте в документации.
   \item
-If you don't like seeing references to PSpice in your designs, you can use
-+GNUCAP and -GNUCAP instead. I believe they are exact synonyms in this context,
-but I am not certain.
-  \item
-Yes, this means you need to learn some
+Да, вам потребуется немного изучить синтакис 
 \href{http://newton.ex.ac.uk/teaching/cdhw/Electronics2/userguide/sec5.html}{SPICE
-and Nutmeg} syntax. It's not hard.
+and Nutmeg}. Это нетрудно.
 \end{itemize}
   \item
-Run the simulation:
+Запустите симуляцию:
 \begin{itemize}
   \item
-Click the “Generate netlist” button (or the equivalent menu item).
+Кликните кнопку или пункт меню \menu{Сформирвать список цепей}.
   \item
-Select the “Spice” tab, and make sure “Default format” is checked. (You should
-only have to do this once; it will just save you time in subsequent invocations
-of the dialog.)
+Выберите вкладку \menu{Spice}, и убедитесь что включен крыжик \menu{\checkbox\
+Формат по умолчанию}. Вам нужно сделать это только один раз, настройки
+запоминаются.
   \item
-Click the “Run simulator” button.
+Заполните полный путь с программе симуляции, типа
+\file{C:/spice/bin/ngspice.exe} со всеми путями и расширениями, KiCAD пока не
+научился запускать симулятор через \verb|PATH|.
+  \item
+Нажмите кнопку \menu{Запустить симулятор}.
 \end{itemize}
 \end{enumerate}
+
+\secup
