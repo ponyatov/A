@@ -21,6 +21,8 @@ TEX += kicad/libs.tex
 TEX += kicad/pcbnew.tex
 TEX += kicad/gerbview.tex
 TEX += kicad/spice.tex
+TEX += kicad/march.tex
+TEX += kicad/march.pdf
 TEX += kicad/wings.tex
 TEX += kicad/icon_kicad.png
 TEX += kicad/icon_eeschema.png
@@ -110,7 +112,9 @@ tmp/work.pdf: work.tex $(TEX) $(TXT)
 	inkscape $< --export-png=$@ --export-dpi=300
 %.pdf: %.svg
 	inkscape $< --export-pdf=$@ --export-area-drawing
-
+kicad/march.pdf: kicad/march.dot
+	dot -Tpdf $< -o $@
+	
 .PHONY: pdf
 pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB) $(TXT)
