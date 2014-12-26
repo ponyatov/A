@@ -20,6 +20,7 @@ TEX += bcollis/led1/led1.pdf
 TEX += spice/spice.tex
 TEX += spice/RCfilter.pdf
 TEX += spice/RCfilter.cir
+TEX += spice/ACanaliz.pdf
 
 # KiCAD
 TEX += kicad/kicad.tex

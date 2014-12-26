@@ -251,108 +251,139 @@ P\spice. Некоторые \spice-движки умеют транслиров�
 
 Запускаем \ngs:
 
-% $ ngspice
-% Note: can't find init file.
-% ******
-% ** ngspice-15 : Circuit level simulation program
-% ** The U. C. Berkeley CAD Group
-% ** Copyright 1985-1994, Regents of the University of California.
-% ** Please submit bug-reports to: ngspice-devel@lists.sourceforge.net
-% ** Creation Date: Sun May 9 19:55:31 CEST 2004
-% ******
-% ngspice 6 ->
-% We now need to load the netlist:
-% ngspice 6 -> source rc.net
-% Circuit: * Spice netlister for gnetlist
-% ngspice 7 ->
-% Since we have dened a frequency of 1 kHz for the input voltage, the time period is 1 ms. We want to see
-% how the input voltage behaves during the rst 5 ms. The simulation is started with the following command:
-% ngspice 9 -> tran 0.01ms 5ms
-% Doing analysis at TEMP = 300.150000 and TNOM = 300.150000
-% Warning: v1: no DC value, transient time 0 value used
-% Initial Transient Solution
-% --------------------------
-% Node Voltage
-% ---- -------
-% n0 0
-% n1 0
-% v1#branch 0
-% No. of Data Rows : 512
-% ngspice 10 ->
-% The rst parameter to tran determines the step to use, the second parameter is the end value. If no third
-% parameter is given, the start time is 0, otherwise the start time is given by this third parameter.
-% Well - thats all ;-) The simulation is now nished. What is still missing is to make the result of the simulation
-% visible.
-% 
-% \secrel{3.4 Viewing the results}
-% 
-% Spice has now generated tables with all calculated values (512 values for each of the nodes as shown above).
-% To make the result visible simply type the following command:
-% ngspice 10 -> plot n0
-% This plots the voltage transient of net n0. Note that plots always refer to two nets, that means the difference
-% voltage between two nets is measured. If only one net name is given, the other net is automatically the reference
-% net 0. This results in the following window opened:
-% You should see the diagram with inverted colors on your monitor, i.e. what is white here is black in your
-% image and vice versa. To make the image more readable and to save ink, I switched the colors before I made
-% the screenshot. Close the plot window and enter the following commands in NG-spice:
-% ngspice 11 -> set color0=rgb:f/f/f
-% ngspice 12 -> set color1=rgb:0/0/0
-% ngspice 13 -> plot n0
-% Figure 2: Screenshot of the plot window
-% The diagram shows the waveform of the input signal as we expected it, because we dened it so. But now,
-% we are interested in the voltage across the resistor; additionally, we would like to compare the two signals!
-% This can be simply achieved by adding the net name of another net to the plot command:
-% ngspice 13 -> plot n0 n1
-% time
-% 0.0 1.0 2.0 3.0 4.0 5.0
-% ms
-% -10.0
-% 0.0
-% 10.0
-% V n1 n0
-% Figure 3: Input and output of the RC lter.
-% There is almost no signal remaining at the resistor. The question now is: Are there frequencies which can
-% pass the lter better? To check this, we will now perform an AC simulation. The general command to perform
-% an AC simulation is ac ( DEC j OCT j LIN )N FStart FEnd. FStart and FEnd are the start and the end frequency.
-% The optional parameter DEC, OCT or LIN describes whether to vary the frequency linear, per decade or per
-% octave. In the case of linear variation, N is the number of frequencies to generate. If octave or decade variation
-% is choosen, N is the number of frequencies per decade or per octave. To perform the AC analysis, the voltage
-% source must be changed: currently it is dened as a sine wave with an amplitude of 10V and a frequency of
-% 1kHz. For the AC analysis, it must be an AC voltage source. Go back to gschem, load the circuit and modify
-% the value of the voltage source to AC:
-% Recreate the netlist, load the netlist into NG-spice and enter the following command to perform the AC
-% analysis:
-% ngspice 65 -> ac lin 1000 0.1 250kHz
-% Doing analysis at TEMP = 300.150000 and TNOM = 300.150000
-% R1
-% 1k
-% 3,3nF
-% C1
-% n0
-% 0
-% n1
-% 1
-% +
-% 2
-% -
-% V1
-% AC
-% Figure 4: Filter for AC simulation.
-% Warning: v1: has no value, DC 0 assumed
-% No. of Data Rows : 1000
-% This command performs a linear frequency analysis from (almost) 0 Hz to 250kHz. The result can be
-% viewed by plotting both the voltage source and the voltage on R1:
-% frequency
-% 0.0 50.0 100.0 150.0 200.0 250.0
-% kHz
-% 0.0
-% 200.0
-% 400.0
-% 600.0
-% 800.0
-% 1000.0
-% mV n1
-% Figure 5: Frequency analysis of the RC lter.
+\begin{verbatim}
+$ ngspice
+
+spinit found in c:\spice\share\ngspice\scripts\spinit
+******
+** ngspice-24 : Circuit level simulation program
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Please get your ngspice manual from http://ngspice.sourceforge.net/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Jan 30 2012   22:58:51
+******
+ngspice 1 -> 
+\end{verbatim}
+
+Теперь нам нужно загрузиь нетлист (выводится заголовок: первая строка файла):
+
+\begin{verbatim}
+ngspice 1 -> source RCfilter.cir
+
+Circuit: * eeschema netlist version 1.1 (spice format) creation date: 26.12.2014 16:15:26
+\end{verbatim}
+
+Так как мы задали для входного напряжения частоту 1\,КГц, период
+$T=1/F=0.001$\,с$=1$\,мс.
+Мы хотим увидеть как входное наряжение меняется за первые 5 периодов, т.е.
+5\,мс. Запускаем симуляцию следующей командой:
+
+\begin{verbatim}
+ngspice 2 -> tran 0.01ms 5ms
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: v1: no DC value, transient time 0 value used
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+/n1                                          0
+/n0                                          0
+v1#branch                                    0
+
+No. of Data Rows : 512
+\end{verbatim}
+
+Первый параметр \verb|tran| определяет \term{шаг расчета}, второй\ ---
+\emph{конечное значение времени}. Если не указан третий параметр,
+начальное время равно 0, иначе третий параметр указывает ненулевое
+\emph{начальное время}. Ну, это все \smiley. Симуляция выполнена. Теперь нам
+нужно увидеть результат симуляции.
+
+\secrel{Просмотр результата расчета}
+
+\spice\ создал таблицы с рассчитанными значениями: 512 значений для каждого узла
+схемы. Для простого просмотра чисел выполним команду (не забудьте про кавычки,
+без них не работает если первый символ [/]):
+
+\begin{verbatim}
+ngspice 3 -> plot "/n0"
+\end{verbatim}
+
+\clearpage
+\noindent\includegraphics[height=\textheight]{spice/spice1.png}
+\clearpage
+
+Эта команда вывела напряжение при переходном процессе на цепи \net{n0}.
+
+Как вы заметили, диаграмма сигнала отображается на черном фоне. Если вам нужны
+другие цвета, например для вставки в документацию, их можно переопределить:
+
+\begin{verbatim}
+ngspice 12 -> set color0 = white
+ngspice 13 -> set color1 = black
+ngspice 14 -> set color2 = green
+ngspice 3 -> plot "/n0"
+\end{verbatim}
+ 
+\noindent\includegraphics[height=0.5\textheight]{spice/spice2.png}
+
+\bigskip
+Диаграмма показывает форму входного сигнала, как мы и ожидали, но она нас мало
+интересует, так как мы ее и задали. Нам интереснее например \emph{напряжение на
+резисторе}, кроме того мы попробуем \emph{сравнить два сигнала}.
+Это легко сделать указав два имени цепи:
+
+\begin{verbatim}
+ngspice 31 -> plot "/n0" "/n1"
+\end{verbatim} 
+
+\clearpage
+\noindent\includegraphics[height=\textheight]{spice/spice3.png}
+\clearpage
+
+Сигнала на резисторе почти не видно. Теперь вопрос: какие частоты попускает наш
+фильтр ? Для определения этого теперь выполним \term{расчет по переменному току
+(AC симуляцию)}. Команда для этого \verb|ac ( DEC j OCT j LIN )N FStart FEnd|.
+
+\verb|FStart| и \verb|FEnd|\ --- соответственно начальная и конечная частота.
+Необязательные параметры \verb|DEC|, \verb|OCT| или \verb|LIN| указывают способ
+изменения частоты: декадно, октавно или линейно. Если выборана октавная или
+декадная \term{вариация частоты}, то параметр \verb|N| задает число
+частот на декаду или октаву. Для выполнения \term{AC анализа} должен быть
+изменен источни сигнала: сейчас он определен как синус с амплитудой 10\,В и
+частотой 1\,КГц. Для анализа это должен быть \emph{источник переменного
+апряжения}. Снова запускаем \eeschema\ и меняем значение источника:
+
+\includegraphics[height=0.5\textheight]{spice/ACanaliz.pdf}
+
+Создаем нетлист, загружаем ео и запускаем команду AC анализа:
+
+\begin{verbatim}
+$ ngspice ACanaliz.cir
+ngspice 1 -> ac lin 1000 0.1 250kHz
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: v1: has no value, DC 0 assumed
+
+
+No. of Data Rows : 1000
+
+ngspice 2 -> plot "/n1"
+ngspice 3 -> plot "/n0" "/n1"
+\end{verbatim}
+
+Эта команда выполяняет \term{линейный AC анализ} от (почти) 0\,Гц до 250\,КГц.
+Результат можно увидеть как напряжение для источника, так и напряжение на
+\elem{R1}:
+
+\noindent
+\includegraphics[width=0.5\textwidth]{spice/spice4.png}
+\includegraphics[width=0.5\textwidth]{spice/spice5.png}
+
 % In the following sections, we are going to simulate more circuits to get better involved with NG-spice.
 % 4 Simulating a full wave rectier
 % 1

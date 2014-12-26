@@ -1,0 +1,90 @@
+EESchema Schematic File Version 2
+LIBS:C
+LIBS:DA_POWER
+LIBS:L
+LIBS:POWER
+LIBS:R
+LIBS:SPICE
+LIBS:SWITCH
+LIBS:VD
+LIBS:RCfilter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 549D47C6
+P 4650 3750
+F 0 "R1" V 4750 3550 60  0000 C CNN
+F 1 "1k" V 4600 3550 60  0000 C CNN
+F 2 "" H 4650 3750 60  0000 C CNN
+F 3 "" H 4650 3750 60  0000 C CNN
+	1    4650 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 549D484F
+P 4000 3250
+F 0 "C1" H 4000 3500 60  0000 C CNN
+F 1 "3.3nF" H 4000 3000 60  0000 C CNN
+F 2 "" H 4075 3250 60  0000 C CNN
+F 3 "" H 4075 3250 60  0000 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3250 4650 3250
+Wire Wire Line
+	4650 3250 4650 3450
+Wire Wire Line
+	4650 4200 4650 4050
+Wire Wire Line
+	3350 4200 4650 4200
+Wire Wire Line
+	3850 3250 3350 3250
+Text Label 3500 3250 0    60   ~ 0
+n0
+Text Label 4450 3250 0    60   ~ 0
+n1
+$Comp
+L V V1
+U 1 1 549D4AEE
+P 3350 3700
+F 0 "V1" H 3550 3850 60  0000 C CNN
+F 1 "AC" H 3550 3550 60  0000 C CNN
+F 2 "" H 3350 3700 60  0000 C CNN
+F 3 "" H 3350 3700 60  0000 C CNN
+	1    3350 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3250 3350 3450
+Wire Wire Line
+	3350 3950 3350 4200
+$Comp
+L 0 #GND01
+U 1 1 549D50D5
+P 4000 4350
+F 0 "#GND01" H 4000 4250 40  0001 C CNN
+F 1 "0" H 4000 4280 40  0000 C CNN
+F 2 "" H 4000 4350 60  0000 C CNN
+F 3 "" H 4000 4350 60  0000 C CNN
+	1    4000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4300 4000 4200
+Connection ~ 4000 4200
+$EndSCHEMATC
