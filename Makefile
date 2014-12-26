@@ -1,8 +1,12 @@
-TEX = Azbuka.tex header.tex authoring.tex title.tex
+TEX = Azbuka.tex header.tex title.tex
 TEX += lstmk.sty lstrc.sty lstsyslinux.sty
 TEX += intro.tex
 
 TXT = rex.py
+
+# docmake
+TEX += docmake/docmake.tex
+TEX += docmake/azbuka.tex
 
 # Collis
 TEX += bcollis/bcollis.tex
@@ -10,6 +14,9 @@ TEX += bcollis/thanks.tex
 TEX += bcollis/intro.tex
 TEX += bcollis/ch02.tex
 TEX += bcollis/led1/led1.pdf
+
+# SPICE
+TEX += spice/spice.tex
 
 # KiCAD
 TEX += kicad/kicad.tex
@@ -58,12 +65,16 @@ TEX += tech/tools/solder.tex
 # Stanki
 TEX += stanki/stanki.tex
 TEX += stanki/1A616.tex
+TEX += stanki/selfmade.tex
+
+# Tabletop
+TEX += tabletop/tabletop.tex
 
 # tech
 TEX += tech/pcb/kipcb.tex
 
 # Cortex-Mx
-TEX += CortexM/cor.tex
+TEX += cortex/cortex.tex
 
 # bibs
 BIB  = ../bib/python.bib
@@ -76,6 +87,9 @@ BIB += ../bib/sysdesign.bib
 
 # math
 TEX += math/math.tex
+
+# VCS
+TEX += vcs/vcs.tex
 
 # prog
 TEX += prog/prog.tex

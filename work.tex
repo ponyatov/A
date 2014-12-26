@@ -1,53 +1,79 @@
 \input{header}
+
 \begin{document}
-\input{title}\tableofcontents\clearpage
 
-% % \input{intro}
+\input{title}
 
-% % \input{bcollis/bcollis}
-% \part{Введение в практическую электронику}\label{collis}
-% \input{bcollis/ch02}
+\tableofcontents
 
-% \input{kicad/kicad}
-\input{kicad/spice}
+\input{bcollis/bcollis}
 
-%\part{Разработка ПО для встраиваемых систем}
-% \input{prog/sysdesign}
-%\input{prog/lexer/lexer}
+\input{kicad/kicad}
 
-%\input{ide/eclipse}
+\input{spice/spice}
 
-% \input{stanki/stanki}
+\input{freecad/freecad}
 
-% \part{Встраиваемый \emlinux}
-% % \input{linux/intro}
-% % \input{linux/syslinux}
-% \input{azlin/azlin}
-% % \input{linux/libsdl}
-% % \input{linux/opengl}
-% % \input{linux/realtime}
-% % \input{linux/netboot}
+\input{tech/tools/tools}
 
-% % \input{freecad/freecad}
+\input{stanki/stanki}
+
+\input{prog/prog}
+
+\input{cortex/cortex}
+
+\input{linux/linux}
+
+\input{docmake/docmake}
+
+% \input{title}\tableofcontents\clearpage
 % 
-% % \input{ide/ide}
-% % 
-% % \input{authoring}
+% % % \input{intro}
 % 
-% %  \input{latex/latex}
+% % % \input{bcollis/bcollis}
+% % \part{Введение в практическую электронику}\label{collis}
+% % \input{bcollis/ch02}
+% 
+% % \input{kicad/kicad}
+% \input{kicad/spice}
+% 
+% %\part{Разработка ПО для встраиваемых систем}
+% % \input{prog/sysdesign}
+% %\input{prog/lexer/lexer}
+% 
+% %\input{ide/eclipse}
+% 
+% % \input{stanki/stanki}
+% 
+% % \part{Встраиваемый \emlinux}
+% % % \input{linux/intro}
+% % % \input{linux/syslinux}
+% % \input{azlin/azlin}
+% % % \input{linux/libsdl}
+% % % \input{linux/opengl}
+% % % \input{linux/realtime}
+% % % \input{linux/netboot}
+% 
+% % % \input{freecad/freecad}
 % % 
-% % \input{heap/heap}
+% % % \input{ide/ide}
+% % % 
+% % % \input{authoring}
+% % 
+% % %  \input{latex/latex}
+% % % 
+% % % \input{heap/heap}
+% 
+% % \input{tech/tools/tools}
+% 
+% % \input{math/math}
+% 
+% % \part{Разработка ПО для встраиваемых систем}
+% % \input{python/python}
 
-% \input{tech/tools/tools}
+\addcontentsline{toc}{part}{Список литературы}
+% % \printbibliography
 
-% \input{math/math}
-
-% \part{Разработка ПО для встраиваемых систем}
-% \input{python/python}
-
-% \addcontentsline{toc}{chapter}{Список литературы}
-% \printbibliography
-
-\printindex
+% \printindex
 
 \end{document}
