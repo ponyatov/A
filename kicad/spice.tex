@@ -1,84 +1,6 @@
 
 \secrel{Моделирование схем в ngSPICE}\secdown
 
-\cp{http://www.mithatkonar.com/wiki/doku.php/kicad/kicad\_spice\_quick\_guide}
-
-\cp{http://physics.gmu.edu/~rubinp/courses/407/ngspice.pdf}
-
-\prog{SPICE}: [S]imulation [P]rogram with [I]ntegrated [C]ircuit
-[E]mphasis\ --- пакет программ симуляции и расчета электронных схем.
-Это мощная программа, используемая в разработке устройств и \emph{интегральных
-схем}, для расчета режимов работы, оптимизаии, и предсказания поведения схем.
-
-\bigskip
-SPICE может выполнять несколько видо схемотехнических расчетов, самые важные
-из которых:
-
-\begin{itemize}
-  \item
-Нелинейный анализ по постоянному току: вычисление передаточной характеристики по
-постоянному току
-  \item 
-Нелинейный анализ переходных процессов: вычисление токов и напряжений как
-функции времени в условиях большого сигнала
-  \item 
-Линейный AC анализ: вычисление выхода как функции от частоты. Выводится
-\term{bode plot}
-  \item 
-Анализ шума 
-  \item
-Расчет чувствительности
-  \item 
-Анализ искажений 
-  \item
-Фурье-анализ: вычисление и отображение частотных спектров   
-  \item 
-Анализ Монте-Карло
-\end{itemize}  
-
-\secrel{Доступные SPICE-пакеты}
-
-\begin{itemize}
-\item \href{http://ngspice.sourceforge.net/}{ngspice}: самый доступный
-бесплатный OpenSource SPICE-движок.
-\item
-\href{https://www.gnu.org/software/gnucap/}{gnucap}\note{уже включен в
-виндозную сборку KiCAD}:
-Не совсем SPICE, но пытается быть синтаксически совместмой.
-\item \href{http://www.spiceopus.si/}{SpiceOpus}: Коммерческая, но
-удобная, особенно в плане вывода графиков.
-\item \href{http://www.linear.com/designtools/software/}{LTSpice}:
-Популярная бесплатная коммерческая версия от Linear Technology для \win.
-Работает в \prog{WINE}. Поставляется в комплекте с графической оболочкой,
-но требуется проверка файлов расчетных заданий, которые она создает. 
-\item
-\href{http://www.cadence.com/products/orcad/pspice_simulation/Pages/default.aspx}{PSpice}:
-\win-only, дорогой коммерческий пакет, стандарт de-facto для
-профессионального применения в USA в составе тяжелых EDA-продуктов.
-Они традиционно предоставляют обрезанную \emph{gratis}-версию для студентов.
-Также имеет в комплекте GUI.
-\item \url{http://www.ngspice.com/}\ --- on-line вариант \prog{ngspice}, удобен
-для начального обучения
-\item Какие-то еще?
-\end{itemize}
-
-\secrel{Установка \prog{ngspice} под \win}
-
-\menu{\winr\url{http://ngspice.sourceforge.net/download.html}>\prog{ng-spice-rework}>\file{ngspice-xx\_xxxxxx.zip}}
-
-\menu{unzip \file{ngspice-xx\_xxxxxx.zip}>\file{C:/spice}}
-
-\menu{\winstart>Компьютер>\rms>Свойства>Дополнительные
-параметры системы}
-
-\menu{Переменные среды>\file{PATH=\ldots;C:/spice/bin}}
-
-\secrel{Установка \prog{ngspice} под \linux}
-
-\begin{verbatim}
-root# aptitude install ngspice
-\end{verbatim}
-
 \secrel{Библиотеки компонентов со SPICE-элементами для \prog{KiCAD}}
 
 \begin{itemize}
@@ -119,18 +41,6 @@ SPICE.
 
 \begin{enumerate}
   \item
-Рисуйте вашу схему, соблюдая несколько рекомендаций:  
-\begin{itemize}
-  \item
-Для именованных цепей используйте \emph{глобальные метки} вместо локальных. 
-В списке цепей глобальные идентификаторы цепей включаются как есть, а
-локальные метки модифицируются, что делает сложным последующие ссылки на них при
-SPICE-моделировании.
-  \item
-Используйте компонент [0] из библиотеки \file{spice}, вместо обычного комопнента
-[GND]: ”0” официальное имя главной земли в файлах PSpice. Некоторые SPICE-движки
-умеют транслировать $GND \rightarrow 0$, другие нет.
-\end{itemize}
   \item
 Укажите режимы сиуляции, которые вы хотите выполнить, и генерацию вывода,
 который хотите отобразить, добавив на схему текстовый блок (т.е.
@@ -165,20 +75,6 @@ and Nutmeg}. Это нетрудно.
 \end{itemize}
   \item
 Запустите симуляцию:
-\begin{itemize}
-  \item
-Кликните кнопку или пункт меню \menu{Сформирвать список цепей}.
-  \item
-Выберите вкладку \menu{Spice}, и убедитесь что включен крыжик \menu{\checkbox\
-Формат по умолчанию}. Вам нужно сделать это только один раз, настройки
-запоминаются.
-  \item
-Заполните полный путь с программе симуляции, типа
-\file{C:/spice/bin/ngspice.exe} со всеми путями и расширениями, KiCAD пока не
-научился запускать симулятор через \verb|PATH|.
-  \item
-Нажмите кнопку \menu{Запустить симулятор}.
-\end{itemize}
 \end{enumerate}
 
 \secup
