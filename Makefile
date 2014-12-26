@@ -1,6 +1,7 @@
 TEX = Azbuka.tex header.tex title.tex
 TEX += lstmk.sty lstrc.sty lstsyslinux.sty
 TEX += intro.tex
+TEX += learnplans.tex
 
 TXT = rex.py
 
@@ -64,6 +65,7 @@ TEX += tech/tools/solder.tex
 
 # Stanki
 TEX += stanki/stanki.tex
+TEX += stanki/cccp.tex
 TEX += stanki/1A616.tex
 TEX += stanki/selfmade.tex
 

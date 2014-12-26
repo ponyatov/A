@@ -1,223 +1,225 @@
-\chapter{\eclipse}\label{eclipse}
+\secrel{\eclipse}\label{eclipse}\secdown
 
 \includegraphics[height=0.5\textheight]{logo/eclipse.png}
 
-\section{Установка \eclipse\ под \win}
-
-\menu{\winr>\url{https://eclipse.org/}>Download>Eclipse Luna release for>\win}
-
-Качаем архив базовой системы:
-\menu{Eclipse IDE for Java Developers>\win\ 32/64 Bit}
-
-Или сразу сборку CDT\eclipse:
-\menu{Eclipse IDE for C/C++ Developers>\win\ 32/64 Bit}
-
-\section{Установка \eclipse\ под \linux}
-
-\menu{\winr>\url{https://eclipse.org/}>Download>Eclipse Luna release for>\linux}
-
-Качаем архив базовой системы:
-\menu{Eclipse IDE for Java Developers>\linux\ 32/64 Bit}
-
-Или сразу сборку CDT\eclipse:
-\menu{Eclipse IDE for C/C++ Developers>\linux\ 32/64 Bit}
-
-\bigskip
-
-Пока качается, параллельно устанавливаем в систему Java-рантайм:
-
-\begin{verbatim}
-sudo aptitude install openjdk-7-jre
-\end{verbatim}
-
-Распаковывем полученный архив
-\file{eclipse-java-luna-SR1-linux-gtk-x86\_64.tar.gz}
-в \file{\$HOME}:
-
-\begin{verbatim}
-cd ~
-tar zx < Downloads/eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz 
-ls -la eclipse/eclipse
--rwxr-xr-x 1 user user 74675 Авг 13 16:12 eclipse/eclipse
-\end{verbatim}
-
-Прописываем запуск \eclipse\ в ваш оконный менеджер или \file{.blackboxmenu}
-с параметром \file{-noSplash} для лечения глюка с запуском на x64-битных
-системах:
-
-\lst{.blackbox.menu}{}{ide/eclipse_blackbox.menu}
-
-\section{Установка CDT}
-
-\href{https://eclipse.org/cdt/}{\prog{CDT}}\ --- расширение \eclipse\ для
-разработки на Си/\cpp, редактирования make-файлов. Это расширение критически
-важно для вашей работы, поэтому ставить его обязательно, или сразу качать сборку
-CDT\eclipse.
-\bigskip
-
-\menu{\eclipse>Help>Install New Software\ldots}
-
-\menu{Work with>Add>Add repository}
-
-\menu{Name>CDT}
-
-\menu{Location>\url{http://download.eclipse.org/tools/cdt/releases/8.5}}
-
-\menu{OK}
-
-\menu{Work with>CDT}
-
-\menu{CDT Main Features>\checkbox\ C/C++ Development Tools}
-
-\menu{CDT Optional Features}
-
-Парсер файлов исходников на диалекте С99:
-\menu{\checkbox\ C99 LR Parser}
-
-Поддержка \prog{gcc}\ в режиме кросс-компиляции:
-\menu{\checkbox\ GCC Cross Compiler Support}
-
-Аппаратная отладка через \prog{gdb}:
-\menu{\checkbox\ GDB Hardware Debugging}
-
-\menu{Next>Next>Accept>Finish}
-
-\section{Установка PyDev}
-
-\href{http://pydev.org/}{\prog{PyDev}}\ --- расширение для разработки на Python:
-\bigskip
-
-
-\menu{\eclipse>Help>Install New Software\ldots}
-
-\menu{Work with>Add>Add repository}
-
-\menu{Name>PyDev}
-
-\menu{Location>\url{http://pydev.org/updates}}
-
-\menu{OK}
-
-\menu{Work with>PyDev}
-
-\menu{PyDev>\checkbox\ PyDev for Eclipse}
-
-\menu{Next>Next>Accept>Finish>Certitificate>Restart Eclipse>Ok}
-
-\section{Установка TeXlipse}
-
-Если планируете работать с документацией в формате \latex, установите расширение
-\href{http://texlipse.sourceforge.net/}{\prog{TeXlipse}}:
-\bigskip
-
-\menu{\eclipse>Help>Install New Software\ldots}
-
-\menu{Work with>Add>Add repository}
-
-\menu{Name>TeXlipse}
-
-\menu{Location>\url{http://texlipse.sourceforge.net/}}
-
-\menu{OK}
-
-\menu{Work with>TeXlipse}
-
-Это расширение поддерживает подсветку синтаксиса, автодополнение, построение
-динамического оглавления, автокомпиляцию по сохранению, и несколько визардов
-создания проекта.
-
-\section{Редактирование файлов в формате XML и производных}
-
-Установите пакет \eclipse\ WST:
-
-\menu{Help>Install New Software}
-
-\menu{Work with:>Luna - http://download.eclipse.org/releases/luna}
-
-\menu{Filter:>WST>Eclipse WST>Next>Next>Restart>OK}
-
-\section{Проверка орфографии}
-
-\cp{http://www.simplecoding.org/proverka-orfografii-v-eclipse.html}
-
-То, что проверка орфографии очень удобная вещь вряд ли нужно объяснять. Есть
-конечно люди, которые не обращают на неё внимание, но это чаще всего из-за
-экономии времени и отсутствия удобных средств проверки.
-
-Действительно, удобная автоматическая проверка орфографии есть в офисных
-пакетах, но мне сложно представить разработчика, который будет переносить
-комментарии в Word и обратно \smiley.
-
-Поэтому очень удобно иметь \emph{проверку правописания прямо в IDE}. И \eclipse\
-в этом смысле полностью соответствует ожиданиям.
-
-Долго объяснять что к чему нет смысла. Проверка орфографии встроена в \eclipse\
-и если вы пишите только на английском, то может быть не захотите ничего менять.
-
-Кроме того, есть
-\href{http://www.102degrees.com/blog/2007/07/09/spell-checking-in-eclipse-pdt/}{статья
-Aaron'а} (en) в которой автор рассказывает о подключении дополнительных словарей
-и плагине \file{eSpell}.
-
-Но \emph{русских словарей в дистрибутиве нет}, а при подключении внешних есть
-нюансы. Поэтому мы максимально подробно рассмотрим \emph{подготовку и добавление
-русских словарей}.
-
-Первый вопрос. В каком виде должны быть словари и где их взять?
-
-Тут всё просто. Формат словаря\ --- обычный текстовый файл, в котором каждое
-слово начинается с новой строки. И нам вполне подойдут свободно распространяемые
-словари \file{aSpell}.
-
-Установка состоит из \ref{aspellecl}\ шагов:
-\begin{enumerate}
-  \item качаем \href{}{aSpell}\ и словари для нужных языков
-  
-  \menu{\winr>\url{http://aspell.net/win32/}>}
-  
-  \menu{Binaries>Full installer}
-  
-  \menu{Precompiled dictionaries>English}
-  
-  \menu{Precompiled dictionaries>Russian}
-  
-  \item устанавливаем сначала \file{aSpell}, потом отдельно каждый словарь
-  
-  \menu{\file{Aspell-0-50-3-3-Setup.exe}>Setup GNU Aspell>Next>License>Next}
-  
-  \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next}
-  
-  \menu{Additional>Next>Install>Next>\uncheckbox\ View manual>Finish}
-  
-  \menu{\file{Aspell-en-0.50-2-3.exe}>Aspell English Dictionary>Next>License>Next}
-  
-  \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
-  
-  \menu{\file{Aspell-ru-0.50-2-3.exe}>Aspell Russian Dictionary>Next>License>Next}
-  
-  \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
-  
-  \item делаем дамп словарей, перекодируем из koi8r в utf8 и объединяем
-  
-  \menu{\winr cmd}
-
-\begin{lstlisting}
-cd \GnuWin32\Aspell
-bin\aspell dump master en > en.dict
-bin\aspell dump master ru > ru.koi8
-iconv -f koi8-r -t utf-8 < ru.koi8 > ru.dict
-copy en.dict + ru.dict enru.dict
-\end{lstlisting}
-  
-  \item \label{aspellecl} настраиваем \emph{spell-checker} \eclipse
-  
-  \menu{\eclipse>Window>Preferences>Editors>Text editors>Spelling}
-  
-  \menu{User defined dictionary>\file{C:/GnuWin32/Aspell/enru.dict}}
-  
-  \menu{Encoding>UTF-8}
-  
-  \menu{Apply>OK}
-  
-\end{enumerate}
-
+% \section{Установка \eclipse\ под \win}
+% 
+% \menu{\winr>\url{https://eclipse.org/}>Download>Eclipse Luna release for>\win}
+% 
+% Качаем архив базовой системы:
+% \menu{Eclipse IDE for Java Developers>\win\ 32/64 Bit}
+% 
+% Или сразу сборку CDT\eclipse:
+% \menu{Eclipse IDE for C/C++ Developers>\win\ 32/64 Bit}
+% 
+% \section{Установка \eclipse\ под \linux}
+% 
+% \menu{\winr>\url{https://eclipse.org/}>Download>Eclipse Luna release for>\linux}
+% 
+% Качаем архив базовой системы:
+% \menu{Eclipse IDE for Java Developers>\linux\ 32/64 Bit}
+% 
+% Или сразу сборку CDT\eclipse:
+% \menu{Eclipse IDE for C/C++ Developers>\linux\ 32/64 Bit}
+% 
+% \bigskip
+% 
+% Пока качается, параллельно устанавливаем в систему Java-рантайм:
+% 
+% \begin{verbatim}
+% sudo aptitude install openjdk-7-jre
+% \end{verbatim}
+% 
+% Распаковывем полученный архив
+% \file{eclipse-java-luna-SR1-linux-gtk-x86\_64.tar.gz}
+% в \file{\$HOME}:
+% 
+% \begin{verbatim}
+% cd ~
+% tar zx < Downloads/eclipse-java-luna-SR1-linux-gtk-x86_64.tar.gz 
+% ls -la eclipse/eclipse
+% -rwxr-xr-x 1 user user 74675 Авг 13 16:12 eclipse/eclipse
+% \end{verbatim}
+% 
+% Прописываем запуск \eclipse\ в ваш оконный менеджер или \file{.blackboxmenu}
+% с параметром \file{-noSplash} для лечения глюка с запуском на x64-битных
+% системах:
+% 
+% \lst{.blackbox.menu}{}{ide/eclipse_blackbox.menu}
+% 
+% \section{Установка CDT}
+% 
+% \href{https://eclipse.org/cdt/}{\prog{CDT}}\ --- расширение \eclipse\ для
+% разработки на Си/\cpp, редактирования make-файлов. Это расширение критически
+% важно для вашей работы, поэтому ставить его обязательно, или сразу качать сборку
+% CDT\eclipse.
+% \bigskip
+% 
+% \menu{\eclipse>Help>Install New Software\ldots}
+% 
+% \menu{Work with>Add>Add repository}
+% 
+% \menu{Name>CDT}
+% 
+% \menu{Location>\url{http://download.eclipse.org/tools/cdt/releases/8.5}}
+% 
+% \menu{OK}
+% 
+% \menu{Work with>CDT}
+% 
+% \menu{CDT Main Features>\checkbox\ C/C++ Development Tools}
+% 
+% \menu{CDT Optional Features}
+% 
+% Парсер файлов исходников на диалекте С99:
+% \menu{\checkbox\ C99 LR Parser}
+% 
+% Поддержка \prog{gcc}\ в режиме кросс-компиляции:
+% \menu{\checkbox\ GCC Cross Compiler Support}
+% 
+% Аппаратная отладка через \prog{gdb}:
+% \menu{\checkbox\ GDB Hardware Debugging}
+% 
+% \menu{Next>Next>Accept>Finish}
+% 
+% \section{Установка PyDev}
+% 
+% \href{http://pydev.org/}{\prog{PyDev}}\ --- расширение для разработки на Python:
+% \bigskip
+% 
+% 
+% \menu{\eclipse>Help>Install New Software\ldots}
+% 
+% \menu{Work with>Add>Add repository}
+% 
+% \menu{Name>PyDev}
+% 
+% \menu{Location>\url{http://pydev.org/updates}}
+% 
+% \menu{OK}
+% 
+% \menu{Work with>PyDev}
+% 
+% \menu{PyDev>\checkbox\ PyDev for Eclipse}
+% 
+% \menu{Next>Next>Accept>Finish>Certitificate>Restart Eclipse>Ok}
+% 
+% \section{Установка TeXlipse}
+% 
+% Если планируете работать с документацией в формате \latex, установите расширение
+% \href{http://texlipse.sourceforge.net/}{\prog{TeXlipse}}:
+% \bigskip
+% 
+% \menu{\eclipse>Help>Install New Software\ldots}
+% 
+% \menu{Work with>Add>Add repository}
+% 
+% \menu{Name>TeXlipse}
+% 
+% \menu{Location>\url{http://texlipse.sourceforge.net/}}
+% 
+% \menu{OK}
+% 
+% \menu{Work with>TeXlipse}
+% 
+% Это расширение поддерживает подсветку синтаксиса, автодополнение, построение
+% динамического оглавления, автокомпиляцию по сохранению, и несколько визардов
+% создания проекта.
+% 
+% \section{Редактирование файлов в формате XML и производных}
+% 
+% Установите пакет \eclipse\ WST:
+% 
+% \menu{Help>Install New Software}
+% 
+% \menu{Work with:>Luna - http://download.eclipse.org/releases/luna}
+% 
+% \menu{Filter:>WST>Eclipse WST>Next>Next>Restart>OK}
+% 
+% \section{Проверка орфографии}
+% 
+% \cp{http://www.simplecoding.org/proverka-orfografii-v-eclipse.html}
+% 
+% То, что проверка орфографии очень удобная вещь вряд ли нужно объяснять. Есть
+% конечно люди, которые не обращают на неё внимание, но это чаще всего из-за
+% экономии времени и отсутствия удобных средств проверки.
+% 
+% Действительно, удобная автоматическая проверка орфографии есть в офисных
+% пакетах, но мне сложно представить разработчика, который будет переносить
+% комментарии в Word и обратно \smiley.
+% 
+% Поэтому очень удобно иметь \emph{проверку правописания прямо в IDE}. И \eclipse\
+% в этом смысле полностью соответствует ожиданиям.
+% 
+% Долго объяснять что к чему нет смысла. Проверка орфографии встроена в \eclipse\
+% и если вы пишите только на английском, то может быть не захотите ничего менять.
+% 
+% Кроме того, есть
+% \href{http://www.102degrees.com/blog/2007/07/09/spell-checking-in-eclipse-pdt/}{статья
+% Aaron'а} (en) в которой автор рассказывает о подключении дополнительных словарей
+% и плагине \file{eSpell}.
+% 
+% Но \emph{русских словарей в дистрибутиве нет}, а при подключении внешних есть
+% нюансы. Поэтому мы максимально подробно рассмотрим \emph{подготовку и добавление
+% русских словарей}.
+% 
+% Первый вопрос. В каком виде должны быть словари и где их взять?
+% 
+% Тут всё просто. Формат словаря\ --- обычный текстовый файл, в котором каждое
+% слово начинается с новой строки. И нам вполне подойдут свободно распространяемые
+% словари \file{aSpell}.
+% 
+% Установка состоит из \ref{aspellecl}\ шагов:
+% \begin{enumerate}
+%   \item качаем \href{}{aSpell}\ и словари для нужных языков
+%   
+%   \menu{\winr>\url{http://aspell.net/win32/}>}
+%   
+%   \menu{Binaries>Full installer}
+%   
+%   \menu{Precompiled dictionaries>English}
+%   
+%   \menu{Precompiled dictionaries>Russian}
+%   
+%   \item устанавливаем сначала \file{aSpell}, потом отдельно каждый словарь
+%   
+%   \menu{\file{Aspell-0-50-3-3-Setup.exe}>Setup GNU Aspell>Next>License>Next}
+%   
+%   \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next}
+%   
+%   \menu{Additional>Next>Install>Next>\uncheckbox\ View manual>Finish}
+%   
+%   \menu{\file{Aspell-en-0.50-2-3.exe}>Aspell English Dictionary>Next>License>Next}
+%   
+%   \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
+%   
+%   \menu{\file{Aspell-ru-0.50-2-3.exe}>Aspell Russian Dictionary>Next>License>Next}
+%   
+%   \menu{Directory>\file{C:/GnuWin32/Aspell}>Next>Next>Install>Finish}
+%   
+%   \item делаем дамп словарей, перекодируем из koi8r в utf8 и объединяем
+%   
+%   \menu{\winr cmd}
+% 
+% \begin{lstlisting}
+% cd \GnuWin32\Aspell
+% bin\aspell dump master en > en.dict
+% bin\aspell dump master ru > ru.koi8
+% iconv -f koi8-r -t utf-8 < ru.koi8 > ru.dict
+% copy en.dict + ru.dict enru.dict
+% \end{lstlisting}
+%   
+%   \item \label{aspellecl} настраиваем \emph{spell-checker} \eclipse
+%   
+%   \menu{\eclipse>Window>Preferences>Editors>Text editors>Spelling}
+%   
+%   \menu{User defined dictionary>\file{C:/GnuWin32/Aspell/enru.dict}}
+%   
+%   \menu{Encoding>UTF-8}
+%   
+%   \menu{Apply>OK}
+%   
+% \end{enumerate}
+% 
+
+\secup

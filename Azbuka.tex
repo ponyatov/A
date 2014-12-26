@@ -1,130 +1,39 @@
 \input{header}
+
 \begin{document}
-\input{title}\tableofcontents\clearpage
+
+\input{title}
+
+\tableofcontents
 
 \input{intro}
 
 \input{bcollis/bcollis}
 
-\part{Основы электроники}
-
-Здесь идет список ссылок на онлайн лекции в edX, Coursera, и т.п.
-
-\chapter{Линейные схемы на пассивных элементах, основы электротехники}
-
-\chapter{Симуляция и расчет схем в \spice}
-
 \input{kicad/kicad}
 
-\chapter{Простейшие полупроводниковые элементы}
-
-\section{Оптоэлектроника}
-
-\section{Схемы на биполярных транзисорах} 
-
-\section{Схемы на на полевых транзисорах}
-
-\chapter{Операционные усилители}
-
-\chapter{Источники питания}
-
-\section{Батарейное питание}
-
-\section{Линейные стабилизаторы}
-
-\section{Импульсные преобразователи на ШИМ-контроллерах} 
-
-\section{Цепи защиты и гашения кондуктивных помех}
-
-\chapter{Цифровая электроника}
-
-\chapter{Компьютерные интерфейсы}
-
-\section{Поколение 90х: COM, LPT, ISA}
-
-\subsection{Резервный программатор AVR ``пять проводков''}
-
-\section{Сеть CAN}
-
-\section{Интерфейсные модули USB}
-
-\subsection{Универсальный высокоскоростной конвертер FTDI FT2232H}
-
-\subsection{JTAG-адаптер}
-
-\subsection{Отладочный модуль CAN}
-
-\section{Интерфейсные модули Ethernet}
-
-\chapter{ПЛИС}
-
-\chapter{Датчики}
-
-\chapter{Электропривод и исполнительные устройства}
-
-\part{Основы конструирования РЭС}
-
-\chapter{Пакеты моделирования на основе OpenFOAM}
-
-\chapter{Обеспечение теплового режима}
-
-\chapter{Электромагнитная совместимость}
-
-\section{Кондуктивные помехи}
-
-\section{Компоновочные модели и оптимизация кабельной сети}
-
-\part{Технология РЭС}
-
-\input{tech/tools/tools}
-
-\input{tech/pcb/kipcb}
+\input{spice/spice}
 
 \input{freecad/freecad}
 
+\input{tech/tools/tools}
+
 \input{stanki/stanki}
-
-\chapter{Основы ЧПУ и цифрового производства}
-
-\section{CAM-пакеты для FreeCAD}
-
-\part{Основы теории систем автоматического управления}
-
-\chapter{Математический аппарат}
-
-\section{Передаточная функция}
-
-\section{Устойчивость САУ}
-
-\section{Сети Петри}
-
-\section{Автоматы Маркова}
-
-\chapter{Релейное управление}
-
-\chapter{Пропорциональные САУ}
-
-\chapter{ПИДn-регуляторы}
 
 \input{prog/prog}
 
-\input{CortexM/cor}
-
-\part{Периферия}
+\input{cortex/cortex}
 
 \input{linux/linux}
 
-\input{ide/ide}
+\input{docmake/docmake}
 
-\input{latex/latex}
-
-\input{math/math}
+\input{learnplans}
 
 \input{heap/heap}
 
-\addcontentsline{toc}{chapter}{Список литературы}
-\printbibliography
-
-\printindex
+\addcontentsline{toc}{part}{Список литературы}
+% \printbibliography
+% \printindex
 
 \end{document}
