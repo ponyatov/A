@@ -125,7 +125,7 @@ tmp/work.pdf: work.tex $(TEX) $(TXT)
 #	python rex.py
 	$(LATEX) work
 #	$(BIBER) tmp/work
-#	makeindex tmp/work
+	makeindex tmp/work
 	$(LATEX) work
 
 %.png: %.svg

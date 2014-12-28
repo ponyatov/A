@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Втр 23 Дек 2014 23:17:31
+EESchema Schematic File Version 2  date Вск 28 Дек 2014 19:46:10
 LIBS:C
 LIBS:DA_POWER
 LIBS:L
@@ -14,7 +14,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "23 dec 2014"
+Date "28 dec 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -40,7 +40,7 @@ Wire Wire Line
 Connection ~ 3950 1400
 Wire Wire Line
 	5300 2300 5300 2650
-Text Notes 2750 3100 0    60   ~ 0
+Text Notes 2300 3000 0    90   ~ 0
 Токоограничивающий\nрезистор
 $Comp
 L R R1
@@ -60,7 +60,7 @@ F 1 "LED" V 4000 2200 60  0000 C CNN
 	1    3950 1950
 	0    1    1    0   
 $EndComp
-Text Notes 3050 2050 0    60   ~ 0
+Text Notes 2800 2000 0    90   ~ 0
 Светодиод
 $Comp
 L GB GB1
@@ -71,7 +71,7 @@ F 1 "9V" V 5350 3250 60  0000 C CNN
 	1    5300 3000
 	0    1    1    0   
 $EndComp
-Text Notes 4750 3050 0    60   ~ 0
+Text Notes 4500 2950 0    90   ~ 0
 Батарея\n9 вольт
 $Comp
 L SA SA1
@@ -82,6 +82,6 @@ F 1 "SA" V 5200 1800 60  0000 C CNN
 	1    5300 2000
 	0    -1   -1   0   
 $EndComp
-Text Notes 4500 2050 0    60   ~ 0
+Text Notes 4250 2250 0    90   ~ 0
 Выключатель
 $EndSCHEMATC

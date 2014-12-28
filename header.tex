@@ -76,11 +76,11 @@ commentstyle=\color{Cyan}%\texttt%,
 % misc
 \usepackage{framed}
 \usepackage{enumitem}
+\usepackage{makeidx}\makeindex
 
 % % books bib management
-% \usepackage[biber]{biblatex}
+% \usepackage[backend=biber,style=numeric]{biblatex}
 % \addbibresource{../bib/stanki.bib}
-
 % % % % \addbibresource{../bib/python.bib}
 % % % % \addbibresource{../bib/eskd.bib}
 % % % % \addbibresource{../bib/electronics.bib}
@@ -90,16 +90,17 @@ commentstyle=\color{Cyan}%\texttt%,
 % % % % \addbibresource{../bib/sysdesign.bib}
 % % % % 
 
-
 \newcommand{\note}[1]{\footnote{\ #1}}
 \newcommand{\cp}[1]{\note{копипаста: \url{#1}}}
 \renewcommand{\emph}[1]{\textcolor{Blue}{#1}}
 \newcommand{\term}[1]{\textcolor{Green}{#1}}
+\newcommand{\termdef}[2]{\textcolor{Green}{#1}\index{#2}}
 \newcommand{\prog}[1]{\textcolor{Brown}{#1}}
 \newcommand{\pack}[1]{\textcolor{Brown}{#1}}
 \newcommand{\elem}[1]{\textcolor{Magenta}{#1}}
 \newcommand{\net}[1]{[\textcolor{Magenta}{#1}]}
 \newcommand{\cmnd}[1]{\textcolor{Blue}{#1}}
+\newcommand{\alarm}[1]{\textcolor{Red}{#1}}
 \newcommand{\file}[1]{\textbf{#1}}
 \newcommand{\internet}{Internet}
 \newcommand{\cpp}{$C^{+}_{+}$}
@@ -156,7 +157,6 @@ commentstyle=\color{Cyan}%\texttt%,
 % % % % % disable oneliner page breaks
 % % % % \usepackage[defaultlines=2,all]{nowidow}
 % % % % 
-% % % % \usepackage{makeidx}
 % % % % \makeindex
 % % % % 
 % % % % % extra char sets
@@ -173,42 +173,10 @@ commentstyle=\color{Cyan}%\texttt%,
 % % % % \newcommand{\email}[1]{$<$\href{mailto:#1}{#1}$>$}
 % % % % \newcommand{\internet}{Internet}
 % % % % 
-% % % % \newcommand{\cm}[1]{Cortex-M#1}
-% % % % \newcommand{\cmx}{\cm{x}}
-% % % % 
-% % % % \newcommand{\linux}{Linux}
-% % % % \newcommand{\emlinux}{em\linux}
-% % % % 
-% % % % \newcommand{\cpp}{$C^{+}_{+}$}
-% % % % \newcommand{\py}{Python}
-% % % % 
-% % % % \newcommand{\vcs}{\hyperref[vcs]{VCS}}
-% % % % \newcommand{\make}{\hyperref[make]{Make}}
-% % % % \newcommand{\spice}{ngSPICE}
-% % % % \newcommand{\latex}{\LaTeX}
-% % % % 
-% % % % 
-% % % % \newcommand{\note}[1]{\footnote{\ #1}}
-% % % % \newcommand{\cp}[1]{\note{копипаста \url{#1}}}
-% % % % 
-% % % % \newcommand{\win}{\winstart Windows}
-% % % % 
-% % % % \newcommand{\mk}{МК}
-% % % % 
-% % % % \newcommand{\ram}{RAM}
-% % % % 
-% % % % 
-% % % % \newcommand{\pref}[1]{/стр.\pageref{#1}/}
-% % % % 
 % % % % % icon sets
 % % % % \newcommand{\icoesch}{\includegraphics[height=0.1\textheight]{tmp/icon_eeschema.png}}
 % % % % % selecting
-% % % % \usepackage{framed}
-% % % % \newcommand{\term}[1]{\textcolor{Green}{#1}}
-% % % % \renewcommand{\emph}[1]{\textcolor{Blue}{#1}}
-% % % % \newcommand{\prog}[1]{\textcolor{Brown}{#1}}
-% % % % \newcommand{\pack}[1]{\textcolor{Magenta}{#1}}
-% % % % 
+
 % % % % \newcommand{\odina}{1А616}
 % % % % 
 % % % % % math
