@@ -124,8 +124,9 @@ BIBER = biber
 tmp/work.pdf: work.tex $(TEX) $(TXT)
 #	python rex.py
 	$(LATEX) work
-	$(LATEX) work
+#	$(BIBER) tmp/work
 #	makeindex tmp/work
+	$(LATEX) work
 
 %.png: %.svg
 	inkscape $< --export-png=$@ --export-dpi=300
