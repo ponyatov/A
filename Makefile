@@ -1,9 +1,11 @@
 TEX = Azbuka.tex header.tex title.tex
 TEX += lstmk.sty lstrc.sty lstsyslinux.sty
 TEX += intro.tex
-TEX += learnplans.tex
 
-TXT = rex.py
+# Learn plans
+TEX += learnplans/learnplans.tex
+
+ TXT = rex.py
 
 # docmake
 TEX += docmake/docmake.tex
