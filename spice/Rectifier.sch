@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Пнд 29 Дек 2014 16:27:12
+EESchema Schematic File Version 2  date Пнд 29 Дек 2014 16:42:26
 LIBS:C
 LIBS:DA_POWER
 LIBS:L
@@ -22,7 +22,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 7500 3750 0    60   ~ 0
-+PSPICE \n* text after netlist\n.control\ntran 0.01ms 50ms\nset color0=white\nset color1=black\nset color2=red\nset color2=green\nset hcopydevtype=postscript\nset hcopypscolor=true\nhardcopy RectifierPlot.eps "/n0" "/n1"\nquit\n.endc
++PSPICE \n* text after netlist\n.control\ntran 0.01ms 50ms\nset hcopydevtype=postscript\nset hcopypscolor=true\nset color0=white\nset color1=black\nset color2=rgb:F/0/0\nset color3=rgb:0/F/0\nset color4=rgb:0/0/F\nhardcopy RectifierPlot.eps "/n0" "/n1"\nquit\n.endc
 Text Notes 7450 3300 0    60   ~ 0
 -PSPICE \n* text before netlist
 Text Label 4650 3050 0    100  ~ 0
