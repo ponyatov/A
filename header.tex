@@ -75,6 +75,7 @@ commentstyle=\color{Cyan}%\texttt%,
 
 % misc
 \usepackage{framed}
+\usepackage{tcolorbox}
 \usepackage{enumitem}
 \usepackage{makeidx}\makeindex
 
@@ -101,6 +102,20 @@ commentstyle=\color{Cyan}%\texttt%,
 \newcommand{\net}[1]{[\textcolor{Magenta}{#1}]}
 \newcommand{\cmnd}[1]{\textcolor{Blue}{#1}}
 \newcommand{\alarm}[1]{\textcolor{Red}{#1}}
+
+\newenvironment{rulebox}
+{\begin{tcolorbox}[colframe=black,colback=green!11!white]\noindent}
+{\end{tcolorbox}}
+
+\newenvironment{alarmbox}
+{\begin{tcolorbox}[colframe=red!80!yellow,title={\includegraphics[width=0.05\textwidth]{logo/Warning.eps}}]\noindent}
+{\end{tcolorbox}}
+
+\newenvironment{youtube}
+{\begin{tcolorbox}[colframe=black!20!white,title={\includegraphics[width=0.1\textwidth]{logo/YouTube.eps}}]
+\noindent}
+{\end{tcolorbox}}
+
 \newcommand{\file}[1]{\textbf{#1}}
 \newcommand{\internet}{Internet}
 \newcommand{\cpp}{$C^{+}_{+}$}
@@ -157,17 +172,11 @@ commentstyle=\color{Cyan}%\texttt%,
 % % % % % disable oneliner page breaks
 % % % % \usepackage[defaultlines=2,all]{nowidow}
 % % % % 
-% % % % \makeindex
-% % % % 
-% % % % % extra char sets
-% % % % \usepackage{wasysym} % smileys
-% % % % 
 % % % % % set lists style
 % % % % \usepackage{enumitem}
 % % % % \setlist{nosep}
 % % % % 
 % % % % % misc
-% % % % 
 % % % % % \usepackage{titling}
 % % % % 
 % % % % \newcommand{\email}[1]{$<$\href{mailto:#1}{#1}$>$}
