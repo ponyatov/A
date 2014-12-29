@@ -1,4 +1,4 @@
-\section{Загрузчик \prog{syslinux}}
+\secrel{Загрузчик syslinux}\secdown
 
 Самый простой и удобный загрузчик для i386-систем, ставится на флешку
 из под Windows, работает с FAT-разделами, поддерживает загрузку с флешек, CDROM
@@ -7,20 +7,20 @@
 \bigskip
 \url{http://www.syslinux.org/}
 
-\subsection{Закачка}
+\secrel{Закачка}
 
-\file{.zip}\ с бинарной сборкой \prog{syslinux}:
+\file{.zip}\ с бинарной сборкой \progdef{syslinux}{syslinux}:
 
 \url{https://www.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.zip}
 \bigskip
 
-\prog{memtest86+}\ --- полезная утилита для тестирования \ram:
+\progdef{memtest86+}{memtest86+}\ --- полезная утилита для тестирования \ram:
 
 \url{http://www.memtest.org/download/5.01/memtest86+-5.01.zip}
-\bigskip 
+\bigskip
 
 Если планируете устанавливать рабочую станцию для сборки az\linux\ с флешки,
-нужно скачать полные или \emph{netinst}\ установочные \file{.iso}-образы: 
+нужно скачать полные или \emph{netinst}\ установочные \file{.iso}-образы:
 
 \emph{Установочный образ Debian Linux} i386:
 
@@ -42,7 +42,7 @@
 
 \url{http://http.us.debian.org/debian/dists/wheezy/main/installer-amd64/current/images/hd-media/vmlinuz}
 
-\subsection{Установка под \win\ на флешку}
+\secrel{Установка под \win\ на флешку}
 
 Распакуйте файлы из \file{.zip}
 \bigskip
@@ -78,24 +78,26 @@
 \begin{tabular}{l l}
 \file{debian-7.7.0-amd64-netinst.iso} & \file{.iso}-образ установочного CD-ROM\\
 \file{debian-7.7.0-i386-netinst.iso} & \file{.iso}-образ установочного CD-ROM\\
-\file{.iso/install.amd/vmlinuz} & ядро amd64 (x64) \\
-\file{.iso/install.amd/initrd.gz} & ramdisk с инсталляром \\
-\file{.iso/install.386/vmlinuz} & ядро i386 (x32) \\
-\file{.iso/install.386/initrd.gz} & ramdisk с инсталляром \\
+\file{hd-media/install.amd/vmlinuz} & ядро amd64 (x64) \\
+\file{hd-media/install.amd/initrd.gz} & ramdisk с инсталляром \\
+\file{hd-media/install.386/vmlinuz} & ядро i386 (x32) \\
+\file{hd-media/install.386/initrd.gz} & ramdisk с инсталляром \\
 \end{tabular}
 \bigskip
 
-\subsection{\file{syslinux.cfg}}
+\secrel{\file{syslinux.cfg}}
 
 \prog{syslinux}\ настривается текстовым файлом \file{syslinux.cfg}.
 
 \lstx{/syslinux/syslinux.cfg}{}{linux/syslinux.cfg}{syslinux}
 
-В примере показана реализация с использованием графического VESA меню. 
-Для использования более надежного текстового меню замените на 
+В примере показана реализация с использованием графического VESA меню.
+Для использования более надежного текстового меню замените на
 \verb|UI menu.c32|.
 
 \emph{Обратите внимание на возможность включения нестандартных видеорежимов}
 используя \file{[VESA]MENU RESOLUTION}: этот финт нужен для включения графики на
 ASUS EeePC 701: режим 800$\times$480 недоступен для включения через параметр
 ядра \file{vga=}, поэтому приходится использовать возможности \prog{syslinux}.
+
+\secup
