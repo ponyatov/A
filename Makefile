@@ -23,6 +23,9 @@ TEX += spice/spice.tex
 TEX += spice/RCfilter.pdf
 TEX += spice/RCfilter.cir
 TEX += spice/ACanaliz.pdf
+TEX += spice/Rectifier.cir
+TEX += spice/Rectifier.pdf
+
 
 # KiCAD
 TEX += kicad/kicad.tex

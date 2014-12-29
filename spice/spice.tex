@@ -348,6 +348,8 @@ ngspice 31 -> plot "/n0" "/n1"
 \noindent\includegraphics[height=\textheight]{spice/spice3.png}
 \clearpage
 
+\secrel{Расчет АЧХ по переменному току (AC симуляция)}
+
 Сигнала на резисторе почти не видно. Теперь вопрос: какие частоты попускает наш
 фильтр ? Для определения этого теперь выполним \term{расчет по переменному току
 (AC симуляцию)}. Команда для этого \verb|ac ( DEC j OCT j LIN )N FStart FEnd|.
@@ -389,7 +391,18 @@ ngspice 3 -> plot "/n0" "/n1"
 \pagebreak\noindent
 \includegraphics[height=\textheight]{spice/spice5.png}
 
-% % In the following sections, we are going to simulate more circuits to get better involved with NG-spice.
+\secrel{Симуляция полноволнового выпрямителя}
+
+\noindent
+\includegraphics[height=0.5\textheight]{spice/Rectifier.pdf}
+
+\lst{Rectifier.cir}{}{spice/Rectifier.cir}
+
+\pagebreak\noindent
+\includegraphics[height=\textheight]{spice/rectifierplot.eps}
+
+% % In the following sections, we are going to simulate more circuits to get
+% better involved with NG-spice.
 % % 4 Simulating a full wave rectier
 % % 1
 % % +
