@@ -352,7 +352,7 @@ ngspice 31 -> plot "/n0" "/n1"
 
 Сигнала на резисторе почти не видно. Теперь вопрос: какие частоты попускает наш
 фильтр ? Для определения этого теперь выполним \term{расчет по переменному току
-(AC симуляцию)}. Команда для этого \verb|ac ( DEC j OCT j LIN )N FStart FEnd|.
+(AC симуляцию)}. Команда для этого\\ \verb|ac ( DEC j OCT j LIN )N FStart FEnd|.
 
 \verb|FStart| и \verb|FEnd|\ --- соответственно начальная и конечная частота.
 Необязательные параметры \verb|DEC|, \verb|OCT| или \verb|LIN| указывают способ
@@ -394,59 +394,24 @@ ngspice 3 -> plot "/n0" "/n1"
 \secrel{Симуляция полноволнового выпрямителя}
 
 \noindent
-\includegraphics[height=0.5\textheight]{spice/Rectifier.pdf}
+\includegraphics[width=\textwidth]{spice/Rectifier.pdf}
 
 \lst{Rectifier.cir}{}{spice/Rectifier.cir}
+
+Подробнее использованные здесь приемы рисования схемы описаны в \ref{kispice}.
+
+Кратко: была применена возможность вставки в нетлист текстовых блоков до и после
+списка элементов. При запуске \prog{ngspice}\ из \prog{KiCAD}\ будет
+автоматически выполнен блок \verb|.control/.endc|. Также для вывода графиков
+была использована команда \verb|hardcopy|, предварительно настроенная на вывод в
+формате (Encapsulated) PostScript. Текущая версия \prog{ngspice} не умеет
+цветной ввод, он должен быть починен в следующих версиях.
 
 \pagebreak\noindent
 \includegraphics[height=\textheight]{spice/rectifierplot.eps}
 
-% % In the following sections, we are going to simulate more circuits to get
-% better involved with NG-spice.
-% % 4 Simulating a full wave rectier
-% % 1
-% % +
-% % 2
-% % -
-% % V1
-% % SIN(0 10 50Hz)
-% % D1
-% % 1N4148
-% % n0
-% % R1
-% % 10k
-% % n1
-% % 0
-% % D2
-% % 1N4148
-% % D3
-% % 1N4148
-% % D4
-% % 1N4148
-% % Vdd Vdd
-% % Figure 6: A full wave rectier.
-% % Figure 6 shows the typical full wave rectier circuit. Both half waves of the input signal can be used, i.e.
-% % the negative half wave is mirrored upwards. This can be seen in Figure 7 which shows the spice simulation of
-% % the circuit.
-% % time
-% % 0.0 5.0 10.0 15.0 20.0 25.0 30.0 35.0 40.0 45.0 50.0
-% % ms
-% % -10.0
-% % -5.0
-% % 0.0
-% % 5.0
-% % 10.0
-% % V v(n1,vdd) tran.v(n0)
-% % Figure 7: Source voltage transient and voltage across R1
-% % 
-% % \secrel{Links to useful resources}
-% % 
-% % URLs
-% % [1] , TBD <http://www.ecircuitcenter.com/>.
-% % [2] , GPL Electronic Design Automation <http://geda.seul.org>.
-% % [3] , TBD <gnucap> .
-% % [4] , TBD <gwave> .
-% % [5] , NG-SPICE: The free circuit simulator <http://www.ngspice.org>.
-
 \secup
+
+\input{spice/kicad}
+
 \secup

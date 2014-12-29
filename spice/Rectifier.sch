@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Пнд 29 Дек 2014 16:05:05
+EESchema Schematic File Version 2  date Пнд 29 Дек 2014 16:27:12
 LIBS:C
 LIBS:DA_POWER
 LIBS:L

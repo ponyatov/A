@@ -25,7 +25,7 @@ TEX += spice/RCfilter.cir
 TEX += spice/ACanaliz.pdf
 TEX += spice/Rectifier.cir
 TEX += spice/Rectifier.pdf
-
+TEX += spice/kicad.tex
 
 # KiCAD
 TEX += kicad/kicad.tex
@@ -36,7 +36,6 @@ TEX += kicad/minilesson.tex
 TEX += kicad/libs.tex
 TEX += kicad/pcbnew.tex
 TEX += kicad/gerbview.tex
-TEX += kicad/spice.tex
 TEX += kicad/march.tex
 TEX += kicad/march.pdf
 TEX += kicad/wings.tex
