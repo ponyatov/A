@@ -1,10 +1,10 @@
-/* %option main */
 %option noyywrap
+%option yylineno
 
 %%
-\n	{ printf("CR"); }
+\n	{ printf("%.2x: <eol>\n",yylineno); }
 %%
 
-//int main() {
-//	return yylex();
-//}
+int main() {
+	return yylex();
+}
