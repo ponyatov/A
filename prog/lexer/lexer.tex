@@ -154,7 +154,13 @@ number   [\+\-]{0,1}{digit}+\.{digit}*
 
 \cp{http://matt.might.net/articles/standalone-lexers-with-lex/}
 
-\lst{xliff/txt/txt2xliff.lex}{}{xliff/txt/txt2xliff.lex}
+\lst{\prog{flex} лексер}{}{xliff/txt2xliff/txt2xliff.l}
+
+\lst{\prog{bison} парсер}{}{xliff/txt2xliff/txt2xliff.y}
+
+\lst{\file{.txt}}{}{xliff/txt2xliff/sample.txt}
+
+\lst{\file{.xliff}}{}{xliff/txt2xliff/sample.xliff}
 
 \secrel{Генератор синтаксических анализаторов \prog{bison}}
 

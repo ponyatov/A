@@ -9,9 +9,9 @@ using namespace std;
 %}
 
 %%
-\n{2,22}					{ yylval = ""; return SEP; }
-\.\ +						{ yylval = yytext[0]; return SEP; }
-\n							{ yylval = " "; return CHAR; }
-\ *\.{4,444}\ [0-9]+\n		{ yylval = " ..."; return SEP; }
-.							{ yylval = yytext; return CHAR; } 
+\n{2,22}				{ yylval = ""; return SEP; }
+\.\ +					{ yylval = yytext[0]; return SEP; }
+\n						{ yylval = " "; return CHAR; }
+\ *\.{4,444}\ [0-9]+\n	{ yylval = " ..."; return SEP; }
+.						{ yylval = yytext; return CHAR; } 
 %%

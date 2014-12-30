@@ -5,7 +5,7 @@ Software Design
 
 2nd edition
 
-© 01 May-2014
+(c) 01 May-2014
 
 This work is copyright. No one but the author may sell or distribute this material.
 

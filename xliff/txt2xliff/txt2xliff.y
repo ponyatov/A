@@ -14,7 +14,8 @@ extern int yylex();
 
 %%
 BLOCK: CHARz | CHARz BLOCK ;
-CHARz: CHAR { cout<<$$; } | SEP { cout<<$$<<"</source></trans-unit>\n\n<trans-unit><source>"; } ;
+CHARz: CHAR { cout<<$$; } 
+	| SEP { cout<<$$<<"</source></trans-unit>\n\n<trans-unit><source>"; } ;
 %%
 
 int main () {
