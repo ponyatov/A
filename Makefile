@@ -106,6 +106,7 @@ TEX += prog/prog.tex
 TEX += prog/lexer/lexer.tex
 TEX += prog/sysdesign.tex
 TEX += prog/ortho.tex
+TEX += xliff/txt/txt2xliff.lex
 
 # linux
 TEX += linux/linux.tex
