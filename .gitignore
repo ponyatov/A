@@ -2,7 +2,6 @@
 *.swp
 /tmp/
 azlin
-*.cir
 *.xml
 logo/*converted-to.pdf
 

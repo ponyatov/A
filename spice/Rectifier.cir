@@ -1,0 +1,27 @@
+* Rectifier
+
+* text before netlist
+
+*Sheet Name:/
+D4  0 /n1 1N4148		
+D2  0 0 1N4148		
+D3  0 /n0 1N4148		
+D1  /n0 /n1 1N4148		
+R1  0 /n1 10k		
+V1  /n0 0 SIN(0 10 50Hz)		
+
+* text after netlist
+.control
+tran 0.01ms 50ms
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=white
+set color1=black
+set color2=rgb:F/0/0
+set color3=rgb:0/F/0
+set color4=rgb:0/0/F
+hardcopy RectifierPlot.eps "/n0" "/n1"
+quit
+.endc
+
+.end
