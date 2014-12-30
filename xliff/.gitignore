@@ -3,7 +3,5 @@
 *.xliff
 *.exe
 *.tex
-
 *.o
 
-txt2xliff

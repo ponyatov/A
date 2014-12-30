@@ -1,0 +1,3 @@
+LINE: 	CHARz | CHARz LINE ;
+CHARz: 	CHAR { cout << $$; } 
+		| SEP { cout << $$<<"</trans-unit>\n\n<trans-unit>"; };

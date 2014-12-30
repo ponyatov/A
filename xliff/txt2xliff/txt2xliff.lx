@@ -1,0 +1,4 @@
+[\.]*\n\n					{ yylval = ""; return SEP; }
+\ *\.{4,444}\ +[0-9]+\n	{ yylval = ".\n\n"; return SEP; }
+\n						{ yylval = " "; return CHAR; }
+[\.][\ \n]				{ yylval = yytext[0]; return SEP; }
