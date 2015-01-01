@@ -131,7 +131,7 @@ BIBER = biber
 #buildmain: pdf
 
 tmp/work.pdf: work.tex $(TEX) $(TXT)
-	python rex.py
+#	python rex.py
 	$(LATEX) work
 #	$(BIBER) tmp/work
 	makeindex tmp/work
