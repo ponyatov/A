@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source> 2.3 LED's</source><target> 2.3 Светодиоды</target></trans-unit>
+
+<trans-unit><source>Light Emitting Diodes are currently used in indicators and displays on equipment, however they are becoming used more and more as replacements for halogen and incandescent bulbs in many different applications.</source><target>В настоящее время светоизлучающие диоды используются в индикаторах и дисплеях на различном оборудовании, однако они все больше и больше используются в качестве замены для галогенных ламп и ламп накаливания во многих других приложениях.</target></trans-unit>
+
+<trans-unit><source>These include vehicle lights, traffic signals, outdoor large TV screens.</source><target>Они включают в себя ходовые огни на транспорте, светофоры,  большие уличные TV-экраны.</target></trans-unit>
+
+<trans-unit><source>Compared to incandescent bulbs (wires inside glass bulbs that glow), LEDs give almost no heat and are therefore highly efficient.</source><target>По сравнению с лампами накаливания (использующие светящиеся проводники внутри стеклянных колб), светодиоды почти не дают тепла, и поэтому очень эффективны.</target></trans-unit>
+
+<trans-unit><source>They also have much longer lives e.g.</source><target>Они также имеют гораздо большее время жизни, например</target></trans-unit>
+
+<trans-unit><source>10 years compared to 10 months.</source><target>10 лет, по сравнению с 10 месяцами для ламп накаливания.</target></trans-unit>
+
+<trans-unit><source>So in some situations e.g.</source><target>Таким образом, в некоторых ситуациях например</target></trans-unit>
+
+<trans-unit><source>traffic signals, once LEDs are installed there can be significant cost savings made on both power and maintenance.</source><target>сигналов светофора, если там установлены светодиоды, они дают значительную экономию как по потребляемой мощности, так и по стоимости технического обслуживания.</target></trans-unit>
+
+<trans-unit><source>There is a small problem with LED traffic lights though – they don’t melt snow that collects on them!!! </source><target>Хотя есть небольшая проблема со светодиодными светофорами – они не плавят снег, который на них налипает !!!</target></trans-unit>
+
+</body>
+</file>
+</xliff>

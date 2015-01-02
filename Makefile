@@ -17,6 +17,7 @@ TEX += bcollis/thanks.tex
 TEX += bcollis/intro.tex
 TEX += bcollis/ch02.tex
 TEX += bcollis/2_2.tex
+TEX += bcollis/2_3.tex
 TEX += bcollis/led1/led1.pdf
 
 # SPICE

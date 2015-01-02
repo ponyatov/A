@@ -1,21 +1,4 @@
 
-2.3 LED's
-Light Emitting Diodes are currently used in indicators and displays
-on equipment, however they are becoming used more and more
-as replacements for halogen and incandescent bulbs in many
-different applications. These include vehicle lights, traffic signals,
-outdoor large TV screens.
-Compared to incandescent bulbs (wires inside
-glass bulbs that glow), LEDs give almost no heat
-and are therefore highly efficient. They also have
-much longer lives e.g. 10 years compared to 10
-months. So in some situations e.g. traffic signals,
-once LEDs are installed there can be significant
-cost savings made on both power and
-maintenance. There is a small problem with LED
-traffic lights though – they don’t melt snow that
-collects on them!!!
-
 2.4 Some LED Specifications
 
 

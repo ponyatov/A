@@ -1,4 +1,4 @@
-XLIFF = ../../bcollis/2_2.xliff
+XLIFF = ../../bcollis/2_3.xliff
 
 txt.txt: $(XLIFF) xliff2tex
 	./xliff2tex < $< > $@
