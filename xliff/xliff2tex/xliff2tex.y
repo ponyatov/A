@@ -5,40 +5,20 @@
 using namespace std;
 #define YYSTYPE string
 #define YYINITDEPTH 0x10000
-void yyerror(const char *str) { cerr << "\nerror:" << str << "\n\n"; }
+void yyerror(const char *str) { cerr << "\nerror: " << str << "\n\n"; }
 extern int yylex();
+bool W=false;
 %}
 
-%token CHAR
-%token SEP
-%token TAG_OPEN
-%token TAG_CLOSE
-%token XML_HEAD
+%token B E CHAR
 
 %%
-XML: XML_HEAD EXPR ;
-EXPR : TAG_OP
-TEXT: CHARz | CHARz TEXT ;
-CHARz: 
-	CHAR { cout<<$$; } |
-	TAG_OPEN { cout<<"\ntag:"<<$$<<"\n"; } |
-	TAG_CLOSE { cout<<$$; } |
-	XML_HEAD { cout<<"xmlhead:"<<$$<<"\n"; } 
+TEX: ITEM |ITEM TEX ;
+ITEM: 
+	CHAR {if (W) cout<<$$;}
+	| B {W=true;}
+	| E {W=false; cout<<"\n\n";}
 	;
 %%
 
-int main () {
-/*
-cout << "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
-cout << "<xliff xmlns=\"urn:oasis:names:tc:xliff:document:1.2\" version=\"1.2\">\n";
-cout << "<file>\n";
-cout << "<body>\n\n<trans-unit><source>";
-*/
-int yyp=yyparse();
-/*
-cout << "</source></trans-unit>\n\n</body>\n";
-cout << "</file>\n";
-cout << "</xliff>\n";
-*/
-return yyp; 
-}
+int main () { return yyparse(); }

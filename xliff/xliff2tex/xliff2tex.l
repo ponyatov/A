@@ -1,3 +1,4 @@
+%option yylineno
 %option noyywrap
 
 %{
@@ -11,8 +12,7 @@ using namespace std;
 id [a-zA-Z][a-zA-Z0-9]*
 
 %%
-\<\?[^\?]+\?\>		{ yylval = yytext; return XML_HEAD; }
-\<\/{id}\>			{ yylval = yytext; return TAG_CLOSE; }
-\<[^\>]+\>			{ yylval = yytext; return TAG_OPEN; }
-.					{ yylval = yytext; return CHAR; } 
+\<target\>			{ yylval = yytext; return B; }
+\<\/target\>		{ yylval = yytext; return E; }
+.|\n				{ yylval = yytext; return CHAR; }
 %%

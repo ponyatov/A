@@ -1,0 +1,111 @@
+\secrel{Определение сопротивления резистора по цветовому коду}
+
+Когда берете резистор, проверьте его \termdef{номинал}{номинал} (значение). В
+наших схемах каждый резистор имеет свою цель, и значение выбирается в
+зависимости от того, хотим ли мы б\'{о}льший или меньший ток в этой части цепи.
+Чем выше \term{номинал} резистора, тем меньше ток. Чем ниже номинал резистора,
+тем выше ток. Для \termdef{выводн\'{ы}х}{выводн\'{о}й корпус} резисторов,
+которые мы будем использовать на макетках, маркировка наносится на корпус в
+виде набора цветных полосок:
+
+\bigskip
+Цветовая маркировка на 5 цветных полосок:
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+ цифра & цифра & цифра & множитель & точность \\
+\hline
+\end{tabular}
+
+\bigskip Цифра:
+\begin{tabular}{l l l l l l l l l l}
+0&1&2&3&4&5&6&7&8&9\\
+\textcolor{Black}{$\blacksquare$} &
+\textcolor{Brown}{$\blacksquare$} &
+\textcolor{Red}{$\blacksquare$} &
+\textcolor{Orange}{$\blacksquare$} &
+\textcolor{Yellow}{$\blacksquare$} &
+\textcolor{Green}{$\blacksquare$} &
+\textcolor{Blue}{$\blacksquare$} &
+\textcolor{Magenta}{$\blacksquare$} &
+\textcolor{Grey}{$\blacksquare$} &
+$\square$ \\
+\end{tabular}
+
+\bigskip Множитель:
+\begin{tabular}{l l l l l l l l l l}
+\textcolor{Black}{$\blacksquare$} & $10^{0}=1$ &
+\textcolor{Brown}{$\blacksquare$} & $10^{1}=10$ &
+\textcolor{Red}{$\blacksquare$} & $10^{2}=100$ &
+\textcolor{Orange}{$\blacksquare$} & $10^{3}=1000$ \\
+\textcolor{Yellow}{$\blacksquare$} & $10^{4}=10000$ &
+\textcolor{Green}{$\blacksquare$} & $10^{5}=100000$ &
+\textcolor{Blue}{$\blacksquare$} & $10^{6}=1000000$ \\
+\textcolor{Gold}{$\blacksquare$} & $10^{-1}=0.1$ &
+\textcolor{Silver}{$\blacksquare$} & $10^{-2}=0.01$ \\
+\end{tabular}
+
+\bigskip Точность:
+\begin{tabular}{l l l l l l l l l l l}
+\textcolor{Brown}{$\blacksquare$} & $\pm 1\%$ &
+\textcolor{Red}{$\blacksquare$} & $\pm 2\%$ &
+\textcolor{Gold}{$\blacksquare$} & $\pm 5\%$ &
+\textcolor{Silver}{$\blacksquare$} & $\pm 10\%$ \\
+\end{tabular}
+
+\bigskip
+\begin{tabular}{l l l l l l l l l l l l l}
+-[&
+\textcolor{Brown}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Yellow}{$\blacksquare$}&
+\textcolor{Brown}{$\blacksquare$}&
+]- 
+& $100\times 10^{4}\pm 1\%$ & 1M & 1 миллион Ом & 1M $\Omega$ & 1 000 000 Ом \\
+&1&0&0&4&1\\
+-[&
+\textcolor{Brown}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Red}{$\blacksquare$}&
+\textcolor{Red}{$\blacksquare$}&
+]- 
+& $100\times 10^{2}\pm 2\%$ & 10k & 10 тысяч ом & 10,000 Ом & 10k $\Omega$ \\
+&1&0&0&2&2\\
+-[&
+\textcolor{Brown}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Brown}{$\blacksquare$}&
+\textcolor{Gold}{$\blacksquare$}&
+]- 
+& $100\times 10^{1}\pm 5\%$ & 1k & 1 тысяча ом & 1000 Ом & 1k $\Omega$ \\
+&1&0&0&1&5\\
+-[&
+\textcolor{Orange}{$\blacksquare$}&
+$\square$&
+$\blacksquare$&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Brown}{$\blacksquare$}&
+]- 
+& $390\times 10^{0}\pm 1\%$ & 390R & 390 Ом & 390$\Omega$ \\
+&3&9&0&0&1\\
+-[&
+\textcolor{Brown}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Brown}{$\blacksquare$}&
+]- 
+& $100\times 10^{0}\pm 1\%$ & 100R & 1000 Ом & 100$\Omega$ \\
+&1&0&0&0&1\\
+-[&
+\textcolor{Yellow}{$\blacksquare$}&
+\textcolor{Magenta}{$\blacksquare$}&
+\textcolor{Black}{$\blacksquare$}&
+\textcolor{Gold}{$\blacksquare$}&
+\textcolor{Brown}{$\blacksquare$}&
+]- 
+& $470\times 10^{-1}\pm 1\%$ & 47R & 47 Ом & 47$\Omega$ \\
+&4&7&0&-1&1\\
+\end{tabular}

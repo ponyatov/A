@@ -5,3 +5,5 @@
 *.tex
 *.o
 
+xliff2tex/txt.txt
+xliff2tex/xliff2tex
