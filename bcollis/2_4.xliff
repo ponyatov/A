@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source> 2.4 Some LED Specifications</source><target> 2.4 Некоторые характеристики светодиодов</target></trans-unit>
+
+<trans-unit><source>Intensity: measured in mcd (millicandela)</source><target>Интенсивность: измеряется в мКд (милликанделлах)</target></trans-unit>
+
+<trans-unit><source>Viewing Angle: The angle from centre where intensity drops to 50%</source><target>Угол обзора: угол от оси, до линии, где интенсивность падает до 50%</target></trans-unit>
+
+<trans-unit><source>Forward Voltage: Voltage needed to get full brightness from the the LED</source><target>Прямое напряжение: напряжение необходимое для получения полной яркости светодиода</target></trans-unit>
+
+<trans-unit><source>Forward Current: Current that will give maximum brightness</source><target>Прямой ток: рабочий ток, дающий максимальную яркость</target></trans-unit>
+
+<trans-unit><source>Peak Wavelength: the brightest colour of light emitted</source><target>Пиковая длина волны: самая яркая спектральная линия излучаемого света</target></trans-unit>
+
+<trans-unit><source></source><target></target></trans-unit>
+
+</body>
+</file>
+</xliff>

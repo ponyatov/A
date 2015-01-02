@@ -1,17 +1,4 @@
 
-2.4 Some LED Specifications
-
-
-
-
-
-
-Intensity: measured in mcd (millicandela)
-Viewing Angle: The angle from centre where intensity drops to 50%
-Forward Voltage: Voltage needed to get full brightness from the the LED
-Forward Current: Current that will give maximum brightness,
-Peak Wavelength: the brightest colour of light emitted
-
 2.5 LED research task
 From a supplier in New Zealand (e.g. Surplustronics, DSE, Jaycar, SICOM) find the information and the
 specifications / attributes for two LEDs, a normal RED 5mm LED and a 5mm high intensity LED.
