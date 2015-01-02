@@ -8,7 +8,11 @@ using namespace std;
 #include "xliff2tex.tab.h"
 %}
 
+id [a-zA-Z][a-zA-Z0-9]*
+
 %%
-\<source\>			{}
+\<\?[^\?]+\?\>		{ yylval = yytext; return XML_HEAD; }
+\<\/{id}\>			{ yylval = yytext; return TAG_CLOSE; }
+\<[^\>]+\>			{ yylval = yytext; return TAG_OPEN; }
 .					{ yylval = yytext; return CHAR; } 
 %%

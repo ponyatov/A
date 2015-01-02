@@ -11,10 +11,20 @@ extern int yylex();
 
 %token CHAR
 %token SEP
+%token TAG_OPEN
+%token TAG_CLOSE
+%token XML_HEAD
 
 %%
+XML: XML_HEAD EXPR ;
+EXPR : TAG_OP
 TEXT: CHARz | CHARz TEXT ;
-CHARz: CHAR { cout<<$$; } ;
+CHARz: 
+	CHAR { cout<<$$; } |
+	TAG_OPEN { cout<<"\ntag:"<<$$<<"\n"; } |
+	TAG_CLOSE { cout<<$$; } |
+	XML_HEAD { cout<<"xmlhead:"<<$$<<"\n"; } 
+	;
 %%
 
 int main () {
