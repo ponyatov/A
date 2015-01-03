@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>2.8 Important circuit concepts</source><target>2.8 Важные понятия схемотехники</target></trans-unit>
+
+<trans-unit><source>A circuit consists of a number of components and a power supply linked by wires.</source><target>Схема состоит из нескольких компонентов и источника питания, соединенных проводами.</target></trans-unit>
+
+<trans-unit><source>Electrons (often called charges) flow in a circuit; however unless there is a complete circuit (a closed loop) no electrons can flow.</source><target>Поток электронов (часто называют носители заряда) течет в цепи; однако если нет полной (замкнутой) цепи, электроны не могут течь.</target></trans-unit>
+
+<trans-unit><source>Voltage is the measure of energy in a circuit, it is used as a measure of the energy supplied from a battery or the energy (voltage) across a part of a circuit.</source><target>Напряжение является мерой энергии в цепи, оно используется в качестве меры энергии, подаваемой от батареи или энергии (напряжения) через часть схемы.</target></trans-unit>
+
+<trans-unit><source>Current (I) is the flow of electrons from the battery around the circuit and back to the battery again.</source><target>Ток (I) представляет собой поток электронов от батареи по контуру и обратно к батарее.</target></trans-unit>
+
+<trans-unit><source>Current is measured in Amps (usually we will use milliamps or mA).</source><target>Ток измеряется в амперах (обычно мы будем использовать миллиампер или мА).</target></trans-unit>
+
+<trans-unit><source>Note that current doesn't flow electrons or charges flow.</source><target>Обратите внимание, что это не ток электронов или ток зарядов.</target></trans-unit>
+
+<trans-unit><source>Just like in a river the current doesn't flow the water flows.</source><target>Так же, как для течение реки  не эквивалентно потоку воды.</target></trans-unit>
+
+<trans-unit><source>Resistance works to reduce current , the resistors in the circuit offer resistance to the current.</source><target>Сопротивление работает на уменьшение тока, резисторы в схеме оказывают сопротивление току.</target></trans-unit>
+
+<trans-unit><source>Conductors such as the wires connecting components together have (theoretically) no resistance to current.</source><target>Проводники, такие как провода, соединяющие компоненты вместе не имеют (теоретически) никакого сопротивления току.</target></trans-unit>
+
+<trans-unit><source>A really important concept to get clear in your mind is that:</source><target>Действительно важное понятие, для ясного понимания:</target></trans-unit>
+
+<trans-unit><source>Voltage is across components and current is through components. </source><target>Напряжение прикладывается параллельно компонентам, а ток течет через компоненты.</target></trans-unit>
+
+</body>
+</file>
+</xliff>

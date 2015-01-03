@@ -22,6 +22,7 @@ TEX += bcollis/2_4.tex
 TEX += bcollis/2_5.tex
 TEX += bcollis/2_6.tex
 TEX += bcollis/2_7.tex
+TEX += bcollis/2_8.tex
 TEX += bcollis/led1/led1.pdf
 TEX += bcollis/led2/led2.pdf
 

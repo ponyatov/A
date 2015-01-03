@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
 <file>
 <body>
 
-<trans-unit><source> 2.7 Switch assignment</source></trans-unit>
+<trans-unit><source> 2.7 Switch assignment</source><target> 2.7 Задание на установку выключателя</target></trans-unit>
 
-<trans-unit><source>Find a small switch and carefully disassemble it (take it apart) draw how it works and explain its operation.</source></trans-unit>
+<trans-unit><source>Find a small switch and carefully disassemble it (take it apart) draw how it works and explain its operation.</source><target>Найдите маленький переключатель, аккуратно разберите его, нарисуйте конструкцию, и объясните как он работает.</target></trans-unit>
 
-<trans-unit><source>Make sure you explain the purpose of the spring(s).</source></trans-unit>
+<trans-unit><source>Make sure you explain the purpose of the spring(s).</source><target>Убедитесь, что вы поняли цель пружин(ы).</target></trans-unit>
 
-<trans-unit><source>Here are simplified drawings of a small slide switch when it is in both positions.</source></trans-unit>
+<trans-unit><source>Here are simplified drawings of a small slide switch when it is in both positions.</source><target>Вот упрощенные рисунки небольшого переключателя, когда он находится в разных позициях.</target></trans-unit>
 
-<trans-unit><source>When the switch is on electricity can flow, when it is open the circuit is broken.</source></trans-unit>
+<trans-unit><source>When the switch is on electricity can flow, when it is open the circuit is broken.</source><target>Когда переключатель включен, электричество может течь, когда он разомкнут, цепь разорвана.</target></trans-unit>
 
-<trans-unit><source></source></trans-unit>
+<trans-unit><source></source><target></target></trans-unit>
 
 </body>
 </file>

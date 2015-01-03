@@ -1,28 +1,4 @@
 
-2.8 Important circuit concepts
-
-A circuit consists of a number of components and a power supply linked by wires.
-Electrons (often called charges) flow in a
-circuit; however unless there is a complete
-circuit (a closed loop) no electrons can flow.
-Voltage is the measure of energy in a circuit,
-it is used as a measure of the energy
-supplied from a battery or the energy
-(voltage) across a part of a circuit.
-Current (I) is the flow of electrons from the
-battery around the circuit and back to the
-battery again. Current is measured in Amps
-(usually we will use milliamps or mA).
-Note that current doesn't flow electrons or
-charges flow. Just like in a river the current
-doesn't flow the water flows.
-
-Resistance works to reduce current , the resistors in the circuit offer resistance to the current.
-Conductors such as the wires connecting components together have (theoretically) no resistance
-to current.
-A really important concept to get clear in your mind is that:
-Voltage is across components and current is through components.
-
 2.9 Changing the value of resistance
 What is the effect of different resistor values on our circuit?
 The resistor controls the current flow, the higher the resistor value the lower the current. (what
