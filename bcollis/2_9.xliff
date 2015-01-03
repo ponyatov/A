@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>2.9 Changing the value of resistance</source><target>2.9 Изменение величины сопротивления</target></trans-unit>
+
+<trans-unit><source>What is the effect of different resistor values on our circuit?</source><target>Каков эффект изменения значения сопротивления в нашей цепи?</target></trans-unit>
+
+<trans-unit><source>The resistor controls the current flow, the higher the resistor value the lower the current.</source><target>Резистор контролирует ток, чем выше значение резистора, тем меньше ток.</target></trans-unit>
+
+<trans-unit><source>What would a 10K resistor look like? </source><target>Как будет выглядеть резистор на 10K?</target></trans-unit>
+
+</body>
+</file>
+</xliff>
