@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>2.6 Adding a switch to your circuit</source><target>2.6 Добавление выключателя в схему</target></trans-unit>
+
+<trans-unit><source>Schematic or circuit diagram</source><target>Принципиальная схема</target></trans-unit>
+
+<trans-unit><source>Layout</source><target>Компоновка</target></trans-unit>
+
+<trans-unit><source>A switch is the way a user can manually control a circuit </source><target>Выключатель -- способ для ручного управления схемой пользователем</target></trans-unit>
+
+</body>
+</file>
+</xliff>

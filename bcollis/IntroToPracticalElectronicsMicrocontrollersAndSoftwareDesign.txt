@@ -1,39 +1,6 @@
 
-2.5 LED research task
-From a supplier in New Zealand (e.g. Surplustronics, DSE, Jaycar, SICOM) find the information and the
-specifications / attributes for two LEDs, a normal RED 5mm LED and a 5mm high intensity LED.
+2.8 Important circuit concepts
 
-LED
-Supplier
-Part number
-Cost ($)
-Brightness (mcd)
-Forward voltage (Vf)
-Wavelength (nm)
-Forward current (If)
-
-RED 5mm
-
-High intensity 5mm
-
-17
-
-2.6 Adding a switch to your circuit
-Schematic or circuit diagram
-
-Layout
-
-A switch is the way a user can manually control a circuit
-
-2.7 Switch assignment
-Find a small switch and carefully disassemble it (take it apart) draw how it works and explain its
-operation. Make sure you explain the purpose of the spring(s).
-Here are simplified drawings of a small slide switch when it is in both positions.
-When the switch is on electricity can flow, when it is open the circuit is broken.
-
-18
-
-2.8 Important circuit concepts
 A circuit consists of a number of components and a power supply linked by wires.
 Electrons (often called charges) flow in a
 circuit; however unless there is a complete

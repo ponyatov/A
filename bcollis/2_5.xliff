@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>\secrel{2.5 Задание на исследование светодиода 17}</source><target>\secrel{2.5 Задание на исследование светодиода 17}</target></trans-unit>
+
+<trans-unit><source>2.5 LED research task</source><target>2.5 Задание на исследование светодиода</target></trans-unit>
+
+<trans-unit><source>From a supplier in New Zealand (e.g.</source><target>От поставщика в Новой Зеландии (например.</target></trans-unit>
+
+<trans-unit><source>Surplustronics, DSE, Jaycar, SICOM) find the information and the specifications / attributes for two LEDs, a normal RED 5mm LED and a 5mm high intensity LED.</source><target>Surplustronics, DSE, Jaycar, SICOM) найти информацию и характеристики / атрибуты для двух светодиодов: обычный красный 5 мм и 5 мм высокой интенсивности.</target></trans-unit>
+
+<trans-unit><source>LED</source><target>Cветодиод</target></trans-unit>
+
+<trans-unit><source>Supplier</source><target>Поставщик</target></trans-unit>
+
+<trans-unit><source>Part number</source><target>Номер детали</target></trans-unit>
+
+<trans-unit><source>Cost (\$)</source><target>Стоимость (\$)</target></trans-unit>
+
+<trans-unit><source>Brightness (mcd)</source><target>Яркость (мКд)</target></trans-unit>
+
+<trans-unit><source>Forward voltage (Vf)</source><target>Прямое напряжение (Vf)</target></trans-unit>
+
+<trans-unit><source>Wavelength (nm)</source><target>Длина волны (нм)</target></trans-unit>
+
+<trans-unit><source>Forward current (If)</source><target>Прямой ток (If)</target></trans-unit>
+
+<trans-unit><source>RED 5mm</source><target>КРАСНЫЙ 5mm</target></trans-unit>
+
+<trans-unit><source>High intensity 5mm</source><target>Высокая интенсивность 5 мм</target></trans-unit>
+
+<trans-unit><source></source><target></target></trans-unit>
+
+</body>
+</file>
+</xliff>
