@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source> Understanding circuits</source><target> Понимание схем</target></trans-unit>
+
+<trans-unit><source>Electronics is all about controlling the physical world.</source><target>Электроника\ --- все что относится к управлению в физическом мире.</target></trans-unit>
+
+<trans-unit><source>Physical objects have properties such as temperature, force, motion, sound/radio/light waves associated with them</source><target>Физические объекты имеют свойства, такие как температура, сила, движение, и звуковые/радио/световые колебания, связанные с ними</target></trans-unit>
+
+<trans-unit><source>Electronic devices have input circuits to convert the physical world (light sound etc) to different voltage levels. They have process circuits that transform, manipulate and modify information (the information is coded as different voltages). They have output circuits to convert differen coltgae levels back to the physical world where we can sense the outcome of the process (light, sound etc)</source><target>Электронные устройства имеют входные цепи, чтобы преобразовать физический мир (свет, звук и т.д.) в различные уровни напряжения. Они включают в себя схемы, которые преобразуют, манипулируют и изменяют информацию (информация закодирована в виде различных напряжений). Они имеют выходные цепи для преобразования различных уровней сигнала обратно в физический мир, где мы можем почувствовать результат процесса (свет, звук и т.д.)</target></trans-unit>
+
+<trans-unit><source>Take an example such as a television, the physical world radio signal on the input is converted to an voltage level, this is processed by the electronic circuit and converted to light which we see and sound which we can hear. </source><target>Рассмотрим пример, например телевизор, радиосигнал из физического мира на входе преобразуется электронной схемой в уровень напряжения, и преобразуется в свет, который мы видим, и звук, который можно слышать.</target></trans-unit>
+
+</body>
+</file>
+</xliff>

@@ -27,6 +27,8 @@ TEX += bcollis/led1/led1.pdf
 TEX += bcollis/led2/led2.pdf
 TEX += bcollis/2_9.tex
 TEX += bcollis/2_10.tex
+TEX += bcollis/fet/fet.pdf
+TEX += bcollis/2_11.tex
 
 # SPICE
 TEX += spice/spice.tex

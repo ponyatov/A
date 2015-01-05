@@ -1,48 +1,3 @@
-A FET is a control
-component that
-amplifies small signals.
-It has three legs or
-leads:
-D – Drain
-G – Gate
-S – Source
-Only a small signal is
-required on the gate to
-control a larger current
-through the source to
-the drain.
-
-The collector current is
-the same current which
-lights the LED
-The 390 limits this
-current to an
-acceptable value for
-the LED.
-
-Breadboard layout diagram
-
-20
-
-2.11
-
-Understanding circuits
-
-Electronics is all about controlling the physical world. Physical objects have properties such as
-temperature, force, motion, sound/radio/light waves associated with them
-
-Electronic devices have input circuits to convert the physical world (light sound etc) to different
-voltage levels.
-They have process circuits that transform, manipulate and modify information (the information is
-coded as different voltages).
-They have output circuits to convert differen coltgae levels back to the physical world where we
-can sense the outcome of the process ( light, sound etc)
-
-Take an example such as a television, the physical world radio signal on the input is converted to
-an voltage level, this is processed by the electronic circuit and converted to light which we see and
-sound which we can hear.
-
-21
 
 2.12
 

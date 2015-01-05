@@ -1,0 +1,116 @@
+EESchema Schematic File Version 2  date Пнд 05 Янв 2015 22:05:59
+LIBS:C
+LIBS:DA_POWER
+LIBS:L
+LIBS:POWER
+LIBS:R
+LIBS:SPICE
+LIBS:SWITCH
+LIBS:VD
+LIBS:FET
+LIBS:led1-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title "noname.sch"
+Date "5 jan 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4750 3400 4750 3600
+Wire Wire Line
+	3800 3000 3800 2600
+Wire Wire Line
+	4250 4100 3800 4100
+Wire Wire Line
+	5650 3250 5650 2900
+Wire Wire Line
+	4750 4200 4750 4350
+Wire Wire Line
+	4750 4350 5650 4350
+Wire Wire Line
+	5650 4350 5650 3900
+Wire Wire Line
+	4750 2000 4750 1800
+Wire Wire Line
+	5650 2300 5650 1800
+Wire Wire Line
+	3800 4100 3800 3600
+Wire Wire Line
+	3800 2000 3800 1800
+Wire Wire Line
+	3800 1800 5650 1800
+Connection ~ 4750 1800
+Wire Wire Line
+	4750 2800 4750 2600
+$Comp
+L R R1
+U 1 1 54AACE67
+P 3800 2300
+F 0 "R1" V 3900 2050 60  0000 C CNN
+F 1 "10k" V 3750 2050 60  0000 C CNN
+	1    3800 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SA SA1
+U 1 1 54AACE50
+P 3800 3300
+F 0 "SA1" V 3800 3100 60  0000 C CNN
+F 1 "~" V 3700 3100 60  0000 C CNN
+	1    3800 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED VD1
+U 1 1 54AACDD4
+P 4750 2300
+F 0 "VD1" V 4700 2600 60  0000 C CNN
+F 1 "LED" V 4850 2600 60  0000 C CNN
+	1    4750 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 54AACDB8
+P 4750 3100
+F 0 "R2" V 4850 2850 60  0000 C CNN
+F 1 "390R" V 4700 2800 60  0000 C CNN
+	1    4750 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SA SA2
+U 1 1 54AACD9A
+P 5650 2600
+F 0 "SA2" V 5650 2400 60  0000 C CNN
+F 1 "~" V 5550 2350 60  0000 C CNN
+	1    5650 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GB GB1
+U 1 1 54AACD82
+P 5650 3600
+F 0 "GB1" V 5650 3800 60  0000 C CNN
+F 1 "~" V 5700 3850 60  0000 C CNN
+	1    5650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L FET FET1
+U 1 1 54AACD45
+P 4600 3900
+F 0 "FET1" H 5050 4000 60  0000 C CNN
+F 1 "2N7000" H 5100 3850 60  0000 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
