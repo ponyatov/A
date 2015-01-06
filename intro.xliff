@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source> \secdown</source><target> \secdown</target></trans-unit>
+
+<trans-unit><source>\secrel{A special note to engineers reading this book\ldots}\secdown</source><target>\secrel{Специальное примечание для инженеров, читающих эту книгу\ldots}\secdown</target></trans-unit>
+
+<trans-unit><source>\secrel{Machining for engineers and engineering for machinists}</source><target>\secrel{Мехобработка для инженеров и инжиниринг для станочников}</target></trans-unit>
+
+<trans-unit><source>At first glance the subtitle on the cover of this book could be a bit deceiving. What does tabletop machining have do with engineering you may ask? Compare it to a book that has been written about the ocean.</source><target>На первый взгляд подзаголовок на обложке этой книги может быть немного обманчив. Вы можете спросить, как настольная обработка связана с инжинирингом? Сравним с книгой, написанной об океане.</target></trans-unit>
+
+<trans-unit><source>The seas could be described from the perspective of a young man who has just sailed around the world in a twenty-five foot sailboat or by a merchant seaman who has spent his career aboard a giant ocean liner.</source><target>Моря могли бы быть описаны с точки зрения молодого человека, который только что ходил по всему миру на парусной лодке длиной двадцать пять футов, или моряком торгового флота, который провёл свою карьеру на гигантском океанском лайнере.</target></trans-unit>
+
+<trans-unit><source>Each would have an entirely different view of what the ocean was all about.</source><target>Каждый из них будет иметь совершенно разную точку зрения об океане.</target></trans-unit>
+
+<trans-unit><source>In a storm, the chap in the small boat would write about surviving broken masts and mountainous seas while the merchant seaman might write about seasick passengers.</source><target>В шторм парень на небольшой лодке написал бы о выживании со сломанными мачтами и волнах размером в гору, в то время как моряк торгового флота мог бы написать о морской болезни пассажиров.</target></trans-unit>
+
+<trans-unit><source>I believe you would learn more about the ocean from the young man in the small boat, because in a sense he was more involved in his subject.</source><target>Я думаю, что вы бы узнали об океане больше от молодого человека на небольшой лодке, потому что некоторым образом ему было сложнее в своём путешествии.</target></trans-unit>
+
+<trans-unit><source>He was not just on it, he was \textit{in} it.</source><target>Он был не просто в путешествии, он был \textit{внутри} него.</target></trans-unit>
+
+<trans-unit><source>\secrel{Navigating the seas of machining}</source><target>\secrel{Навигация по морям механической обработки}</target></trans-unit>
+
+<trans-unit><source>The ocean in this case is the world of machining.</source><target>Океан в нашем случае\ --- мир механической обработки.</target></trans-unit>
+
+<trans-unit><source>The craftsman using tabletop machine tools is like the sailor in a small boat, while the professional machinist with his big CNC shop tools is like the world-traveling seaman.</source><target>Мастер использующий настольные станки, как матрос на маленькой лодке, в то время как профессиональный станочник с его большим магазином инструментом на станке с ЧПУ, как моряк несколько раз совершивший кругосветку.</target></trans-unit>
+
+<trans-unit><source>The process of producing complex, accurate parts cannot be described by looking in the window of a quarter million dollar CNC machine.</source><target>Процесс производства сложных, точных деталей не может быть описан описан, глядя в окно ЧПУ станка за четверть миллиона долларов.</target></trans-unit>
+
+<trans-unit><source>It would be like a merchant seaman working in the engine room trying to describe a storm in the Atlantic Ocean by telling you how much extra fuel the ship used.</source><target>Это было бы похоже на моряка торгового судна, работающего в машинном отделении, который пытается описать бурю в Атлантическом океане, рассказывая вам, сколько дополнительного топлива использовал корабль.</target></trans-unit>
+
+<trans-unit><source>The professional's view of the subject may be so cluttered with details that it is difficult to sort the things you really need to know to sail in rough seas or make good parts.</source><target>Представления специалиста о предмете разговора может быть так наполнено тонкостями, что трудно отсортировать вещи, которые вам действительно нужно знать, чтобы плавать в бурных морях, или делать хорошие детали.</target></trans-unit>
+
+<trans-unit><source>It is the craftsman working with small tools, turning the cranks by hand, who will have the most to tell you about the real world of working with metal.</source><target>Если этот мастер работает с мелкими инструментами, вытачивает шатуны вручную, у него больше возможностей рассказать вам о реальном мире работы с металлом.</target></trans-unit>
+
+<trans-unit><source>\secrel{Looking ot engineering from the craftsman's perspective}</source><target>\secrel{Рассмотрение инжиниринга с точки зрения мастера}</target></trans-unit>
+
+<trans-unit><source>With the aid of computers, parts can easily be drawn that can't be built.</source><target>Используя компьютер, очень легко смоделировать детали, которые не могут быть изготовлены.</target></trans-unit>
+
+<trans-unit><source>CAD programs allow a designer to put a perfect .0001"\ radius on the inside comer of a pocket cut in tool steel.</source><target>САПР программы позволяют проектировщику поставить идеальный радиус с точностью 0,0001\,мм на внутреннем ребре кармана, отфрезерованного в инструментальной стали.</target></trans-unit>
+
+<trans-unit><source>Hopefully after reading this book you will not ask a toolmaker to do it, but if you do, you'll at least know it is going to cost a great deal of money to try.</source><target>Надеюсь после прочтения этой книги вы не будете просить инструментальщика сделать такой элемент, но если вы это сделаете, вы по крайней мере будете знать, что это будет стоить много много денег, даже только чтобы попробовать это сделать.</target></trans-unit>
+
+<trans-unit><source>Working with metal is far more difficult than one would imagine.</source><target>Работа с металлом является гораздо более трудной, чем можно себе представить.</target></trans-unit>
+
+<trans-unit><source>A false impression is gained by looking at the beautiful yet inexpensive machined parts that we deal with daily.</source><target>Это ложное впечатление сложилось, глядя на красивые, но все же недорогие детали, сделанные на станках, с которыми мы имеем дело ежедневно.</target></trans-unit>
+
+<trans-unit><source>They have been produced in very large quantities, and that five-dollar part you may consider a "rip-off could easily cost five hundred dollars if you had to manufacture just one.</source><target>Они были сделаны серийно в очень больших количествах, и цена в 5 долларов за деталь, которую вы можете почитать надувательством, легко может взлететь до 500 долларов, если вам нужно сделать одну такую деталь.</target></trans-unit>
+
+<trans-unit><source>New engineers will often think a toolmaker is a failure when the seemingly simple part they design ends up costing a thousand dollars to make.</source><target>Начинающие инженеры часто думают что для инструментальщик плох, когда казалось бы простая деталь в итоге оказывается с ценой в тысячи долларов.</target></trans-unit>
+
+<trans-unit><source>Most engineers will eventually have to deal with the craftsman who turn their ideas into reality, and in reading this book I would hope you come away with a new perspective of what is really involved in producing a machined part or a product.</source><target>Большинству инженеров в конечном итоге придется иметь дело с мастером, который может превратить их идеи в реальность, и вы читаете эту книгу, я надеюсь, чтобы сформировать новую точку зрения на то, что на самом деле происходит при обработки детали или продукта.</target></trans-unit>
+
+<trans-unit><source>An alternate subtitle for the book might have been "Things they should have taught you in engineering school but didn't".</source><target>Альтернативным названием для книги могло бы быть "Вещи, которым вас должны были научить в ВУЗе".</target></trans-unit>
+
+<trans-unit><source>This book might be considered your textbook for a course called "Reality 101".</source><target>Эта книга может считаться вашим учебником по курсу с названием "Реальность 101".</target></trans-unit>
+
+<trans-unit><source>\secrel{Seeing production from the point of view of both the engineer and machinist}</source><target>\secrel{Производство с точки зрения инженера и станочника}</target></trans-unit>
+
+<trans-unit><source>My perspective on machining could be considered unique because, in order to survive, I have had to deal with every aspect of product design from engineering to prototyping to tooling to manufacturing to sales.</source><target>Мой взгляд на мехобработку можно считать уникальным потому что, для того чтобы выжить на рынке, я имел дело с каждым аспектом дизайна продукта от проектирования и прототипирования до производства и продаж.</target></trans-unit>
+
+<trans-unit><source>In this book I have tried to pass along the logic I used to solve the associated problems.</source><target>В этой книге я попытался объяснить логику моих решений, связанных с этим проблемами.</target></trans-unit>
+
+<trans-unit><source>Understanding how a craftsman thinks and works is an essential part of getting projects done. Unless you are willing to build your designs yourself, you are going to have to learn how to deal with the craftsman who will actually build them.</source><target>Понимание того, как мастер думает и работает, является неотъемлемой частью получения готовых проектов. Если вы не готовы изготавливать свои проекты самостоятельно, вы все равно сможете узнать, как общаться с мастером, который будет на самом деле их делать.</target></trans-unit>
+
+<trans-unit><source>The more you know about their methods, personalities and unique problems, the better your chances are for success.</source><target>Чем больше вы знаете о его методах, личных и уникальных особенностях, тем выше ваши шансы на успех.</target></trans-unit>
+
+<trans-unit><source>Smooth sailing.</source><target>Счастливого плавания.</target></trans-unit>
+
+<trans-unit><source>\bigskip --- Joe Martin</source><target>\bigskip ---\ Джо Мартин</target></trans-unit>
+
+<trans-unit><source>\secup \secup </source><target>\secup \secup</target></trans-unit>
+
+</body>
+</file>
+</xliff>

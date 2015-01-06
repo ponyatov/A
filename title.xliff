@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>\bigskip {\Huge Tabletop Machining}</source><target>\bigskip {\Huge Настольная обработка}</target></trans-unit>
+
+<trans-unit><source>\bigskip {\Large A basic approach to making small parts on miniature machine tools}</source><target>\bigskip {\Large Основные приемы изготовления мелких деталей на миниатюрных станках}</target></trans-unit>
+
+<trans-unit><source></source><target></target></trans-unit>
+
+</body>
+</file>
+</xliff>
