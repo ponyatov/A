@@ -29,6 +29,8 @@ TEX += bcollis/2_9.tex
 TEX += bcollis/2_10.tex
 TEX += bcollis/fet/fet.pdf
 TEX += bcollis/2_11.tex
+TEX += bcollis/2_12.tex
+TEX += bcollis/ldr/ldr.pdf
 
 # SPICE
 TEX += spice/spice.tex

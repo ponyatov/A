@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>\secrel{2.12 Входная цепь\ --- LDR 22}</source><target>\secrel{Входная цепь\ --- фоторезистор (LDR)}</target></trans-unit>
+
+<trans-unit><source>The input circuit\ --- an LDR</source><target>Входная цепь\ --- LDR</target></trans-unit>
+
+<trans-unit><source>The LDR or Light Dependant Resistor is a common component used in circuits to sense light level.</source><target>LDR\note{Light Dependent Resistor} или фоторезистор\ --- типичный компонент, используемый в цепях измерения уровня освещенности.</target></trans-unit>
+
+<trans-unit><source>An LDR varies resistance with the level of light falling on it.</source><target>LDR изменяет сопротивление пропорционально интенсивности света, падающего на него.</target></trans-unit>
+
+<trans-unit><source>LDRs are made from semiconductors such as Selenium, Thalliumoxid and Cadmiumsulfide.</source><target>Фоторезисторы изготавливаются из полупроводников, таких как селен, оксид таллия и сульфид кадмия.</target></trans-unit>
+
+<trans-unit><source>As photons of light hit the atoms within the LDR, electrons can flow through the circuit.</source><target>Когда фотоны света сталкиваются с атомами в материале LDR, проводимость увеличивается, и электроны могут течь через цепь.</target></trans-unit>
+
+<trans-unit><source>This means that as light level increases, resistance decreases.</source><target>Это означает, что по мере увеличения уровня освещенности, сопротивление уменьшается.</target></trans-unit>
+
+<trans-unit><source>Find an LDR and measure its resistance:</source><target>Найдите фоторезистор и измерьте его сопротивление:</target></trans-unit>
+
+<trans-unit><source>in full daylight the LDRs resistance is approximately \verb|____________|</source><target>сопротивление LDR при полном дневном свете \verb|__________|</target></trans-unit>
+
+<trans-unit><source>in darkness the LDRs resistance is approximately \verb|____________|</source><target>сопротивление LDR в темноте \verb|__________|</target></trans-unit>
+
+<trans-unit><source>LDRs can only with stand a small current flow e.g. 5\,mA, if too much current flows they may overheat and burn out.</source><target>Фоторезисторы можно использовать только с маленьким протекающим через ни током порядка 5\.мА, если превышается допустимый ток, LDR перегревается и сгорает.</target></trans-unit>
+
+<trans-unit><source>They are used in voltage divider circuits with a series resistor.</source><target>Обычно они используются в схеме делителя напряжения последовательно с обычным резистором.</target></trans-unit>
+
+<trans-unit><source>The components are a resistor from 10K (10,000)\,ohms to 1M (1,000,000)\,ohms, an LDR, a battery and the circuit is a series one.</source><target>Компоненты на схеме: резистор от 10K (10 000)\,Ом до 1M (1 000 000)\,Ом, фоторезистор, батарея.</target></trans-unit>
+
+<trans-unit><source>When it is dark the LDR has a high resistance and the output voltage is high.</source><target>В темноте LDR имеет высокое сопротивление, и напряжение на выходе высокое.</target></trans-unit>
+
+<trans-unit><source>When it is bright the LDR has a low resistance and the voltage is low. </source><target>На свету LDR имеет низкое сопротивление, и напряжение падает.</target></trans-unit>
+
+</body>
+</file>
+</xliff>

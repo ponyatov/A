@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Пнд 05 Янв 2015 22:05:59
+EESchema Schematic File Version 2  date Втр 06 Янв 2015 15:13:22
 LIBS:C
 LIBS:DA_POWER
 LIBS:L
@@ -8,14 +8,14 @@ LIBS:SPICE
 LIBS:SWITCH
 LIBS:VD
 LIBS:FET
-LIBS:led1-cache
+LIBS:fet-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "noname.sch"
-Date "5 jan 2015"
+Date "6 jan 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -24,19 +24,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	4750 3400 4750 3600
+	4750 3500 4750 3400
 Wire Wire Line
 	3800 3000 3800 2600
 Wire Wire Line
-	4250 4100 3800 4100
+	4300 4100 3800 4100
 Wire Wire Line
 	5650 3250 5650 2900
 Wire Wire Line
-	4750 4200 4750 4350
+	5650 4400 4750 4400
 Wire Wire Line
-	4750 4350 5650 4350
-Wire Wire Line
-	5650 4350 5650 3900
+	5650 4400 5650 3900
 Wire Wire Line
 	4750 2000 4750 1800
 Wire Wire Line
@@ -50,6 +48,8 @@ Wire Wire Line
 Connection ~ 4750 1800
 Wire Wire Line
 	4750 2800 4750 2600
+Wire Wire Line
+	4750 4400 4750 4300
 $Comp
 L R R1
 U 1 1 54AACE67
@@ -107,10 +107,10 @@ $EndComp
 $Comp
 L FET FET1
 U 1 1 54AACD45
-P 4600 3900
-F 0 "FET1" H 5050 4000 60  0000 C CNN
-F 1 "2N7000" H 5100 3850 60  0000 C CNN
-	1    4600 3900
+P 4650 3900
+F 0 "FET1" H 5100 4000 60  0000 C CNN
+F 1 "2N7000" H 5150 3850 60  0000 C CNN
+	1    4650 3900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

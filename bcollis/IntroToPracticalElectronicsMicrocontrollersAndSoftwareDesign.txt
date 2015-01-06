@@ -1,35 +1,4 @@
 
-2.12
-
-The input circuit – an LDR
-
-The LDR or Light Dependant Resistor is a common component used in
-circuits to sense light level. An LDR varies resistance with the level of light
-falling on it.
-LDRs are made from semiconductors such as Selenium, Thalliumoxid and
-Cadmiumsulfide.
-As photons of light hit the atoms within the LDR, electrons can flow through
-the circuit. This means that as light level increases, resistance decreases.
-Find an LDR and measure its resistance:
-in full daylight the LDRs resistance is approximately ____________
-in darkness the LDRs resistance is approximately ______________
-
-LDRs can only with stand a small current
-flow e.g. 5mA, if too much current flows
-they may overheat and burn out. They are
-used in voltage divider circuits with a
-series resistor. The components are a
-resistor from 10K (10,000) ohms to 1M
-(1,000,000) ohms, an LDR, a battery and
-the circuit is a series one.
-
-When it is dark the LDR has a high resistance and the output voltage is high.
-
-When it is bright the LDR has a low resistance
-and the voltage is low.
-
-22
-
 2.13
 
 Working darkness detector circuit

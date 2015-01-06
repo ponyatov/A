@@ -1,0 +1,129 @@
+EESchema Schematic File Version 2  date Втр 06 Янв 2015 15:50:16
+LIBS:C
+LIBS:DA_POWER
+LIBS:FET
+LIBS:L
+LIBS:POWER
+LIBS:R
+LIBS:SPICE
+LIBS:SWITCH
+LIBS:VD
+LIBS:ldr-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title "noname.sch"
+Date "6 jan 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5250 4100 5000 4100
+Wire Wire Line
+	6400 4300 6400 5050
+Connection ~ 6400 5050
+Wire Wire Line
+	5000 5050 7300 5050
+Wire Wire Line
+	5000 5050 5000 4900
+Wire Wire Line
+	6400 2800 6400 2600
+Connection ~ 6400 1800
+Wire Wire Line
+	7300 1800 5000 1800
+Wire Wire Line
+	7300 1800 7300 2300
+Wire Wire Line
+	6400 2000 6400 1800
+Wire Wire Line
+	7300 5050 7300 3900
+Wire Wire Line
+	7300 3250 7300 2900
+Connection ~ 5000 4100
+Wire Wire Line
+	5000 1800 5000 2800
+Wire Wire Line
+	5000 3400 5000 4200
+Wire Wire Line
+	6400 3500 6400 3400
+Wire Wire Line
+	5850 4100 5950 4100
+$Comp
+L R R4
+U 1 1 54ABCBAD
+P 5550 4100
+F 0 "R4" H 5550 4250 60  0000 C CNN
+F 1 "1k" H 5550 3950 60  0000 C CNN
+	1    5550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LDR R3
+U 1 1 54ABC474
+P 5000 4550
+F 0 "R3" V 5050 4200 60  0000 C CNN
+F 1 "LDR" V 4900 4150 60  0000 C CNN
+	1    5000 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 54AACE67
+P 5000 3100
+F 0 "R1" V 5100 2850 60  0000 C CNN
+F 1 "10k" V 4950 2850 60  0000 C CNN
+	1    5000 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED VD1
+U 1 1 54AACDD4
+P 6400 2300
+F 0 "VD1" V 6350 2600 60  0000 C CNN
+F 1 "LED" V 6500 2600 60  0000 C CNN
+	1    6400 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 54AACDB8
+P 6400 3100
+F 0 "R2" V 6500 2850 60  0000 C CNN
+F 1 "390R" V 6350 2800 60  0000 C CNN
+	1    6400 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SA SA1
+U 1 1 54AACD9A
+P 7300 2600
+F 0 "SA1" V 7300 2400 60  0000 C CNN
+F 1 "~" V 7200 2350 60  0000 C CNN
+	1    7300 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GB GB1
+U 1 1 54AACD82
+P 7300 3600
+F 0 "GB1" V 7300 3800 60  0000 C CNN
+F 1 "~" V 7350 3850 60  0000 C CNN
+	1    7300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L FET FET1
+U 1 1 54AACD45
+P 6300 3900
+F 0 "FET1" H 6750 4000 60  0000 C CNN
+F 1 "2N7000" H 6800 3850 60  0000 C CNN
+	1    6300 3900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
