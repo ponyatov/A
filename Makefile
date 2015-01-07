@@ -118,10 +118,10 @@ TEX += prog/prog.tex
 TEX += prog/lexer/lexer.tex
 TEX += prog/sysdesign.tex
 TEX += prog/ortho.tex
-TEX += xliff/txt2xliff/txt2xliff.l
-TEX += xliff/txt2xliff/txt2xliff.y
-TEX += xliff/txt2xliff/sample.txt
-TEX += xliff/txt2xliff/sample.xliff
+TEX += xliff/tex2xliff.l
+TEX += xliff/tex2xliff.y
+TEX += xliff/xliff2tex.l
+TEX += xliff/xliff2tex.y
 
 # linux
 TEX += linux/linux.tex

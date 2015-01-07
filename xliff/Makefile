@@ -1,14 +1,21 @@
 
-all: tex2xliff
-	./tex2xliff < X.tex > xliff.xliff
+all: xliff.xliff Y.tex
+
+xliff.xliff: X.tex tex2xliff
+	./tex2xliff < $< > $@
+Y.tex: xliff.xliff xliff2tex  
+	./xliff2tex < $< > $@
 
 clean:
+	rm -f tex2xliff xliff2tex
+	rm -f xliff.xliff Y.tex
 
 tex2xliff: tex2xliff.l tex2xliff.y
-	bison -d tex2xliff.y &&\
-	flex -o tex2xliff.lex.c tex2xliff.l &&\
+	bison -d $@.y &&\
+	flex -o $@.lex.c $@.l &&\
 	g++ -o $@ $@.lex.c $@.tab.c
  
 xliff2tex: xliff2tex.l xliff2tex.y
-	bison -d xliff2tex.y &&\
-	flex xliff2tex.l
+	bison -d $@.y &&\
+	flex -o $@.lex.c $@.l &&\
+	g++ -o $@ $@.lex.c $@.tab.c
