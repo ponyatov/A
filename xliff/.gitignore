@@ -2,4 +2,7 @@ tex2xliff
 xliff2tex
 *.c
 *.h
+X.tex
+Y.tex
+xliff.xliff
 
