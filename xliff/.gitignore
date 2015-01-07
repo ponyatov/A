@@ -1,8 +1,5 @@
+tex2xliff
+xliff2tex
 *.c
 *.h
-*.xliff
-*.exe
-*.tex
-*.o
-xliff2tex/txt.txt
-xliff2tex/xliff2tex
+

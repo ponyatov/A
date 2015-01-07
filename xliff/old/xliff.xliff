@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<segment>
+
+<trans-unit>
+<source>Like all open-source projects, the FreeCAD project is not a one-way work delivered to you by its developers.</source><target>Как и все проекты с открытым исходным кодом, проект FreeCAD не единственый способ работы обеспеченный Вам его разработчиками.</target>
+</trans-unit>
+
+<trans-unit>
+<source>It depends much on its community to grow, gain features, and stabilize (get bugs fixed).</source><target>Это во многом зависит от роста его сообществу пользователей и разработчиком, доработки функций и стабилизации кода (да здравствует исправление ошибок!).</target>
+</trans-unit>
+
+<trans-unit>
+<source>So don't forget this when starting to use FreeCAD, if you like it, you can directly influence and help the project!</source><target>Так что не забывайте об этом, когда начинаете использовать FreeCAD, если вам он нравится, вы можете непосредственно влиять и помочь проекту!</target>
+</trans-unit>
+
+</segment>
+
+
+</body>
+</file>
+</xliff>
