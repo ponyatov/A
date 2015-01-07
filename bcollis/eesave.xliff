@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>  </source><target></target></trans-unit>
+
+<trans-unit><source>  It is always best to save your data before you start work   </source><target>  Не забывайте сохранять ваши данные в процессе работы</target></trans-unit>
+
+<trans-unit><source>  Eagle creates many temporary files so you need to keep your folders tidy.   </source><target>  САПР создает много временных файлов, так что вы должны держать ваши папки в аккуратности.</target></trans-unit>
+
+<trans-unit><source>  If this is the first time you have used Eagle create an Eagle folder within your folder on the server.   </source><target>  Если в первый раз запустили \prog{eeschema}, создайте папку для проекта.</target></trans-unit>
+
+<trans-unit><source>  Within the Eagle folder create a folder for the name of this project e.g. DarkDetector   </source><target>  Создайте папку в соответствии с названием проекта, например, DarkDetector</target></trans-unit>
+
+<trans-unit><source>  Save the schematic as DarkDetector verA.sch within the DarkDetector folder. </source><target>  Сохранить схему как DarkDetector.sch в папке DarkDetector.</target></trans-unit>
+
+</body>
+</file>
+</xliff>

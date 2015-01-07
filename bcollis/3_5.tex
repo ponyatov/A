@@ -1,0 +1,44 @@
+% % 3.5 Making Negative Printouts . 37
+
+% 3.5 Making Negative Printouts
+% Eagle is straight forward at producing printouts for a positive photographic pcb making process.
+% (NOTE THE TEXT ON THE PCB APPEARS
+% REVERSED THIS IS CORRECT)
+% If your photosensitive board
+% requires a negative image
+% such as this, another stage on
+% the process is required..
+% 
+% 3.5.1 Other software
+% required
+% The following software is required to manipulate the
+% special CAM (computer aided manufacturing) files
+% created by Eagle (and other pcb CAD software) into
+% the printed image you require. All this software is
+% shareware with no fees attached for its use by
+% students.
+% * Install GhostScript - from http://www.ghostscript.com
+% * Install GSView - from http://www.ghostgum.com.au/
+% Conversion process
+% This process creates a '.ps' (postscript file), it is the best output from Eagle to use. It will keep the
+% board exactly the same and correct size for printing.
+% * Open yourboard.brd in Eagle
+% * From within the Eagle Board Editor start the CAM Processor
+% * select device as PS_INVERTED
+% * Scale = 1
+% * file = .ps
+% * make sure fill pads is NOT selected this
+% makes small drill holes in the acetate which
+% we use to line up the drill with when drilling
+% * for layers select only 16,17,18 and 20,
+% * make sure ALL other layers are NOT
+% selected.
+% * Select process job
+% * if you will use this process a lot save this
+% cam setup as so that you can reuse it again
+% Open the TDA2822verA.ps file with
+% Ghostview for printing and print it onto an over
+% head transparency. Make sure you can see
+% the drill holes!
+% 
+% 37

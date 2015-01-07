@@ -1,0 +1,180 @@
+% % 3.3 The Schematic Editor  28
+
+\secrel{The Schematic Editor}
+
+% The first part of the process in creating a PCB is drawing the schematic.
+% 1. Parts will be added from libraries
+% 2. and joined together using ‘nets’ to make the circuit
+% 
+% 3.3.1 The Toolbox
+% As you point to the tools in the TOOLBOX their names will appear in a popup and also their
+% description will appear in the status bar at the bottom of the window
+% Find the following tools
+% 
+% 
+% ADD A PART
+% 
+% 
+% 
+% MOVE AN OBJECT
+% 
+% 
+% 
+% DELETE AN OBJECT
+% 
+% 
+% 
+% DEFINE THE NAME OF AN OBJECT
+% 
+% 
+% 
+% DEFINE THE VALUE OF AN OBJECT
+% 
+% 
+% 
+% DRAW NETS (connections)
+% 
+% 
+% 
+% ERC (electrical rule check)
+% 
+% 28
+% 
+% 3.3.2 Using parts libraries
+% Selecting parts libraries to use.
+% Parts are stored within libraries and there are a large number of libraries in Eagle.
+% It is not hard to create your own library and modify the parts within it. The cls.lbr has many already
+% modified components within it. If Eagle is not setup to use the cls library you will need to do it
+% now.
+% 1.
+% 2.
+% 3.
+% 4.
+% 5.
+% 6.
+% 7.
+% 8.
+% 9.
+% 10.
+% 11.
+% 
+% From your internet browser save the file cls.lbr into your Eagle folder.
+% In Eagle's control panel from the menu select options then directories
+% In the new window that appears make sure the directories for the libraries are highlighted
+% Click on browse and find your Eagle.directory
+% Next highlight the directories for Projects
+% Click on browse and find your Eagle directory again.
+% Choose OK.
+% You might need to close EAGLE and restart it to make sure it reads the libraries ok.
+% To use a library right click on it from within the Control Panel
+% Make sure Use is highlighted. It will have a green dot next to it if it is selected
+% At this time right click on the other lbr folder and select Use none.
+% 
+% NOTE THE IMPORTANCE OF THE GREEN DOT NEXT TO THE LIBRARY,
+% if its not there you will not see the library in the schematic editor!
+% 
+% 29
+% 
+% 3.3.3 Using Components from within libraries.
+% From your schematic Click the ADD button
+% in the toolbox
+% A new window will open (it may take a
+% while)
+% 
+% 
+% 
+% 
+% 
+% 
+% Find the CLS library
+% Open it by double clicking on it or by
+% clicking the + sign
+% Open the R-EU_ section (ResistorEuropean)
+% Here you will find the 0204/10
+% resistor.
+% Select it and then click OK
+% 
+% Add 2 more resistors of the same type.
+% Add all of the following parts
+% LIBRARY
+% PART
+% Qty
+% cls
+% REU-0204/10
+% 3
+% cls
+% LDR
+% 1
+% cls
+% 2,54/0,8 (wirepads)
+% 2
+% cls
+% led 5MM
+% 1
+% cls
+% 1N4148 D41-10
+% 1
+% cls
+% 2N7000
+% 1
+% cls
+% GND
+% 3
+% A wirepad allows us to connect wires to the PCB (such as wires to switches and batteries)
+% 
+% 3.3.4 Different component
+% packages
+% There are several different types of
+% resistors; they all have the same symbol
+% however resistors come in different
+% physicalpackages so we must choose an
+% appropriate one.The 0204/7 is suitable
+% for us but any of the 4 smallest ones
+% would be OK.
+% 
+% 30
+% 
+% Moving parts
+% Move the parts around within the schematic editor so that they are arranged as per the schematic
+% below. Keep the component identifiers (numbers like R1, R2, R3) in the same places as those
+% below.
+% 
+% 3.3.5 Wiring parts together
+% 
+% These form the electrical connections that makeup the
+% circuit. Select the net button from the toolbox.
+% Left click on the very end of a component and draw in a
+% straight line either up, down, left or right.
+% Left click again to stop at a point and draw before drawing in
+% another direction.
+% Double left click at another component to finish the wire.
+% 
+% 31
+% 
+% 3.3.6 Zoom Controls
+% There are a number of zoom controls that can be used to help you work in your circuit.
+% 
+% Find these on the toolbar and identify what each does.
+% Nets
+% Nets are the wire connections between the components, each has a
+% unique name.
+% Find the info button in the toolbox and check the names and details of the
+% components and nets/wires.
+% When you want to connect a new net to an existing net, Eagle will prompt
+% you as to which name to give the combined net.
+% If one of the nets has a proper name i.e. VCC, V+,V-, ground... use that
+% name, otherwise choose the net with the smallest number
+% 
+% 3.3.7 Junctions
+% Junctions are the dots at joins in the circuit, they are there to make sure that the wires are
+% electrically connected. Generally you will NOT need to add these to your circuit as the net tool puts
+% them in place automatically
+% 
+% 32
+% 
+% 3.3.8 ERC
+% The ERC button causes Eagle to test the schematic for electrical errors.
+% Errors such as pins overlapping, and components unconnected are very common.
+% The ERC gives a position on the circuit as to where the error is; often zooming in on that point and
+% moving components around will help identify the error.
+% You must correct all errors before going on.

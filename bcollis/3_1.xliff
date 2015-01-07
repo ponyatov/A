@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>\secrel{Introductory PCB construction}\secdown</source><target>\secrel{Вводное конструирование печатной платы}</target></trans-unit>
+
+<trans-unit><source>We take a short break from electronics theory to introduce a further topic of construction\ --- PCB making.</source><target>Мы берем короткий перерыв в теории электроники, чтобы представить вам новую тему в конструировании\ --- изготовление печатных плат.</target></trans-unit>
+
+<trans-unit><source>\secrel{Schematic and Layout Editor Tutorial}</source><target>\secrel{Учебник по редакторам схем и печатных плат}</target></trans-unit>
+
+<trans-unit><source>A circuit such as the darkeness detector is no good to us on a breadboard it needs a permanent solution and so we will build it onto a PCB ( printed circuit board). </source><target>Схема типа детектора тьмы не очень подходит нам в виде сборки на "вафле", нам нужна надежная конечная конструкция, так что мы сделаем ее на печатной плате.</target></trans-unit>
+
+</body>
+</file>
+</xliff>

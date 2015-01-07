@@ -1,0 +1,83 @@
+% % 3.4 The Board Editor . 33
+
+\secrel{The Board Editor}
+
+% The board editor is opened using a button in the toolbar, find this button and answer yes to the
+% question about creating the board.
+% The new window has a pile of parts and an area upon which to place them.
+% WARNING: once you have started to create a board always have both the board and
+% schematic open at the same time, never work on one without the other open or you will get
+% horrible errors which will require you to delete the .brd file and restart the board from
+% scratch.
+% 
+% 33
+% 
+% 3.4.1 Airwires
+% The wires from the schematic have become connections called airwires, these wires will shortly
+% become tracks on the PCB.
+% These connections can look very messy at times and at this stage it is called a RATSNEST.
+% 
+% 3.4.2 Moving Components
+% 
+% Move the components into the highlighted area. In the demo version you cannot place parts
+% outside this area. Keep the components in the lower left corner near the origin (cross).
+% Reduce the size of the highlighted area you are using for the components. Then zoom to fit.
+% Progressively arrange the components so that there is the minimum number of crossovers.
+% As you place components press the Ratsnest button often to reorganize the Airwires. Eventually
+% your picture will look like the one on the right.
+% Good PCB design is more about placement of components than routing, so spending most
+% of your time (80%) doing this step is crucial to success.
+% You want to make track lengths as short as possible
+% 
+% 34
+% 
+% 3.4.3 Hiding/Showing Layers
+% The DISPLAY button in the TOOLBOX is used to turn on and off different sets of screen
+% information. Turn off the names, and values while you are placing components. This will keep the
+% screen easier to read. Turn off the layer by selecting the display button and in the popup window
+% pressing the number of the layer you no longer want to see.
+% 
+% 35
+% 
+% 3.4.4 Routing Tracks
+% Now is the time to replace the airwires with actual PCB
+% tracks. Tracks need to connect all the correct parts of the
+% circuit together without connecting together other parts.
+% This means that tracks cannot go over the top of one
+% another, nor can they go through the middle of
+% components!
+% Go to the Toolbar, Select the ROUTE button
+% On the Toolbar make sure the Bottom layer is selected
+% (blue) and that the track width is 0.04. Left click on a
+% component.
+% Note that around your circuit all of the pads on the same
+% net will be highlighted. Route the track by moving the
+% mouse and left clicking on corner points for your track as
+% you go. YOU ONLY WANT TO CONNECT THE PADS
+% ON THE SAME NET, DON'T CONNECT ANY OTHERS
+% OR YOUR CIRCUIT WILL NOT WORK. Double click on a
+% pad to finish laying down the track.
+% 
+% Track layout Rules
+% 1.
+% 
+% 2.
+% 3.
+% 
+% Place tracks so that no track touches the leg of
+% a component that it is not connected to on the
+% schematic
+% No track may touch another track that it is not
+% connected to on the schematic
+% Tracks may go underneath the body of a
+% component as long as they meet the above
+% rules
+% 
+% 3.4.5 Ripping up Tracks
+% Ripping up a track is removing the track you have laid
+% down and putting the airwire back in place. This will be
+% necessary as you go to solve problems where it is not
+% possible to route the tracks. You may even want to rip up
+% all the tracks and move components around as you go.
+
+% 36
