@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>Final darkness detector circuit</source><target>Финальная схема датчика темноты</target></trans-unit>
+
+<trans-unit><source>The function of the input part of the circuit is to detect light level.</source><target>Функция входной части схемы\ --- определение уровня освещенности.</target></trans-unit>
+
+<trans-unit><source>The function of the process part of the circuit (the transistor) is to amplify the small change in voltage due to light changes.</source><target>Функция преобразовательной части схемы (транзистор)\ --- усиление небольшого изменение напряжения из-за легких изменений освещенности.</target></trans-unit>
+
+<trans-unit><source>The function of the output part of the circuit is to indicate something to the end user.</source><target>Функция выходной части цепи\ --- индикация для пользователя.</target></trans-unit>
+
+<trans-unit><source>The function of the power supply is to safely provide the energy for the circuit to work</source><target>Функция источника питания\ --- надежно обеспечить энергию для работы схемы.</target></trans-unit>
+
+<trans-unit><source>\bigskip When it is dark the LED is switched on, when there is light present the LED is switched off.</source><target>\bigskip Когда темно, светодиод включается, когда свет присутствует, светодиод выключен.</target></trans-unit>
+
+<trans-unit><source>This circuit could be used to help a younger child orientate themselves at night and to find the door in a darkened room.</source><target>Эта схема может использоваться как игрушка для ребенка, чтобы ориентироваться в темноте, и найти дверь в темной комнате.</target></trans-unit>
+
+<trans-unit><source>The DIODE, LED and TRANSISTOR are polarised, have positive and negative ends and therefore require wiring into the circuit the right way round or it will not work</source><target>\emph{Диод}, \emph{светодиод} и \emph{транзистор} поляризованные элементы, т.е. имеют положительные и отрицательные выводы и, следовательно, требуют правильного включения в схему, или они не будут работать</target></trans-unit>
+
+<trans-unit><source>\bigskip You can identify the LED polarity by the flat on the LED body (negative-cathide) or by the longer lead (positive or anode)</source><target>\bigskip Вы можете определить полярность светодиода найдя спил на корпусе(отрицательный вывод, катод) или по длинной ноге (положительный вывод, или анод)</target></trans-unit>
+
+<trans-unit><source>You can identify the TRANSISTOR polarity by the shape of the bidy and the layout of the three leads</source><target>Полярность \emph{транзистора} можноопределить за счет формы корпуса и зная расположение трех выводов.</target></trans-unit>
+
+<trans-unit><source>\bigskip Draw lines from the components to the symbols to help you remember them. Remember the resistor in the output circuit was made a lower value (changed from 1k to 390ohms) to make the LED brighter in the final circuit. </source><target>\bigskip Нарисуйте линии от компонентов к их символам на схеме, чтобы помочь вам запомнить их. Помните, что резистор в выходной цепи был установлен с более низким значением (уменьшен от 1k до 390\,Ом) чтобы в окончательной схеме сделать светодиод ярче.</target></trans-unit>
+
+</body>
+</file>
+</xliff>

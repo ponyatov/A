@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>Diode Research Task</source><target>Задача исследования диода</target></trans-unit>
+
+<trans-unit><source>Research the specifications for these two common diodes (ones we use often in class) and find out what each specification/attribute means.</source><target>Исследуйте спецификации для этих двух распространенных диодов (мы их часто используем в классе) и узнайте, что значит каждый параметр спецификации.</target></trans-unit>
+
+<trans-unit><source>Description</source><target>Описание</target></trans-unit>
+
+<trans-unit><source>1N4007 1N4148</source><target>1N4007 1N4148</target></trans-unit>
+
+<trans-unit><source>Peak reverse voltage</source><target>Пиковое обратное напряжение</target></trans-unit>
+
+<trans-unit><source>Maximum forward current </source><target>Максимальный прямой ток</target></trans-unit>
+
+</body>
+</file>
+</xliff>

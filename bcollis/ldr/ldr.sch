@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Втр 06 Янв 2015 15:50:16
+EESchema Schematic File Version 2  date Срд 07 Янв 2015 14:04:03
 LIBS:C
 LIBS:DA_POWER
 LIBS:FET
@@ -15,7 +15,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "noname.sch"
-Date "6 jan 2015"
+Date "7 jan 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -67,7 +67,7 @@ $Comp
 L LDR R3
 U 1 1 54ABC474
 P 5000 4550
-F 0 "R3" V 5050 4200 60  0000 C CNN
+F 0 "R3" V 5050 4150 60  0000 C CNN
 F 1 "LDR" V 4900 4150 60  0000 C CNN
 	1    5000 4550
 	0    -1   -1   0   

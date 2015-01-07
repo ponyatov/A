@@ -31,6 +31,12 @@ TEX += bcollis/fet/fet.pdf
 TEX += bcollis/2_11.tex
 TEX += bcollis/2_12.tex
 TEX += bcollis/ldr/ldr.pdf
+TEX += bcollis/ldr/final.pdf
+TEX += bcollis/2_13.tex
+TEX += bcollis/vd/vd.pdf
+TEX += bcollis/2_14.tex
+TEX += bcollis/2_15.tex
+TEX += bcollis/2_16.tex
 
 # SPICE
 TEX += spice/spice.tex
@@ -153,6 +159,8 @@ tmp/work.pdf: work.tex $(TEX) $(TXT)
 
 %.png: %.svg
 	inkscape $< --export-png=$@ --export-dpi=300
+%.pdf: %.ps
+	inkscape $< --export-pdf=$@ --export-area-drawing
 %.pdf: %.svg
 	inkscape $< --export-pdf=$@ --export-area-drawing
 kicad/march.pdf: kicad/march.dot

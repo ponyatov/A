@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>Protecting circuits – using a diode</source><target>Защитные цепи\ --- использование диода</target></trans-unit>
+
+<trans-unit><source>Diodes are very common components, they come in all shapes and sizes.</source><target>Диоды очень часто используемые компоненты, они бывают всех форм и размеров.</target></trans-unit>
+
+<trans-unit><source>The key characteristic of a diode is that there is current in only one direction so you cannot reverse it in the circuit and expect it to work. In this modified circuit the power is supplied from the battery.</source><target>Основная характеристика диода\ --- то что ток течет только в одном направлении, так что вы не можете его пустить в схеме в обратном направлении, и можете быть уверены, что это работает. В этой модифицированной схеме питание подается от батареи.</target></trans-unit>
+
+<trans-unit><source>The circuit is protected by a diode, this means if the battery is connected in reverse then there is no current because the diode blocks it (this is commonly used in the workshop to protect our circuits from a reverse polarity situation).</source><target>Фраза "цепь защищена диодом"\ означает, что если батарея ошибочно подключена в неправильной полярности, тока не будет, потому что диод блокирует его (это обычно используется в мастерской для защиты наших схем от подачи питания обратной полярности).</target></trans-unit>
+
+<trans-unit><source>Of course no diode is perfect and should the voltage of the power supply exceed the voltage rating of the diode then the diode would breakdown, this means the current would increase rapidly and it would burn up.</source><target>Конечно, диод несовершенен, и если напряжение источника питания превысит максимальное обратное напряжение диода, то диод будет сломан: обратный ток диода будет очень быстро расти, и сожгет диод.</target></trans-unit>
+
+<trans-unit><source>The 1N4004 has a 400V rating. Diodes can only take a certain current in the forward direction before they overheat and burn up. The 1N4004 has a maximum forward current of 1Amp. </source><target>1N4004 допускает обратное напряжение 400\,В. Диоды также могут проводить определенный ток в прямом направлении, иначе они перегреваются и сгорают. 1N4004 имеет максимальный прямой ток 1\,А.</target></trans-unit>
+
+</body>
+</file>
+</xliff>

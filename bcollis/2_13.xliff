@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file>
+<body>
+
+<trans-unit><source>Working darkness detector circuit</source><target>Рабочая схема датчика темноты</target></trans-unit>
+
+<trans-unit><source>The resistor in series with the LDR can be experiments with to change the sensitivity of the circuit to different light levels. </source><target>Экспериментируя с резистором последовательно с LDR, можно регулировать чувствительность схемы на различных уровнях освещенности.</target></trans-unit>
+
+</body>
+</file>
+</xliff>
