@@ -7,14 +7,22 @@ using namespace std;
 #define YYINITDEPTH 0x10000
 void yyerror(const char *str) { cerr << "\nerror:" << str << "\n\n"; }
 extern int yylex();
+
+bool target=false;
+int width=0;
 %}
 
 %token CHAR
+%token TB
+%token TE
 
 %%
-BLOCK: CHARz | CHARz BLOCK ;
+TEXT: CHARz | CHARz TEXT ;
 CHARz: 
-	CHAR	{ cout<<$$; } ;
+	CHAR	{ if (target) cout<<$$; } |
+	TB		{ target=true; } |
+	TE		{ target=false; cout<<"\n"; }
+	;
 %%
 
 int main () {

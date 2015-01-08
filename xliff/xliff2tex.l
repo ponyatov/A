@@ -9,5 +9,7 @@ using namespace std;
 %}
 
 %%
-.|\n						{ yylval = yytext; return CHAR; } 
+\<target\>		{ yylval = yytext; return TB; }
+\<\/target\>	{ yylval = yytext; return TE; }
+.|\n			{ yylval = yytext; return CHAR; } 
 %%

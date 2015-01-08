@@ -9,9 +9,12 @@ using namespace std;
 %}
 
 %%
-\n{2,22}				{ yylval = ""; return SEP; }
-\.\ +					{ yylval = "."; return SEP; }
-\n						{ yylval = " "; return CHAR; } 
-\\item					{ yylval = ""; return SEP; }
-.						{ yylval = yytext; return CHAR; } 
+([a-z0-9]+\.)+(com|nz)	{ yylval = yytext; return URL; }
+
+\.[\n\ ]+		{ yylval = "."; return SEP; }
+\&				{ yylval = "&amp;"; return CHAR; }
+\n{2,22}		{ yylval = ""; return SEP; }
+\n				{ yylval = " "; return CHAR; } 
+\\item			{ yylval = ""; return SEP; }
+.				{ yylval = yytext; return CHAR; } 
 %%

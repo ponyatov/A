@@ -11,11 +11,13 @@ extern int yylex();
 
 %token CHAR
 %token SEP
+%token URL
 
 %%
 BLOCK: CHARz | CHARz BLOCK ;
 CHARz: 
 	CHAR	{ cout<<$$; } |
+	URL		{ cout<<"<mrk mtype=\"protected\" comment=\"url\">"<<$$<<"</mrk>"; } |
 	SEP		{
 		cout<<$$<<"</source></trans-unit>\n";
 		cout<<"<trans-unit><source>"; 
