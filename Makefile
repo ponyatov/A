@@ -124,6 +124,7 @@ TEX += xliff/tex2xliff.y
 TEX += xliff/xliff2tex.l
 TEX += xliff/xliff2tex.y
 TEX += prog/llvm/llvm.tex
+TEX += tmp/xliff.mk
 
 # linux
 TEX += linux/linux.tex
@@ -178,3 +179,6 @@ Azbuka.pdf: $(TEX) $(BIB) $(TXT)
 .PHONY: clean
 clean:
 	rm -f tmp/work.* tmp/Azbuka.*
+
+tmp/%.mk: %/Makefile
+	cp $< $@
