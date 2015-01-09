@@ -161,13 +161,9 @@ number   [\+\-]{0,1}{digit}+\.{digit}*
 
 \cp{http://matt.might.net/articles/standalone-lexers-with-lex/}
 
+\lstx{Makefile}{}{xliff/Makefile}{mk}
+
 \lst{\prog{flex} лексер}{}{xliff/tex2xliff.l}
-
-\lst{\prog{bison} парсер}{}{xliff/tex2xliff.y}
-
-%\lst{\file{X.tex}}{}{xliff/X.tex}
-
-%\lst{\file{xliff.xliff}}{}{xliff/xliff.xliff}
 
 \secrel{Генератор синтаксических анализаторов \prog{bison}}
 
@@ -177,26 +173,10 @@ number   [\+\-]{0,1}{digit}+\.{digit}*
 этапе выделяются \term{синтаксичекие ошибки}.
 \end{framed}
 
-\secrel{Семантический анализ}
+\lst{\prog{bison} парсер}{}{xliff/tex2xliff.y}
 
-\begin{framed}\noindent
-\termdef{Семантический анализ}{семантический анализ}\ --- процесс выполнения
-\term{семантических проверок}: контроль типов, привязка объектов и т.д. 
-\end{framed}
+%\lst{\file{X.tex}}{}{xliff/X.tex}
 
-\secrel{Оптимизация}
-
-Выполнение формальных преобразований структур данных, описываютщих
-компилируюемую программу, с целью построения более компактного/быстрого
-машинного кода.
-
-\secrel{Кодогенерация}
-
-Получение реального машинного кода в бинарном представлении, или в виде
-ассемблерных текстовых файлов.
-
-\secrel{Транслятор Паскаля}
-
-\secrel{LLVM и разработка собственных компиляторов}
+%\lst{\file{xliff.xliff}}{}{xliff/xliff.xliff}
 
 \secup

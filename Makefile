@@ -123,6 +123,7 @@ TEX += xliff/tex2xliff.l
 TEX += xliff/tex2xliff.y
 TEX += xliff/xliff2tex.l
 TEX += xliff/xliff2tex.y
+TEX += prog/llvm/llvm.tex
 
 # linux
 TEX += linux/linux.tex
