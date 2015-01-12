@@ -1,11 +1,11 @@
-\chapter{Библиотека \prog{libSDL2} }
+\chapter{Библиотека libSDL}\secdown
 
 Библиотека \href{http://www.libsdl.org/}{SDL} предоставляет такие средства, как
 быстрый вывод 2D-графики, обработку ввода, проигрывание звука, вывод 3D через
-OpenGL и другие операции, причем делает это кросплатформенно.
-Список платформ обширный: Linux, Windows, Windows CE, BeOS, Mac OS X, FreeBSD, NetBSD,
-OpenBSD, BSD/OS, Solaris, IRIX и QNX\ --- и вдобавок есть неофициальные порты на
-другие системы.
+OpenGL и другие операции, причем делает это кросплатформенно. Список платформ
+обширный: Linux, Windows, Windows CE, BeOS, Mac OS X, FreeBSD, NetBSD, OpenBSD,
+BSD/OS, Solaris, IRIX и QNX\ --- и вдобавок есть неофициальные порты на другие
+системы.
 
 Сама библиотека написана на Си и поддерживает \cpp, однако есть биндинги к
 большинству популярных языков. Автор \prog{libsdl} был нанят компанией Valve,
@@ -13,3 +13,38 @@ OpenBSD, BSD/OS, Solaris, IRIX и QNX\ --- и вдобавок есть неоф
 библиотека выходит под лицензией zlib, а не LGPLv2, как было раньше, и SDL 2.0
 можно использовать в любых своих приложениях, в т.ч. коммерческих Скорее всего
 сделано это было для того, чтобы Valve смогла включить ее в Steam для Linux.
+
+\bigskip
+Использование SDL позволяет писать графические и мультимедийные приложения для
+em\linux, не включая в систему достаточно тяжелую X Window System.
+
+\bigskip
+В книге рассмотрена версия 1.2.15, последняя версия из ветки \prog{SDL1}, т.к.
+она используется в сборке az\linux\ \ref{azlin}. Сейчаc активно развивается
+ветка \prog{SDL2}, ее особенности кратко рассмотрены в разделе \ref{sdl2}.
+
+\secrel{Инициализация и завершение SDL-программы}
+
+\begin{verbatim}
+int main() {
+	...
+	SDL_Init(SDL_INIT_xxx));
+	...
+	SDL_Quit();
+}
+\end{verbatim}
+
+\begin{description}
+\item[SDL\_INIT\_EVERYTHING] все подсистемы, не работает с отключенным звуком
+\item[SDL\_INIT\_VIDEO] только графическая подсистема
+\end{description}
+
+\secrel{Примеры программ}
+
+\lstx{user/sdl\_hello.c}{}{azlin/user/sdl_hello.c}{c}
+
+\lstx{user/sdl\_rect.c}{}{azlin/user/sdl_rect.c}{c}
+
+\secrel{Версия SDL2}\label{sdl2}
+
+\secup
