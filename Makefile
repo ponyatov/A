@@ -132,10 +132,21 @@ TEX += linux/syslinux.tex
 TEX += linux/syslinux.cfg
 TEX += linux/intro.tex
 TEX += azlin/azlin.tex
-TEX += linux/libsdl.tex
 TEX += linux/opengl.tex
 TEX += linux/realtime.tex
 TEX += linux/netboot.tex
+
+# SDL
+TEX += linux/libsdl.tex
+TEX += linux/sdl/lf01.tex linux/sdl/lf02.tex linux/sdl/lf03.tex linux/sdl/lf04.tex
+TEX += linux/sdl/lf05.tex linux/sdl/lf06.tex linux/sdl/lf07.tex linux/sdl/lf08.tex
+TEX += linux/sdl/lf09.tex linux/sdl/lf10.tex linux/sdl/lf11.tex linux/sdl/lf12.tex
+TEX += linux/sdl/lf13.tex linux/sdl/lf14.tex linux/sdl/lf15.tex linux/sdl/lf16.tex
+TEX += linux/sdl/lf17.tex linux/sdl/lf18.tex linux/sdl/lf19.tex linux/sdl/lf20.tex
+TEX += linux/sdl/lf21.tex linux/sdl/lf22.tex linux/sdl/lf23.tex linux/sdl/lf24.tex
+TEX += linux/sdl/lf25.tex linux/sdl/lf26.tex linux/sdl/lf27.tex linux/sdl/lf28.tex
+TEX += linux/sdl/lf29.tex linux/sdl/lf30.tex linux/sdl/lf31.tex linux/sdl/lf32.tex
+TEX += linux/sdl/lf33.tex linux/sdl/lf34.tex linux/sdl/lf35.tex linux/sdl/lf36.tex
 
 # heap
 TEX += heap/heap.tex 

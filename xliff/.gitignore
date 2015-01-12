@@ -4,5 +4,6 @@ xliff2tex
 *.h
 X.tex
 Y.tex
-xliff.xliff
+*.exe
+*.xliff
 
