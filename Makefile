@@ -161,6 +161,7 @@ TEX += linux/sdl/lf33.tex linux/sdl/lf34.tex linux/sdl/lf35.tex linux/sdl/lf36.t
 
 # heap
 TEX += heap/heap.tex 
+TEX += heap/linparazit.tex 
 
 LATEX = pdflatex --output-directory=tmp -halt-on-error
 BIBER = biber
