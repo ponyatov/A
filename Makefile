@@ -98,6 +98,17 @@ TEX += tech/pcb/kipcb.tex
 
 # Cortex-Mx
 TEX += cortex/cortex.tex
+TEX += cortex/makers.tex
+TEX += cortex/stm32.tex
+TEX += cortex/lpc.tex
+TEX += cortex/milandr.tex
+TEX += cortex/maple/mini.tex
+TEX += cortex/discovery/STM32DISCOVERY.tex
+TEX += cortex/discovery/STM32F4DISCOVERY.tex
+TEX += cortex/discovery/STM32F0DISCOVERY.tex
+
+# muino
+TEX += muino/muino.tex
 
 # bibs
 BIB  = ../bib/python.bib
