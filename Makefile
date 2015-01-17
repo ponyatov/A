@@ -11,6 +11,13 @@ TEX += learnplans/learnplans.tex
 TEX += docmake/docmake.tex
 TEX += docmake/azbuka.tex
 
+# USB
+TEX += usb/usb.tex
+TEX += usb/libusb.tex
+
+# devkit
+TEX += devkit.tex
+
 # Collis
 TEX += bcollis/bcollis.tex bcollis/thanks.tex bcollis/intro.tex
 TEX += bcollis/ch02.tex
