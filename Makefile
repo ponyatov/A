@@ -11,9 +11,14 @@ TEX += learnplans/learnplans.tex
 TEX += docmake/docmake.tex
 TEX += docmake/azbuka.tex
 
+# network
+TEX += net/osi.tex
+
 # USB
 TEX += usb/usb.tex
 TEX += usb/libusb.tex
+TEX += usb/protocol.tex
+TEX += usb/linux.tex
 
 # devkit
 TEX += devkit.tex
