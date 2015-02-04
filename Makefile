@@ -159,6 +159,9 @@ TEX += linux/opengl.tex
 TEX += linux/realtime.tex
 TEX += linux/netboot.tex
 
+TEX += azlin/mk/sdk/pascal.mk
+TEX += azlin/mk/sdk/binhost.mk
+
 # SDL
 TEX += linux/libsdl.tex
 TEX += linux/sdl/lf01.tex linux/sdl/lf02.tex linux/sdl/lf03.tex linux/sdl/lf04.tex
