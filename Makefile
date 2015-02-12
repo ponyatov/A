@@ -160,7 +160,10 @@ TEX += linux/realtime.tex
 TEX += linux/netboot.tex
 
 TEX += azlin/mk/sdk/pascal.mk
-TEX += azlin/mk/sdk/binhost.mk
+TEX += azlin/mk/sdk/canadian.mk
+
+# x86os
+TEX += x86os/x86os.tex
 
 # SDL
 TEX += linux/libsdl.tex
@@ -184,7 +187,6 @@ BIBER = biber
 #buildmain: pdf
 
 tmp/work.pdf: work.tex $(TEX) $(TXT)
-#	python rex.py
 	$(LATEX) work
 #	$(BIBER) tmp/work
 	makeindex tmp/work
@@ -202,6 +204,7 @@ kicad/march.pdf: kicad/march.dot
 .PHONY: pdf
 pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB) $(TXT)
+	python rex.py
 	$(LATEX) Azbuka
 	makeindex tmp/Azbuka
 	$(LATEX) Azbuka
