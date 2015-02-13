@@ -164,9 +164,11 @@ TEX += azlin/mk/sdk/canadian.mk
 
 # x86os
 TEX += x86os/x86os.tex
+TEX += x86os/mk/versions.mk
 TEX += x86os/mk/cross.mk
 TEX += x86os/mk/dirs.mk
 TEX += x86os/mk/src.mk
+TEX += x86os/cfg.mk
 
 # SDL
 TEX += linux/libsdl.tex
