@@ -119,6 +119,9 @@ TEX += cortex/discovery/STM32DISCOVERY.tex
 TEX += cortex/discovery/STM32F4DISCOVERY.tex
 TEX += cortex/discovery/STM32F0DISCOVERY.tex
 
+# FPGA
+TEX += fpga/fpga.tex
+
 # muino
 TEX += muino/muino.tex
 
