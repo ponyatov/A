@@ -1,5 +1,5 @@
 TEX = Azbuka.tex header.tex title.tex
-TEX += lstmk.sty lstrc.sty lstsyslinux.sty
+TEX += lstmk.sty lstrc.sty lstsyslinux.sty lstobjdump.sty
 TEX += intro.tex
 
 # Learn plans
