@@ -26,6 +26,7 @@ TEX += devkit.tex
 # gnu
 TEX += gnu/gnu.tex
 TEX += gnu/make.tex
+TEX += gnu/elf.tex
 TEX += gnu/as.tex
 TEX += gnu/ld.tex
 TEX += gnu/gcc.tex
