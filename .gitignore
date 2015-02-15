@@ -1,6 +1,6 @@
 *~
 *.swp
-/tmp/
+tmp
 azlin
 *.xml
 logo/*converted-to.pdf
