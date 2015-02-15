@@ -25,7 +25,11 @@ TEX += devkit.tex
 
 # gnu
 TEX += gnu/gnu.tex
-#TEX += gnu/ld.tex
+TEX += gnu/make.tex
+TEX += gnu/as.tex
+TEX += gnu/ld.tex
+TEX += gnu/gcc.tex
+TEX += gnu/fortran.tex
 
 # Collis
 TEX += bcollis/bcollis.tex bcollis/thanks.tex bcollis/intro.tex
