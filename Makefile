@@ -23,6 +23,10 @@ TEX += usb/linux.tex
 # devkit
 TEX += devkit.tex
 
+# gnu
+TEX += gnu/gnu.tex
+#TEX += gnu/ld.tex
+
 # Collis
 TEX += bcollis/bcollis.tex bcollis/thanks.tex bcollis/intro.tex
 TEX += bcollis/ch02.tex
