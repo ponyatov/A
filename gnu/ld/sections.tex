@@ -1,0 +1,95 @@
+\secrel{Команда SECTIONS}\secdown
+
+The SECTIONS command tells the linker how to map input sections into output
+sections, and how to place the output sections in memory.
+
+The format of the SECTIONS command is:
+
+\begin{verbatim}
+SECTIONS
+{
+  sections-command
+  sections-command
+  …
+}
+\end{verbatim}
+
+Each sections-command may of be one of the following:
+
+\begin{itemize}
+  \item an ENTRY command (refer to Section 4.4.1 Setting the Entry Point)
+  \item a symbol assignment (refer to Section 4.5 Assigning Values to Symbols)
+  \item an output section description
+  \item an overlay description
+\end{itemize}
+
+The ENTRY command and symbol assignments are permitted inside the SECTIONS
+command for convenience in using the location counter in those commands. This
+can also make the linker script easier to understand because you can use those
+commands at meaningful points in the layout of the output file.
+
+Output section descriptions and overlay descriptions are described below.
+
+If you do not use a SECTIONS command in your linker script, the linker will
+place each input section into an identically named output section in the order
+that the sections are first encountered in the input files. If all input
+sections are present in the first file, for example, the order of sections in
+the output file will match the order in the first input file. The first section
+will be at address zero.
+
+\secrel{Описание выходных секций}
+
+The full description of an output section looks like this:
+
+\begin{verbatim}
+section [address] [(type)] : [AT(lma)]
+  {
+    output-section-command
+    output-section-command
+    …
+  } [>region] [AT>lma_region] [:phdr :phdr …] [=fillexp]
+\end{verbatim}
+
+Most output sections do not use most of the optional section attributes.
+
+The whitespace around section is required, so that the section name is
+unambiguous. The colon and the curly braces are also required. The line breaks
+and other white space are optional.
+
+Each output-section-command may be one of the following:
+
+\begin{itemize}
+  \item 
+a symbol assignment (refer to Section 4.5 Assigning Values to Symbols)
+  \item 
+an input section description (refer to Section 4.6.4 Input Section Description)
+  \item 
+data values to include directly (refer to Section 4.6.5 Output Section Data)
+  \item 
+a special output section keyword (refer to Section 4.6.6 Output Section Keywords)
+\end{itemize}
+
+\secrel{Имя выходной секции}
+
+The name of the output section is section. section must meet the constraints of
+your output format. In formats which only support a limited number of sections,
+such as a.out, the name must be one of the names supported by the format (a.out,
+for example, allows only .text, .data or .bss). If the output format supports
+any number of sections, but with numbers and not names (as is the case for
+Oasys), the name should be supplied as a quoted numeric string. A section name
+may consist of any sequence of characters, but a name which contains any unusual
+characters such as commas must be quoted.
+
+The output section name /DISCARD/ is special; refer to Section 4.6.7 Output
+Section Discarding.
+
+
+\secrel{Описание выходных секций}
+\secrel{Описание входных секций}
+\secrel{Выходная секция данных}
+\secrel{Ключевые слова выходных секций}
+\secrel{Отброс выходных секций}
+
+\secrel{Атрибуты выходных секций}
+\secrel{Описание оверлея}
+\secup

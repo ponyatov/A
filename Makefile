@@ -28,7 +28,8 @@ TEX += gnu/gnu.tex
 TEX += gnu/make.tex
 TEX += gnu/elf.tex
 TEX += gnu/as.tex
-TEX += gnu/ld.tex
+TEX += gnu/ld/ld.tex
+TEX += gnu/ld/sections.tex
 TEX += gnu/gcc.tex
 TEX += gnu/fortran.tex
 
