@@ -168,6 +168,7 @@ TEX += linux/syslinux.tex
 TEX += linux/syslinux.cfg
 TEX += linux/intro.tex
 TEX += azlin/azlin.tex
+TEX += linux/unknown.tex
 TEX += linux/opengl.tex
 TEX += linux/realtime.tex
 TEX += linux/netboot.tex
