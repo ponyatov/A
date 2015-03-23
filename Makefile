@@ -34,22 +34,23 @@ TEX += gnu/gcc.tex
 TEX += gnu/fortran.tex
 
 # Collis
-TEX += bcollis/bcollis.tex bcollis/thanks.tex bcollis/intro.tex
-TEX += bcollis/ch02.tex
-TEX += bcollis/2_2.tex bcollis/2_3.tex bcollis/2_4.tex
-TEX += bcollis/2_5.tex bcollis/2_6.tex bcollis/2_7.tex
-TEX += bcollis/2_8.tex
-TEX += bcollis/led1/led1.pdf bcollis/led2/led2.pdf
-TEX += bcollis/2_9.tex bcollis/2_10.tex
-TEX += bcollis/fet/fet.pdf
-TEX += bcollis/2_11.tex bcollis/2_12.tex
-TEX += bcollis/ldr/ldr.pdf bcollis/ldr/final.pdf
-TEX += bcollis/2_13.tex
-TEX += bcollis/vd/vd.pdf
-TEX += bcollis/2_14.tex bcollis/2_15.tex bcollis/2_16.tex
-TEX += bcollis/ch03.tex
-TEX += bcollis/3_1.tex bcollis/3_2.tex bcollis/3_3.tex
-TEX += bcollis/3_4.tex bcollis/3_5.tex bcollis/3_6.tex
+TEX += bcollis/bcollis.tex bcollis/thanks.tex 
+#TEX += bcollis/intro.tex
+#TEX += bcollis/ch02.tex
+#TEX += bcollis/2_2.tex bcollis/2_3.tex bcollis/2_4.tex
+#TEX += bcollis/2_5.tex bcollis/2_6.tex bcollis/2_7.tex
+#TEX += bcollis/2_8.tex
+#TEX += bcollis/led1/led1.pdf bcollis/led2/led2.pdf
+#TEX += bcollis/2_9.tex bcollis/2_10.tex
+#TEX += bcollis/fet/fet.pdf
+#TEX += bcollis/2_11.tex bcollis/2_12.tex
+#TEX += bcollis/ldr/ldr.pdf bcollis/ldr/final.pdf
+#TEX += bcollis/2_13.tex
+#TEX += bcollis/vd/vd.pdf
+#TEX += bcollis/2_14.tex bcollis/2_15.tex bcollis/2_16.tex
+#TEX += bcollis/ch03.tex
+#TEX += bcollis/3_1.tex bcollis/3_2.tex bcollis/3_3.tex
+#TEX += bcollis/3_4.tex bcollis/3_5.tex bcollis/3_6.tex
 
 # SPICE
 TEX += spice/spice.tex
