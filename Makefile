@@ -5,7 +5,7 @@ TEX += intro.tex
 # Learn plans
 TEX += learnplans/learnplans.tex
 
- TXT = rex.py
+TXT = rex.py
 
 # docmake
 TEX += docmake/docmake.tex
@@ -168,6 +168,7 @@ TEX += linux/syslinux.tex
 TEX += linux/syslinux.cfg
 TEX += linux/intro.tex
 TEX += azlin/azlin.tex
+#TEX += azlin/crox.py
 TEX += linux/unknown.tex
 TEX += linux/opengl.tex
 TEX += linux/realtime.tex
