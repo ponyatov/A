@@ -1,4 +1,6 @@
-\secrel{Установка под \win}\label{kicadinstwin}
+\secrel{Установка}\secdown
+
+\secrel{\win}\label{kicadinstwin}
 
 \menu{\winr{\url{http://www.kicad-pcb.org/}}>Download>\winstart}
 
@@ -20,24 +22,30 @@
 
 \menu{Completing Setup>\uncheckbox Wings3D>Finish}
 
-\secrel{Установка под \linux}\label{kicadinstlin}
+\secrel{\linux}\label{kicadinstlin}
 
 \begin{verbatim}
 root# aptitude install kicad-doc-ru kicad
 \end{verbatim}
 
-\lst{+++\ $\sim$/.blackbox/menu}{}{tmp/kicad.bbmenu}
+\lst{+++\ $\sim$/.blackbox/menu}{}{/tmp/kicad.bbmenu}
+
+\secrel{Настройка библиотек}
 
 Для добавления библиотек, поставляемых с этой книгой, сделайте \emph{git
-checkout}:
+clone} или \emph{git pull}:
 
 \begin{verbatim}
 user:~$ git clone --depth=1 -o gh https://github.com/ponyatov/Azbuka.git Azbuka
+user:~$ cd Azbuka
+user:~/Azbuka$ git pull
 \end{verbatim}
 
 \menu{\prog{kicad}>\prog{eeschema}>Настройки>Библиотека}
 
 \menu{Пользовательские пути поиска>Добавить>\file{/home/user/Azbuka/kicad/lib}}
+
+\menu{Файлы библиотек>все стандартные>Удалить>OK}
 
 \menu{Файлы библиотек>Добавить>R,L,C,SPICE,DA\_POWER,..>Открыть>OK}
 
@@ -49,3 +57,45 @@ user:~$ git clone --depth=1 -o gh https://github.com/ponyatov/Azbuka.git Azbuka
 или сразу схему
 
 \menu{\prog{eeschema}>Файл>Открыть>\file{~/Azbuka/bcollis/led1/led1.sch}}
+
+\secrel{Дотфайлы}
+
+Посколько программа изначально писалась как юниксовая, пользовательские
+настройки хранятся в dot-файлах:
+
+\lst{~/.kicad}{}{kicad/kicad.dotfile}
+
+\begin{description}
+\item[KicadFrame*] размеры и положение окна менеджера проектов
+\item[WorkingDir] каталог с текущим рабочим проектом
+\item[fileN] список последних проектов (\ \menu{Файл>Последние файлы}\ )
+\end{description}
+
+\lst{~/.eeschema}{}{kicad/eeschema.dotfile}
+
+\begin{description}
+\item[SchematicFrame*] размеры и положение окна \prog{eeschema}
+\item[fileN] список последних схем (\ \menu{Файл>Последние файлы}\ )
+\end{description}
+
+\secrel{Глобальные шаблоны}
+
+После установки \kicad\ можно скорректировать файлы глобальных шаблонов, чтобы
+новые проекты создавались сразу с нужными настройками, прежде всего с нужным
+нам набором библиотек:
+
+\begin{verbatim}
+sudo vim /usr/share/kicad/template/kicad.pro
+\end{verbatim}
+
+\lst{/usr/share/kicad/template/kicad.pro}{}{kicad/kicad.template}
+
+\begin{description}
+\item[LibDir] каталог библиотек, установите на свой или корпоративный/групповой
+\item[LibNameN] задается список библиотек по умолчанию, приопишите ваш типовой
+набор
+\item[eeschema/libraries] схемные библиотеки \eeschema
+\item[pcbnew/libraries] библиотеки надстеков для печатных плат \pcbnew
+\end{description}
+
+\secup

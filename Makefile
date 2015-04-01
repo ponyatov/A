@@ -1,4 +1,5 @@
 TEX = Azbuka.tex header.tex title.tex
+PNG =
 TEX += lstmk.sty lstrc.sty lstsyslinux.sty lstobjdump.sty
 TEX += intro.tex
 
@@ -71,22 +72,25 @@ TEX += kicad/eeschema.tex
 TEX += kicad/minilesson.tex
 TEX += kicad/libs.tex
 TEX += kicad/eenew.tex kicad/pcbnew.tex 
-TEX += kicad/newproj.tex kicad/new_project.png
+TEX += kicad/newproj.tex 
+PNG += kicad/new_project.png
+PNG += kicad/icon_cvpcb.png
 TEX += kicad/gerbview.tex
 TEX += kicad/march.tex
 TEX += kicad/march.pdf
 TEX += kicad/wings.tex
-TEX += kicad/icon_kicad.png
-TEX += kicad/icon_eeschema.png
-TEX += kicad/icon_gerbview.png
-TEX += kicad/icon_cvpcb.png
-TEX += kicad/icon_modedit.png
-TEX += kicad/icon_pcbcalculator.png
-TEX += kicad/icon_pcbnew.png
-TEX += kicad/icon_pagelayout.png
+PNG += kicad/icon_kicad.png
+PNG += kicad/icon_eeschema.png
+PNG += kicad/icon_gerbview.png
+PNG += kicad/icon_cvpcb.png
+PNG += kicad/icon_modedit.png
+PNG += kicad/icon_pcbcalculator.png
+PNG += kicad/icon_pcbnew.png
+PNG += kicad/icon_pagelayout.png
 
 # FreeCAD
-TEX += freecad/freecad.tex logo/FreeCAD.png
+TEX += freecad/freecad.tex
+PNG += logo/FreeCAD.png
 
 # IDE
 TEX += ide/ide.tex
@@ -224,7 +228,7 @@ kicad/march.pdf: kicad/march.dot
 	
 .PHONY: pdf
 pdf: Azbuka.pdf
-Azbuka.pdf: $(TEX) $(BIB) $(TXT)
+Azbuka.pdf: $(TEX) $(BIB) $(TXT) $(PNG)
 	python rex.py
 	$(LATEX) Azbuka
 	makeindex tmp/Azbuka
@@ -237,6 +241,10 @@ Azbuka.pdf: $(TEX) $(BIB) $(TXT)
 		-dNOPAUSE -dBATCH \
 		-sOutputFile=Azbuka.pdf tmp/Azbuka.pdf
 #	$(BIBER) tmp/Azbuka
+
+.PGONY: png
+png: 
+	make $(PNG)
 
 .PHONY: clean
 clean:
