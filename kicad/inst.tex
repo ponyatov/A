@@ -36,14 +36,14 @@ root# aptitude install kicad-doc-ru kicad
 clone} или \emph{git pull}:
 
 \begin{verbatim}
-user:~$ git clone --depth=1 -o gh https://github.com/ponyatov/Azbuka.git Azbuka
-user:~$ cd Azbuka
-user:~/Azbuka$ git pull
+user:~$ git clone --depth=1 -o gh https://github.com/ponyatov/odurino.git odurino
+user:~$ cd odurino
+user:~/odurino$ git pull
 \end{verbatim}
 
 \menu{\prog{kicad}>\prog{eeschema}>Настройки>Библиотека}
 
-\menu{Пользовательские пути поиска>Добавить>\file{/home/user/Azbuka/kicad/lib}}
+\menu{Пользовательские пути поиска>Добавить>\file{/home/user/odurino/lib}}
 
 \menu{Файлы библиотек>все стандартные>Удалить>OK}
 
@@ -78,7 +78,7 @@ user:~/Azbuka$ git pull
 \item[fileN] список последних схем (\ \menu{Файл>Последние файлы}\ )
 \end{description}
 
-\secrel{Глобальные шаблоны}
+\secrel{Глобальные шаблоны}\label{kicadtemplates}
 
 После установки \kicad\ можно скорректировать файлы глобальных шаблонов, чтобы
 новые проекты создавались сразу с нужными настройками, прежде всего с нужным

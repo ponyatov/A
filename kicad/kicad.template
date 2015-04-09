@@ -7,7 +7,7 @@ RootSch=
 BoardNm=
 [eeschema]
 version=1
-LibDir=/home/ponyatov/Azbuka/kicad/lib
+LibDir=/home/ponyatov/odurino/lib
 NetFmt=1
 HPGLSpd=20
 HPGLDm=15
@@ -46,6 +46,10 @@ LibName6=FET
 LibName7=SPICE
 LibName8=VD
 LibName9=SWITCH
+LibName10=FTDI
+LibName11=Atmel
+LibName12=MAXIM
+LibName13=STMicro
 [cvpcb]
 version=1
 NetIExt=net
@@ -69,16 +73,4 @@ TxtLar=120
 MSegLar=150
 LastNetListRead=
 [pcbnew/libraries]
-LibDir=/home/ponyatov/Azbuka/kicad/lib
-LibName1=sockets
-LibName2=connect
-LibName3=discret
-LibName4=pin_array
-LibName5=divers
-LibName6=libcms
-LibName7=display
-LibName8=led
-LibName9=dip_sockets
-LibName10=pga_sockets
-LibName11=valves
-
+LibDir=/home/ponyatov/odurino/lib

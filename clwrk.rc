@@ -1,0 +1,11 @@
+#!/bin/sh
+rm work.aux
+rm work.idx
+rm work.ilg
+rm work.ind
+rm work.log
+rm work.out
+rm work.pdf
+rm work.synctex.gz*
+rm work.toc
+
