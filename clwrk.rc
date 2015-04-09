@@ -9,3 +9,9 @@ rm work.pdf
 rm work.synctex.gz*
 rm work.toc
 
+rm Azbuka.aux
+rm Azbuka.idx
+rm Azbuka.log
+rm Azbuka.out
+rm Azbuka.toc
+
