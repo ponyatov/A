@@ -137,9 +137,6 @@ TEX += cortex/discovery/STM32F0DISCOVERY.tex
 # FPGA
 TEX += fpga/fpga.tex
 
-# muino
-TEX += muino/muino.tex
-
 # bibs
 BIB  = ../bib/python.bib
 BIB += ../bib/eskd.bib
