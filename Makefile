@@ -223,10 +223,14 @@ tmp/work.pdf: work.tex $(TEX) $(TXT)
 kicad/march.pdf: kicad/march.dot
 	dot -Tpdf $< -o $@
 	
+.PHONY: files
+files:
+	python rex.py
+	
 .PHONY: pdf
 pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB) $(TXT) $(PNG)
-	python rex.py
+	make files
 	$(LATEX) Azbuka
 	makeindex tmp/Azbuka
 	$(LATEX) Azbuka
