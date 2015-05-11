@@ -1,4 +1,4 @@
-TEX = Azbuka.tex header.tex title.tex
+TEX = Azbuka.tex header.tex ../texheader/header.tex ../texheader/title.tex
 PNG =
 TEX += lstmk.sty lstrc.sty lstsyslinux.sty lstobjdump.sty
 TEX += intro.tex
