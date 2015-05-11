@@ -1,4 +1,10 @@
-TEX = Azbuka.tex header.tex ../texheader/header.tex ../texheader/title.tex
+TEX = Azbuka.tex header.tex 
+TEX += ../texheader/header.tex 
+TEX += ../texheader/title.tex
+TEX += ../texheader/colors.tex
+TEX += ../texheader/comp.tex
+TEX += ../texheader/translate.tex
+ 
 PNG =
 TEX += lstmk.sty lstrc.sty lstsyslinux.sty lstobjdump.sty
 TEX += intro.tex
@@ -227,12 +233,17 @@ kicad/march.pdf: kicad/march.dot
 files:
 	python rex.py
 	
+.PHONY: test
+test: $(TEX) $(BIB) $(TXT) $(PNG)
+	$(LATEX) Azbuka
+
 .PHONY: pdf
 pdf: Azbuka.pdf
 Azbuka.pdf: $(TEX) $(BIB) $(TXT) $(PNG)
 	make files
 	$(LATEX) Azbuka
 	makeindex tmp/Azbuka
+	$(LATEX) Azbuka
 	$(LATEX) Azbuka
 #	mv tmp/$@ $@
 	ghostscript \
