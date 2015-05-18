@@ -1,13 +1,10 @@
 *~
 *.swp
-*.idx
 tmp
-azlin
-*.xml
-logo/*converted-to.pdf
-muino
-x86os
-binport
+*.idx
+*.synctex.gz
 bcollis
+azlin
 odurino
+x86os
 
