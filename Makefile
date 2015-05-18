@@ -209,6 +209,8 @@ BIBER = biber
 
 #buildmain: pdf
 
+.PHONY: work
+work: tmp/work.pdf
 tmp/work.pdf: work.tex $(TEX) $(TXT)
 	$(LATEX) work
 #	$(BIBER) tmp/work
@@ -227,6 +229,7 @@ kicad/march.pdf: kicad/march.dot
 .PHONY: files
 files:
 	python rex.py
+	touch x86os/kernel.objdump
 	
 .PHONY: test
 test: $(TEX) $(BIB) $(TXT) $(PNG)
