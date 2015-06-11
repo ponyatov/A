@@ -25,6 +25,12 @@ TEX += usb/linux.tex
 # devkit
 TEX += devkit.tex
 
+# odurino
+TEX += odurino/doc/odurino.tex
+TEX += odurino/usb/usb.tex
+TEX += odurino/interface/RS232.tex
+PNG += odurino/interface/RS232_5v.png
+
 # gnu
 TEX += gnu/gnu.tex
 TEX += gnu/make.tex
@@ -211,11 +217,15 @@ BIBER = biber
 
 .PHONY: work
 work: tmp/work.pdf
-tmp/work.pdf: work.tex $(TEX) $(TXT)
+tmp/work.pdf: work.tex $(TEX) $(TXT) $(PNG)
 	$(LATEX) work
 #	$(BIBER) tmp/work
 	makeindex tmp/work
 	$(LATEX) work
+	
+PHONY: texclean
+texclean:
+	rm -f *.idx *.ind *.log *.toc *.aux azlin_*
 
 %.png: %.svg
 	inkscape $< --export-png=$@ --export-dpi=300
