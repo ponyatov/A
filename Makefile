@@ -42,9 +42,17 @@ TEX += intro.tex
 #TEX += gnu/fortran.tex
 
 # Collis
-TEX += ../bcollis/bcollis.tex ../bcollis/thanks.tex 
+TEX += bcollis/bcollis.tex bcollis/thanks.tex
+TEX += bcollis/ch01/ch01.tex 
+TEX += bcollis/ch02/ch02.tex 
+TEX += bcollis/ch03/ch03.tex 
+TEX += bcollis/ch04/ch04.tex 
+TEX += bcollis/ch05/ch05.tex 
+TEX += bcollis/ch06/ch06.tex 
+TEX += bcollis/ch07/ch07.tex 
+TEX += bcollis/ch08/ch08.tex 
+TEX += bcollis/ch09/ch09.tex 
 ##TEX += bcollis/intro.tex
-##TEX += bcollis/ch02.tex
 ##TEX += bcollis/2_2.tex bcollis/2_3.tex bcollis/2_4.tex
 ##TEX += bcollis/2_5.tex bcollis/2_6.tex bcollis/2_7.tex
 ##TEX += bcollis/2_8.tex
@@ -56,7 +64,6 @@ TEX += ../bcollis/bcollis.tex ../bcollis/thanks.tex
 ##TEX += bcollis/2_13.tex
 ##TEX += bcollis/vd/vd.pdf
 ##TEX += bcollis/2_14.tex bcollis/2_15.tex bcollis/2_16.tex
-##TEX += bcollis/ch03.tex
 ##TEX += bcollis/3_1.tex bcollis/3_2.tex bcollis/3_3.tex
 ##TEX += bcollis/3_4.tex bcollis/3_5.tex bcollis/3_6.tex
 #
