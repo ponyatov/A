@@ -183,7 +183,9 @@ TEX += bcollis/ch09/ch09.tex
 #TEX += linux/syslinux.tex
 #TEX += linux/syslinux.cfg
 #TEX += linux/intro.tex
-#TEX += azlin/azlin.tex
+
+# ALYEH:Linux
+TEX += L/L.tex
 ##TEX += azlin/crox.py
 #TEX += linux/unknown.tex
 #TEX += linux/opengl.tex
@@ -225,15 +227,16 @@ LATEX = pdflatex --output-directory=tmp -halt-on-error
 .PHONY: work
 work: tmp/work.pdf
 tmp/work.pdf: work.tex $(TEX) $(TXT) $(PNG)
+	make files
 	$(LATEX) work
 ##	$(BIBER) tmp/work
 	makeindex tmp/work
 	$(LATEX) work
 	
-#PHONY: texclean
-#texclean:
-#	rm -f *.idx *.ind *.log *.toc *.aux azlin_*
-#
+PHONY: texclean
+texclean:
+	rm -f *.idx *.ind *.log *.toc *.aux *.ilg *.out
+
 #%.png: %.svg
 #	inkscape $< --export-png=$@ --export-dpi=300
 #%.pdf: %.ps
@@ -242,12 +245,12 @@ tmp/work.pdf: work.tex $(TEX) $(TXT) $(PNG)
 #	inkscape $< --export-pdf=$@ --export-area-drawing
 #kicad/march.pdf: kicad/march.dot
 #	dot -Tpdf $< -o $@
-#	
-#.PHONY: files
-#files:
-#	python rex.py
+	
+.PHONY: files
+files: rex.py
+	python rex.py
 #	touch x86os/kernel.objdump
-#	
+	
 #.PHONY: test
 #test: $(TEX) $(BIB) $(TXT) $(PNG)
 #	$(LATEX) Azbuka
@@ -276,6 +279,3 @@ tmp/work.pdf: work.tex $(TEX) $(TXT) $(PNG)
 #.PHONY: clean
 #clean:
 #	rm -f tmp/work.* tmp/Azbuka.*
-#
-#tmp/%.mk: %/Makefile
-#	cp $< $@

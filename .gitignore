@@ -2,13 +2,10 @@
 *.swp
 tmp
 *.idx
-*.synctex.gz
+*.synctex*.gz*
 bcollis
 azlin
 odurino
 x86os
 
-/work.aux
-/work.log
-/work.out
-/work.toc
+
