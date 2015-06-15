@@ -27,7 +27,10 @@ TEX += intro.tex
 
 # ALYEH:Hardware
 TEX += H/H.tex
+TEX += H/interface/RS232_5v.tex
 PNG += H/interface/RS232_5v.png
+TEX += H/interface/SD.tex
+TEX += H/interface/CAN.tex
 TEX += H/usb/usb.tex
 PNG += H/usb/HEX_FT232RL.png
 PNG += H/usb/FT232RL.png
