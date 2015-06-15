@@ -24,13 +24,17 @@ TEX += intro.tex
 #
 ## devkit
 #TEX += devkit.tex
-#
-## odurino
-#TEX += odurino/doc/odurino.tex
-#TEX += odurino/usb/usb.tex
-#TEX += odurino/interface/RS232.tex
-#PNG += odurino/interface/RS232_5v.png
-#
+
+# ALYEH:Hardware
+TEX += H/H.tex
+PNG += H/interface/RS232_5v.png
+TEX += H/usb/usb.tex
+PNG += H/usb/HEX_FT232RL.png
+PNG += H/usb/FT232RL.png
+TEX += H/cpu/cpu.tex
+TEX += H/power/power.tex
+TEX += H/lib/lib.tex
+
 ## gnu
 #TEX += gnu/gnu.tex
 #TEX += gnu/make.tex
@@ -237,8 +241,8 @@ PHONY: texclean
 texclean:
 	rm -f *.idx *.ind *.log *.toc *.aux *.ilg *.out
 
-#%.png: %.svg
-#	inkscape $< --export-png=$@ --export-dpi=300
+%.png: %.svg
+	inkscape $< --export-png=$@ --export-dpi=300
 #%.pdf: %.ps
 #	inkscape $< --export-pdf=$@ --export-area-drawing
 #%.pdf: %.svg
