@@ -27,6 +27,7 @@ TEX += intro.tex
 
 # ALYEH:Hardware
 TEX += H/H.tex
+TEX += H/interface/interface.tex
 TEX += H/interface/RS232_5v.tex
 PNG += H/interface/RS232_5v.png
 TEX += H/interface/SD.tex

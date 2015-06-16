@@ -35,7 +35,10 @@ FILES = [
 
 for i in FILES:
 	F = open(i[2], 'w')
-	for j in re.findall(i[1], open(i[0]).read()):
-		print j
-		print >> F, j
+	try:
+		for j in re.findall(i[1], open(i[0]).read()):
+			print j
+			print >> F, j
+	except IOError:
+		print 'no file',i[0]
 	F.close()
