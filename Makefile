@@ -35,9 +35,26 @@ TEX += H/interface/CAN.tex
 TEX += H/usb/usb.tex
 PNG += H/usb/HEX_FT232RL.png
 PNG += H/usb/FT232RL.png
+TEX += H/amp/amp.tex
 TEX += H/cpu/cpu.tex
 TEX += H/power/power.tex
+TEX += H/radio/radio.tex
 TEX += H/lib/lib.tex
+
+# ALYEH:Embedded C++ library
+TEX += E/E.tex
+TEX += E/const.tex E/const.h
+TEX += E/File.tex E/File.h E/File.cpp
+TEX += E/hw/hw.tex
+TEX += E/hw/arduino/arduino.tex
+TEX += E/cpu/cpu.tex
+TEX += E/arch/arch.tex
+TEX += E/arch/AVR8/AVR8.tex
+TEX += E/arch/i386/i386.tex
+TEX += E/arch/CortexM/CortexM.tex
+TEX += E/os/os.tex
+TEX += E/os/POSIX/POSIX.tex
+TEX += E/os/win32/win32.tex
 
 ## gnu
 #TEX += gnu/gnu.tex
