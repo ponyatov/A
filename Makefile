@@ -55,6 +55,8 @@ TEX += E/arch/CortexM/CortexM.tex
 TEX += E/os/os.tex
 TEX += E/os/POSIX/POSIX.tex
 TEX += E/os/win32/win32.tex
+TEX += E/interface/interface.tex
+TEX += E/interface/SD.tex
 
 ## gnu
 #TEX += gnu/gnu.tex
